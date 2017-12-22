@@ -33,12 +33,10 @@
       <div class="col-md-offset-3 col-md-6 row text-center">
         <form class="form-inline">
           <div class="form-group">
-            <label for="inputText">Pseudo</label>
-            <input type="text" id="inputPseudo" class="form-control">
+              <input type="text" id="inputPseudo" class="form-control" placeholder="Pseudo">
           </div>
           <div class="form-group">
-            <label for="inputPassword">Mot de passe</label>
-            <input type="password" id="inputPassword" class="form-control">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe">
           </div>
         </form>
       </div>

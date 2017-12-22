@@ -59,11 +59,8 @@
 				<ul>
 					<li>I. Introduction</li>
 					<p>Sortir Gratos, enregistré au RCS de Montpellier sous le numéro B XXX XXX XXX , édite et à vocation à exploiter le site Internet fixes et/ou sa version mobile accessibles par fil ou sans fil et notamment à la date de mise à jour le site “sortir-gratos.fr”, accessible à l’adresse URL suivante : http://www.sortir-gratos.fr<br />
-					Sortir Gratos se réserve le droit de modifier ainsi que de supprimer, tout ou partie du Site Sortir Gratos et ce, sans préavis et sans avoir à en informer préalablement les utilisateurs, personnes physiques ou morales quelles que soient leurs qualités et activités commerciales du Site Sortir Gratos (ci-après « Utilisateur(s) »). Sortir Gratos ne pourra être tenue responsable à l’encontre des Contributeurs ou à l’encontre de tout tiers pour toute modification du  Site Sortir Gratos
-					<li>II. Champ d’application des conditions générales d’utilisation du site Sortir Gratos
-</li>
-					</p>
-					</ul>
+					Sortir Gratos se réserve le droit de modifier ainsi que de supprimer, tout ou partie du Site Sortir Gratos et ce, sans préavis et sans avoir à en informer préalablement les utilisateurs, personnes physiques ou morales quelles que soient leurs qualités et activités commerciales du Site Sortir Gratos (ci-après « Utilisateur(s) »). Sortir Gratos ne pourra être tenue responsable à l’encontre des Contributeurs ou à l’encontre de tout tiers pour toute modification du  Site Sortir Gratos</p>
+					<li>II. Champ d’application des conditions générales d’utilisation du site Sortir Gratos</li>
 						<ul>
 							<li>II-1. Acceptation des Conditions Générales d’Utilisation du Site Sortir Gratos</li>
 							<p>Toute connexion au Site Sortir Gratos et utilisation de son contenu s’effectue dans le cadre des présentes conditions générales d’utilisation (ci-après « Conditions Générales d’Utilisation »).<br />
@@ -71,8 +68,8 @@
 							Les Conditions Générales d’Utilisation applicables sont celles en vigueur lors de chaque connexion et utilisation du Site Sortir Gratos par Utilisateur.<br />
 							Sortir Gratos informe les Utilisateurs que les Conditions Générales d’Utilisation peuvent être modifiées à tout moment. Ces modifications sont portées à la connaissance des Utilisateurs par leur simple mise en ligne et sont réputées acceptées sans réserve par tout Utilisateur qui accède au Site Sortir Gratos postérieurement à ladite mise en ligne.<br />
 							Tout Utilisateur n’adhérant pas à la nouvelle version des Conditions Générales d’Utilisation qui serait mise en ligne par Sortir Gratos doit impérativement cesser d’utiliser le Site Sortir Gratos et le cas échéant les services associés.<br />
-							Sortir Gratos s’engage à ce que les présentes Conditions Générales d’Utilisation soient présentes et imprimables, à tout moment, sur le Site Sortir Gratos (sous réserve d’une éventuelle indisponibilité de tout ou partie dudit Site Sortir Gratos).<br />
-						</p>
+							Sortir Gratos s’engage à ce que les présentes Conditions Générales d’Utilisation soient présentes et imprimables, à tout moment, sur le Site Sortir Gratos (sous réserve d’une éventuelle indisponibilité de tout ou partie dudit Site Sortir Gratos).</p>
+						</ul>
 					</ul>
 					<ul>
 						<li>III. Disponibilité du site Sortir Gratos</li>
@@ -121,7 +118,108 @@
 								Sortir Gratos informe les Utilisateurs que, conformément à la législation en vigueur, les données communiquées par ces derniers pourront être communiquées par Sortir Gratos aux autorités judiciaires sur requête de ces dernières.<br />
 								</p>					
 								<li>V-2. Droits de l’Utilisateur</li>
-								<p>Conformément à la loi n°78-17 du 6 janvier 1978 modifiée (dite loi « Informatique et Liberté »), Sortir Gratos a déclaré auprès de la CNIL, le traitement des données à caractère personnel des Utilisateurs (numéro de déclaration : XXXXXX).</p>
+								<p>Conformément à la loi n°78-17 du 6 janvier 1978 modifiée (dite loi « Informatique et Liberté »), Sortir Gratos a déclaré auprès de la CNIL, le traitement des données à caractère personnel des Utilisateurs (numéro de déclaration : XXXXXX).<br />
+								Conformément au décret n°2007-451 du 25 mars 2007 pris pour l’application de la loi du 6 janvier 1978, les demandes des Utilisateurs devront être présentées par écrit et devront être signées et accompagnées de la photocopie d’un titre d’identité portant la signature du titulaire. La demande devra préciser l’adresse à laquelle devra parvenir la réponse. Mapado disposera d’un délai de 2 (deux) mois pour répondre suivant réception de la demande.
+								</p>
+								<li>V-3. Destinataire(s) des données à caractère personnel de l’Utilisateur</li>
+								<p>Les Utilisateurs sont informés que dans le cadre du traitement des données à caractère personnel les concernant il peut être nécessaire pour accéder à certains services disponibles sur le Site Sortir Gratos que ces données soient transmises à tout tiers prestataire technique de Sortir Gratos en vue d’assurer le fonctionnement desdits Services.<br />
+								Lors de la création de leur Compte Contributeur Sortir Gratos et/ou à l’occasion de leur participation à certains services du Site Sortir Gratos, les Utilisateurs pourront se voir demander s’ils souhaitent recevoir la newsletter du Site Sortir Gratos. Les Utilisateurs devront répondre par oui ou par non en cochant la case prévue à ces fins.</p>
+								<li>Utilisation de cookies</li>
+								<p>Sortir Gratos peut être amené à utiliser des cookies. Un cookie est un fichier, souvent anonyme, contenant des données, notamment un identifiant unique, transmis par le serveur d’un Site Mapado au navigateur de l’Utilisateur et stocké sur son disque dur. Ces cookies permettent lors de chaque visite par un Utilisateur sur le Site Sortir Gratos, de réaliser des études statistiques globales sur l’audience du Site Sortir Gratos, d’identifier le cas échéant l’Utilisateur, d’étudier le comportement des Contributeurs dudit Site Sortir Gratos au sein des  différentes rubriques et ce, afin de personnaliser au mieux ledit Site Sortir Gratos et ses services en terme d’organisation, d’affichage et de contenus.<br />
+								L’Utilisateur a cependant la possibilité de refuser ces cookies en configurant son navigateur. Les Utilisateurs sont toutefois informés que l’accès à certains services et rubriques des Sites Mapado pourra dans cette hypothèse être altéré, voire impossible.<br />
+								Pour plus d’informations sur les cookies, les Utilisateurs sont invités à consulter le site Internet de la CNIL à l’adresse suivante : http://www.cnil.fr ou consulter l’aide et la documentation de leur navigateur Internet.</p>
+							</ul>
+								<li>VI. Protection des mineurs</li>
+								<p>Les personnes détentrices de l’autorité parentale sur un mineur reconnaissent être conscientes du fait que le Site Sortir Gratos ou les Sites tiers mentionnés peuvent contenir des informations dont la nature ou la forme ne sont pas appropriées à la consultation et/ou à l’utilisation par un mineur. Elles sont, par conséquent, vivement invitées à surveiller l’utilisation faite par le mineur de l’accès à l’Internet et auxdits Site Sortir Gratos ou Sites tiers, ainsi que prendre toutes mesures adéquates pour prévenir l’accès par celui-ci aux contenus et informations non appropriés.<br />
+								Sortir Gratos s’engage à prendre les dispositions suivantes –conformes aux précautions d’usages en la matière ainsi qu’à la réglementation applicable – afin de restreindre au maximum l’accès des mineurs audit contenu.</p>
+								<li>VII. Services communautaires</li>
+									<ul>
+										<li>VII-1. Règles de conduite à la charge des Utilisateurs</li>
+										<p>Les services communautaires mis à disposition par Sortir Gratos (notamment, et sans que cette liste ne soit exhaustive, services de mise à disposition de contenus, etc.) donnent à leurs Utilisateurs l’occasion de partager des contenus et informations, notamment via un module logiciel permettant le téléchargement de contenus par les Utilisateurs tel que décrit au point VII-2 (ci- après dénommés « Espace(s) Communautaire(s) »).<br />
+										Les Espaces Communautaires sont des espaces de liberté. Les Utilisateurs sont invités à ne pas abuser de cette liberté et de se soumettre à certaines règles de conduite. Sortir Gratos rappelant aux Utilisateurs qu’ils sont seuls responsables de leurs propos tenus ainsi que des contenus édités par leurs soins sur cet Espace Communautaire.<br />
+										Sortir Gratos décline toute responsabilité quant aux propos, commentaires, textes, illustrations, photos, images, sons, vidéos, de quelque nature que ce soit, mis à disposition dans le cadre de l’Espace Communautaire.<br />
+										Tout Utilisateur de cet Espace Communautaire s’engage d’une part, à s’exprimer dans un contexte positif et d’autre part, à se soumettre d’une manière générale aux règles de conduite admises sur Internet et plus précisément aux règles exposées ci-après :
+											<ul>
+												<li>Respecter les règles habituelles de courtoisie. Eviter les insultes et vulgarités même si elles sont d’ordre humoristique ;</li>
+												<li>Respecter le thème de l’Espace Communautaire et écrire en termes clairs et lisibles tout message. Prendre le temps de rédiger chaque message afin de poster une contribution de qualité ;</li>
+												<li>Ne pas poster de message comportant : des informations de nature diffamatoire, menaçante, abusive, obscène, raciste, incitant à la pédophilie, à la discrimination, à la haine ou à la violence en raison de la race, de l’ethnie, de la religion ou incitant à l’apologie du nazisme ou la contestation de crimes contre l’humanité ; tout contenu, contrefaisant (notamment par la création de liens hypertextes renvoyant vers un site Internet proposant des contenus contrefaisants ou par la simple fourniture d'informations relatives à de tels sites Internet) ; toute information portant atteinte aux bonnes mœurs, ou d’une manière générale, illicite;</li>
+												<li>Ne pas utiliser l’Espace Communautaire à des fins de menaces, harcèlement ou injures, ou de manière plus générale pour violer les droits des tiers (y compris le droit à la protection de la vie privée) ;</li>
+												<li>Prendre garde à ne pas reproduire sans le consentement de son auteur ou de son titulaire de droits voisins (producteurs de bases de données, producteurs de phonogrammes et de vidéogrammes, entreprises de communication audiovisuelle et artistes-interprètes) des œuvres protégées par le droit de la propriété intellectuelle ;</li>
+												<li>S’abstenir de collecter, stocker et/ou diffuser les données personnelles d’autrui ou de diffuser les données personnelles le concernant tel que numéro de sécurité sociale, de carte de crédit, nom et adresse, numéro de permis de conduire ;</li>
+												<li>Ne pas se livrer à des activités de « spamming » consistant à envoyer les mêmes messages hors sujets plusieurs fois à de nombreux Utilisateurs différents ;</li>
+												<li>Ne pas diffuser ni utiliser de programmes informatiques comportant des fonctionnalités destructrices, telles que virus, programme de type worm, Cheval de Troie ou des robots destinés à faire défiler ou à afficher des écrans multiples, ou toute autre activité tendant à perturber la communication en ligne ;</li>
+												<li>Ne pas usurper l’identité d’un administrateur ou de toute autre personne (ne pas tenter par exemple d’usurper un pseudonyme déjà employé) et ce, notamment, dans l’intention d’induire en erreur ou de causer un préjudice à autrui ;</li>
+												<li>Ne pas utiliser l’Espace Communautaire à des fins commerciales notamment à des fins promotionnelles et, d'une manière générale, ne pas proposer des produits et des services contre rémunération de manière directe ou indirecte.</li>
+											</ul>
+											<p>L’Utilisateur participant à cet Espace Communautaire sous sa seule responsabilité, il garantit Mapado contre toute demande, réclamation et/ou condamnation à des dommages intérêts dont elle pourrait être menacée ou être l’objet, et/ou qui pourraient être prononcées contre elle, en ce compris les frais raisonnables d’avocats qui auraient pu être exposés, dès lors que celles-ci auraient pour cause, fondement ou origine la violation de ces principes par l’Utilisateur.<br />
+											En cas de non-respect de ces règles par un Utilisateur, Sortir Gratos pourra suspendre et/ou supprimer l’accès et/ou le Compte Contributeur associé audit Utilisateur.</p>
+											<li>VII-2. Chargement et mise en ligne de contributions</li>
+											<p>Sortir Gratos met à disposition des Utilisateurs un module logiciel dit d’ « upload » leur permettant de charger et de mettre en ligne leurs propres contenus, textuels, graphiques, etc. (ci-après dénommés les « Contributions »).<br />
+											Les Contributeurs qui publient ainsi des Contributions via le module sur le Site Sortir Gratos confèrent à Sortir Gratos, à titre gratuit et non exclusif, le droit de stocker, de reproduire, et de représenter lesdites contributions, dans les conditions notamment de durée et de territoire, du point X.2<br />
+											A travers les Contributions qu’ils postent, les Contributeurs s’engagent à respecter les conditions des présentes CGU et notamment garantissent Sortir Gratos contre toute demande, réclamation ou action à ce titre, notamment en violation de droits d’auteurs et de droits voisins.</p>
+											<li>VII-3. Hébergement et obligations de Sortir Gratos à ce titre</li>
+											<p>D’une manière générale, les contenus accessibles au sein du Site Sortir Gratos et notamment les Contributions, sont édités par les Contributeurs, Sortir Gratos n’intervenant qu’en qualité d’hébergeur et de modérateur.<br />
+												Dans ce cadre, Sortir Gratos agira promptement afin de procéder à tout retrait de contenu manifestement illicite dans les conditions fixées par la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, dès lors qu’elle aura été informée de ces contenus au moyen d’une notification satisfaisant aux exigences de la loi précitée.Les Contributions font l’objet d’une modération automatique visant à supprimer certains contenus contraires aux présentes règles de conduite (par exemple, injures et mots grossiers). Ainsi, certaines Contributions pourront être refusées à la publication si elles contiennent de tels contenus.<br/>
+												Sortir Gratos ne peut garantir que leurs outils de modération sont sans faille. Dans le cas où un Utilisateur serait témoin d’une Contribution manifestement illicite et/ou contraire aux règles de conduite (telles que définies au point VII-1), il pourrait en alerter Sortir Gratos par écrit afin de supprimer, après sa diffusion, tout contenu et notamment toute Contribution qui serait manifestement illicite et/ou contraire aux règles de conduite précitées, et d’une manière générale qui serait contraire à la loi ;<br />
+												de rappeler à l’ordre l’auteur du message et/ou de la Contribution litigieux afin qu’il modifie son attitude ;<br />
+												d’exclure temporairement voire définitivement les Utilisateurs qui violeraient les présentes règles de conduite.<br />
+											Les décisions du modérateur(s) ne sont, en aucun cas, susceptibles d’être contestées. En validant leur formulaire d’inscription de Contributeur, les Utilisateurs s’engagent à respecter son autorité et d’une manière générale les règles qui s’y appliquent.</p>
+										</p>
+										<li>IX. Droit de réponse</li>
+										<p>En application de l’article 6-IV de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, toute personne physique ou morale nommée ou désignée sur le Site Sortir Gratos peut solliciter auprès de Sortir Gratos un droit de réponse.<br />
+										Conformément à la réglementation en vigueur, Sortir Gratos désigne, à cet effet, en tant que responsable chargé d’assurer l’exécution des obligations se rattachant à l’exercice du droit de réponse, le directeur de la publication du Site Sortir Gratos mentionné au point I ci-avant.<br />
+										La demande d’exercice du droit de réponse devra être adressée à l’adresse suivante : Sortir Gratos - adresseXXX<br />
+										Elle devra être présentée par lettre recommandée avec accusé de réception, au plus tard 3 mois suivant la mise en ligne du message justifiant ladite demande. Cette demande devra par ailleurs contenir les références du message (titre, date, etc.) auquel l’Utilisateur souhaite répondre, mention des passages contestés ainsi que les circonstances dans lesquelles ce message aura été mis à disposition du public.<br />
+										Il est recommandé que soit joint à la demande d’exercice du droit de réponse, le texte de la réponse que l’Utilisateur se propose de faire. Au sein de celle-ci, l’Utilisateur pourra utilement faire référence au titre du message mis en cause ainsi que sa date de diffusion.<br />
+									Sous réserve que la demande respecte les conditions de validité du droit de réponse et soit justifiée juridiquement, Sortir Gratos s’engage à ce que la réponse soit insérée dans les 3 jours suivant réception de la demande à la même place et en mêmes caractères que le message auquel l’Utilisateur souhaite répondre.</p>
+								</ul>
+								<li>X. Droits de propriété intellectuelle</li>
+								<ul>
+									<li>X-1. Droits de propriété intellectuelle afférents au Site Sortir Gratos</li>
+									<p>L’ensemble des éléments du Site Sortir Gratos, notamment leur structure, leur contenu éditorial, leurs illustrations, leurs photos, images, sons et vidéos, leur organisation, sont protégés au titre du droit d’auteur, du droit des marques et des droits de propriété intellectuelle en général.<br />
+									Sortir Gratos confère à l’Utilisateur, à compter de son accès au Site Sortir Gratos, un droit d’usage privé, non collectif et non exclusif du contenu dudit Site Sortir Gratos. En conséquence, l’Utilisateur s’engage à respecter d’une manière générale les droits de la propriété intellectuelle sur les divers contenus proposés sur le Site Sortir Gratos et notamment à :
+									<ul>
+										<li>ne pas reproduire, modifier, altérer, rediffuser sans l’autorisation préalable de Sortir Gratos, tout élément contenu ou se rapportant au Site Sortir Gratos ;</li>
+										<li>ne pas détourner ou faire un usage commercial de ces services et Site Sortir Gratos sans solliciter au préalable un accord exprès de Sortir Gratos.</li>
+									</ul>
+									Il est expressément interdit à tout Utilisateur, quelle que soit sa qualité ou son activité, de mettre en place un mécanisme de référencement systématique de tout ou partie des contenus mis en ligne sur le Site de Sortir Gratos, notamment au moyen de liens hypertexte profonds, aux fins de proposer, sur tout autre site, service ou application, un référencement desdits contenus à destination du public et ce, à toutes fins notamment commerciales.<br />
+								En tant qu’éditeur du Site Sortir Gratos, Sortir Gratos s’engage, également, à respecter les droits de propriété intellectuelle d’autrui. Dans le cas où l’Utilisateur constaterait la violation d’un droit de propriété intellectuelle d’autrui sur le Site Sortir Gratos, il lui sera possible d’en référer à Sortir Gratos par écrit.</p>
+								<li>X-2. Droits de propriété intellectuelle afférents aux Contributions postées par les Contributeurs</li>
+								<p>En mettant en ligne des Contributions sur le Site Sortir Gratos, le Contributeur confère gracieusement à Sortir Gratos, à compter de leur publication, le droit de stocker, reproduire, et représenter les Contributions qu’il publie et qui seraient protégeables au titre du droit d’auteur, pour les besoins de leur mise à disposition et ce, sur le Site Sortir Gratos et tous services associés (y compris le cas échéant au sein d’applications dédiées et/ou de sites tiers de partages de vidéos ou de contenus, notamment au sein de toute chaîne officielle dédiée à un Site Sortir Gratos).<br />
+								A cette fin, l’Utilisateur autorise expressément Sortir Gratos à adapter techniquement ses Contributions à la charte graphique du  Site Sortir Gratos concernés et/ou de les rendre compatibles avec ses performances techniques ou les formats des supports concernés. Sortir Gratos pourra, dans ce cadre, exploiter les Contributions dans le cadre de tout partenariat et/ou d’application dédiée, en recourant le cas échéant à tout outil de partage des Contributions.<br />
+							Ces droits sont concédés pour le monde entier et pour une durée de 5 (cinq) ans à compter de la mise en ligne des Contributions pour une utilisation à titre gratuit sur le Site Sortir Gratos.</p>
+						</ul>
+						<li>XI. Garanties - Responsabilité</li>
+						<p>Le Site Sortir Gratos sont accessibles et mis à la disposition des Utilisateurs "tels quels" sans aucune garantie de Sortir Gratos quant à l’accessibilité et aux contenus disponibles via ledit Site Sortir Gratos.<br />
+							Sortir Gratos ne garantit pas que les informations disponibles via le Site Sortir Gratos soient exemptes d’erreurs ou d’inexactitudes, notamment dans le cas décrit à l’article 2.3 ci-dessus. De même, Sortir Gratos ne garantit pas que le Site Sortir Gratos ou le serveur qui les met à disposition soit exempt de virus ou d’autres composants dangereux. Sortir Gratos ne saurait donc être tenue responsable de l’inexactitude de ces informations.<br />
+							L’Utilisateur est seul responsable de l’utilisation du Site Sortir Gratos et de l’interprétation des informations consultées sur le Site Sortir Gratos. Sortir Gratos dégage toute responsabilité pour les dommages directs ou indirects qui pourraient survenir relativement à l’utilisation de ces données.<br />
+							Le Contributeur garantit Sortir Gratos qu’avant de poster du contenu et/ou d’uploader des Contributions sur les Espaces Communautaires, il s’est assuré que le stockage, la reproduction et la diffusion de ceux-ci ne constituaient pas :
+							<ul>
+								<li>une violation des droits de propriété intellectuelle de tiers,</li>
+								<li>une atteinte aux personnes et/ou à leur vie privée (respect de la législation en matière de presse, et de vie privée),</li>
+								<li>une atteinte à l’ordre public et aux bonnes mœurs.</li>
+							</ul>
+							A ce titre, il reconnaît à Sortir Gratos qu’il détient tous les droits et autorisations nécessaires de la part des ayants droit concernés et garantit Mapado contre tous recours et actions à cet égard.<br />
+							De manière générale, l’Utilisateur garantit Sortir Gratos contre toute demande, réclamation et/ou condamnation à des dommages intérêts dont elle pourrait être menacée ou être l’objet, et/ou qui pourraient être prononcées contre elle, en ce compris les frais raisonnables d’avocats qui auraient pu être exposés, dès lors que celles-ci auraient pour cause, fondement ou origine la violation des présentes Conditions Générales d’Utilisation et/ou de toutes règles ou lignes de conduite additionnelles et spécifiques applicables aux Sites Mapado par l’Utilisateur.</p>
+							<li>XII. Divers</li>
+							<p>Pour toute question relative aux présentes Conditions Générales d’Utilisation, l’Utilisateur est invité à prendre  contact avec : Sortir Gratos - adresseXXX</p>
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

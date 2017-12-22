@@ -1,0 +1,163 @@
+/* Raz */
+*{
+    font-family: 'Roboto Slab', serif;
+    text-align: justify-all;
+}
+
+body{
+    margin:0 auto;
+    padding: 0;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+    color: #0bb3e8;
+}
+
+a {
+    font-size: 1.2em !important;
+    padding-left: 20px;
+}
+
+header{
+    background-color: #e7169d;
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+header img{
+    max-width:10%;
+}
+
+header p, header a{ /* voir le vertical align*/
+    padding-top: 15px;
+}
+
+header a{
+    color:white;
+}
+
+/*----- CAROUSEL-----*/
+
+#carousel h2{
+      font-size: 30px;  
+}
+
+#carousel {
+  max-width: 40%;
+  margin:auto;
+}
+
+/*----- PRESENTATION-----*/
+#presentation{
+    background-color: #0bb3e8;
+    color:white;
+    padding: 40px !important;
+    margin-top:15px;
+    margin-bottom : 15px;
+    width: 60%;
+}
+
+#presentation h1{
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#presentation p{
+    font-size: 1em;
+    margin: 0;
+}
+
+/*----- BOUTONS EVENEMENTS-----*/
+#boutons-evenement{
+    background-color: #AF006E;
+}
+
+#boutons-evenement a{
+    float: right;
+    color: white;
+    margin-top: 30px;
+}
+
+#boutons-evenement h2{
+    color: white;
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+
+/*----- EVENEMENTS-----*/
+
+#evenements{
+    background-color: #E7169D;
+    margin-bottom : 15px;
+    padding-bottom : 25px;
+  }
+
+.evenement-block{
+    margin-left:80px;/* voir si meilleur moyen de centrer ??*/
+}
+
+.evenement-description{
+    background-color: white;
+    margin-top:25px;
+}
+
+#evenements h2 {  /*mise en forme titres*/
+    font-size: 1.5em;
+    color: black;
+}
+
+#evenements h3 { /*mise en forme catégories*/
+    color: #0bb3e8;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#evenements h4 { /*mise en forme date, heure, public, lieu, département*/
+    color: #E7169D;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#evenements h4 span {
+    color: black;
+}
+
+#evenements h4 .bleu{
+    color: #0bb3e8;
+}
+
+.evenement-description img{
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+#evenements img {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.buttonPlus { /*mise en forme bouton plus*/
+    position: absolute;
+    background-color: #0bb3e8;
+    right: 10px;
+    bottom: 10px;
+    color:white;
+}
+
+
+/*----- FOOTER-----*/
+footer{
+    background-color: #0bb3e8;
+    color:white;
+    margin-top: 25px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+footer a{
+    color:white;    
+}
+

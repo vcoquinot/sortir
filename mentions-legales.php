@@ -121,6 +121,7 @@
 								Sortir Gratos informe les Utilisateurs que, conformément à la législation en vigueur, les données communiquées par ces derniers pourront être communiquées par Sortir Gratos aux autorités judiciaires sur requête de ces dernières.<br />
 								</p>					
 								<li>V-2. Droits de l’Utilisateur</li>
+								<p>Conformément à la loi n°78-17 du 6 janvier 1978 modifiée (dite loi « Informatique et Liberté »), Sortir Gratos a déclaré auprès de la CNIL, le traitement des données à caractère personnel des Utilisateurs (numéro de déclaration : XXXXXX).</p>
 
 
 

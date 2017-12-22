@@ -19,16 +19,20 @@ a {
     padding-left: 20px;
 }
 
+/*----- Header-----*/
 header{
     background-color: #e7169d;
     color:white;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 18px;
+    font-size: 1.2em;
+    height: 95px;
+    line-height: 1.2em;
 }
 
 header img{
     max-width:10%;
+    margin-top: 8px;
 }
 
 header p, header a{ /* voir le vertical align*/
@@ -88,6 +92,10 @@ header a{
     line-height: 1.8em;
 }
 
+#boutons-evenement a:hover, a:focus {
+    color: #0bb3e8;
+}
+
 /*----- EVENEMENTS-----*/
 
 #evenements{
@@ -106,19 +114,19 @@ header a{
 }
 
 #evenements h2 {  /*mise en forme titres*/
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
 }
 
 #evenements h3 { /*mise en forme catégories*/
     color: #0bb3e8;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: right;
 }
 
 #evenements h4 { /*mise en forme date, heure, public, lieu, département*/
     color: #E7169D;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
 }
 
@@ -136,7 +144,6 @@ header a{
   }
 #evenements img {
     max-width: 100%;
-    margin: 20px auto;
 }
 
 .buttonPlus { /*mise en forme bouton plus*/
@@ -152,12 +159,18 @@ header a{
 footer{
     background-color: #0bb3e8;
     color:white;
-    margin-top: 25px;
+    margin-top: 15px;
     padding-top:5px;
     padding-bottom:5px;
+    font-size: 1.2em;
+    /*height: 190px;*/
 }
 
 footer a{
     color:white;    
+}
+
+footer h4 {
+    display: inline-block;
 }
 

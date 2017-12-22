@@ -33,9 +33,9 @@
     <section id="formulaire-creation-compte" class="container">
       <form class="form-horizontal">
         <div class="form-group row "><!--voir si formGroupInputMedium necessaire ?? -->
-          <label class="control-label col-md-2" for="formGroupInputMedium">Pseudo</label>
+          
             <div class="col-md-3">
-            <input class="form-control" type="password" id="formGroupInputPseudo">
+            <input class="form-control" type="password" id="formGroupInputPseudo" placeholder="Pseudo">
             </div>
           <label class="control-label col-md-2 " for="formGroupInputMedium">Mot de passe</label>
             <div class="col-md-3">

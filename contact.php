@@ -24,26 +24,29 @@
       <?php include ("menu-logo-blanc.php");?>
       <div class="col-md-12 row text-center">
       <h1>Nous contacter</h1>
-      <section id="formulaire-creation-compte" class="container">
-      <form class="form-horizontal">
-        <div class="form-group row"><!--voir si formGroupInputMedium necessaire ?? -->
-            <div class="col-md-offset-3 col-md-3">
-              <input class="form-control" type="nom" id="formGroupInputNom" placeholder="Nom">
+        <section id="formulaire-creation-compte" class="container">
+          <form class="form-horizontal">
+            <div class="form-group row"><!--voir si formGroupInputMedium necessaire ?? -->
+              <div class="col-md-offset-3 col-md-3">
+                <input class="form-control" type="nom" id="formGroupInputNom" placeholder="Nom">
+              </div>
+              <div class="col-md-3">
+               <input class="form-control" type="email" id="formGroupInputEmail" placeholder="Mail">
+              </div>
             </div>
-            <div class="col-md-3">
-              <input class="form-control" type="email" id="formGroupInputEmail" placeholder="Mail">
+          <form class="form-horizontal">
+            <div class="form-group row ">
+              <div class="col-md-offset-3 col-md-6">
+                <textarea class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea><!--agrandir largeur textarea ?? -->
+              </div>
             </div>
-        </div>
-      <form class="form-horizontal">
-        <div class="form-group row ">
-          <div class="col-md-offset-3 col-md-6">
-            <textarea class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea><!--agrandir largeur textarea ?? -->
-          </div>
-
-        </div>
-         <button type="submit" class="btn btn-light">Envoyer</button>
-      </form>
-      </form>
+            <button type="submit" class="btn btn-light">Envoyer</button>
+          </form>
+          </form>
+        </section>
+      </div>
+    </section>
+    
       <?php include ("footer.php");?>
   </body>
   </html>

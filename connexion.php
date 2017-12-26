@@ -25,10 +25,8 @@
     <?php include ("menu-logo.php");?>
 
     <section id="introduction-contributeur" class= "container'fluid">
-
       <div class="col-md-12 row text-center">
       <h1>Connexion contributeur</h1>
-
           <!-- Présentation -->
           <section id="presentation" class="container">
               <div class="row">
@@ -37,7 +35,6 @@
               </div>
           </section>
           <!-- Fin Présentation -->
-
     </section>
 
     <section id="formulaire-contribueur" class= "container">

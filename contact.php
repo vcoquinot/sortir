@@ -21,7 +21,7 @@
   </head>
   <body>
 
-  <?php include ("menu-logo-blanc.php");?>
+  <?php include ("menu-logo.php");?>
 
     <section id="introduction-contact" class="container-fluid">
 

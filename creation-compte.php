@@ -22,7 +22,7 @@
 
   <body>
     <section id="introduction-creation-compte" class="container'fluid">
-      <?php include ("menu-logo-blanc.php");?>
+      <?php include ("menu-logo.php");?>
       <div class="col-md-12 row text-center">
       <h1> Connexion contributeur</h1>
       <div class="col-md-offset-4 col-md-4 row text-center">

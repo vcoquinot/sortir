@@ -1,8 +1,3 @@
-<!-- résoudre le problème facebook !!!!!!!-->
-<!-- résoudre le problème facebook !!!!!!!-->
-<!-- résoudre le problème facebook !!!!!!!-->
-
-
 <header class="container-fluid">
     <div class="row">
         <div class="col-md-8">

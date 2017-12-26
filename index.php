@@ -51,8 +51,8 @@
     }
    ?> 
 
-<!-- Caroussel -->
-        <section id="slides" class="container">
+<!-- Caroussel size slides: 650*433-->
+        <section id="slides" class="container-fluid">
             <div class="carousel slide" data-ride="carousel" id="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel" data-slide-to="0"class="active"></li>
@@ -63,22 +63,22 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide img-fluid" src="images/slides/salle_logo.png" alt="salle">
+                    <img class="first-slide img-fluid" src="images/slides/salle-logo.png" alt="salle">
                     <div class="carousel-caption">
                         <h2>Sortir<strong>gratos.fr</strong></h2>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="second-slide img-fluid" src="images/slides/salle.jpg" alt="salle">
+                    <img class="second-slide img-fluid" src="images/slides/spectacle.jpg" alt="spectacle">
                  </div>
                 <div class="item">
-                    <img class="third-slide img-fluid" src="images/slides/salle.jpg" alt="salle">
+                    <img class="third-slide img-fluid" src="images/slides/danse.jpg" alt="danse">
                 </div>
                 <div class="item">
-                    <img class="fourth-slide img-fluid" src="images/slides/salle.jpg" alt="salle">
+                    <img class="fourth-slide img-fluid" src="images/slides/musee.jpg" alt="musee">
                 </div>
                 <div class="item">
-                    <img class="fifth-slide img-fluid" src="images/slides/salle.jpg" alt="salle">
+                    <img class="fifth-slide img-fluid" src="images/slides/rando.jpg" alt="rando">
                 </div>
             </div>
         </div>

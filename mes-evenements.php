@@ -21,21 +21,18 @@
     <![endif]-->
   </head>
   <body>
-    <section id="tableau-de-bord" class="container">
-        <div class="row text-center">
-            <div class ="col-md-offset-9 col-md-3">
-            <p>nom contrib.</p>
-            <button type="button" class="btn btn-light">Déconnexion</button>
-            </div>
-        </div>
-        <div class="row text-center">
-        <h2>Mes événements</h2>
-        <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.</p><button type="button" class="btn btn-light">Créer un événement</button>
-        </div>
+  <section id="introduction-mes-evenements" class="container'fluid">
+      <?php include ("menu-contributeur.php");?>
+      <div class="col-md-12 row text-center">
+      <h1>Mes événements</h1>
+      <div class="col-md-offset-3 col-md-6 row text-center">
+      <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiammissus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.</p><button type="button" class="btn btn-light">Créer un événement</button>
+      </div>
     </section>
+
     <section id="mes-evenements" class="container">
         <h2>Listing de mes événements</h2>
-        
+
             <div class= "mes-evenements-block">
                 <div class="row">
                     <div class="col-md-5">

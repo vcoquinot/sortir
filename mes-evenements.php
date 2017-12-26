@@ -35,6 +35,79 @@
     </section>
     <section id="mes-evenements" class="container">
         <h2>Listing de mes événements</h2>
+        
+            <div class= "mes-evenements-block">
+                <div class="row">
+                    <div class="col-md-5">
+                    <h3>Titre</h3>
+                    </div>
+                    <div class="col-offset-md-3 col-md-3">
+                    <h3>Date</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Modifier</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Catégorie</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Supprimer</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Public</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Dupliquer</button>
+                </div>
+            </div>
+
+            <div class= "mes-evenements-block">
+                <div class="row">
+                    <div class="col-md-5">
+                    <h3>Titre</h3>
+                    </div>
+                    <div class="col-offset-md-3 col-md-3">
+                    <h3>Date</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Modifier</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Catégorie</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Supprimer</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Public</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Dupliquer</button>
+                </div>
+            </div>
+
+            <div class= "mes-evenements-block">
+                <div class="row">
+                    <div class="col-md-5">
+                    <h3>Titre</h3>
+                    </div>
+                    <div class="col-offset-md-3 col-md-3">
+                    <h3>Date</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Modifier</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Catégorie</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Supprimer</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    <h3>Public</h3>
+                    </div>
+                    <button type="button" class="btn btn-light">Dupliquer</button>
+                </div>
+            </div>
+            
             <div class= "mes-evenements-block">
                 <div class="row">
                     <div class="col-md-5">

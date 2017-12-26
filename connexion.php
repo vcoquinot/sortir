@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/connexion</title>
+    <title>Sortirgratos / Connexion</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -19,16 +19,26 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
+    <?php include ("menu-logo.php");?>
 
     <section id="introduction-contributeur" class= "container'fluid">
-      <a href="index.php"><img src="images/logo.png" alt= "logo"></a>
+
       <div class="col-md-12 row text-center">
-      <h1> Connexion contributeur</h1>
-      <div class="col-md-offset-4 col-md-4 row text-center">
-      <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis</p>
-      </div>
+      <h1>Connexion contributeur</h1>
+
+          <!-- Présentation -->
+          <section id="presentation" class="container">
+              <div class="row">
+
+                  <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis</p>
+              </div>
+          </section>
+          <!-- Fin Présentation -->
+
     </section>
+
     <section id="formulaire-contribueur" class= "container">
       <div class="col-md-offset-3 col-md-6 row text-center">
         <form class="form-inline">
@@ -43,17 +53,21 @@
     </section>
 
     <section id="boutons-contributeur" class= "container"><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
-      <div class="col-md-offset-2 col-md-9 row text-center">
-        <div class="col-md-3">
-        <a href="#">Connexion</a>
-        </div>
-        <div class="col-md-4">
-        <a href="#">Mot de passe oublié</a>
-        </div>
-        <div class="col-md-4">
-        <a href="#">Créer un compte</a>
-        </div>
+      <div class="col-md-12 row text-center">
+          <a href="#" class="lien_bleu">Connexion</a>
+          <a href="#" class="lien_bleu">Mot de passe oublié</a>
+          <a href="#" class="lien_bleu">Créer un compte</a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <?php include ("footer.php");?>
+    <!-- Fin Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>

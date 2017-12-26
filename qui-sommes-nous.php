@@ -29,5 +29,14 @@
         <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous. Concerts, expos, spectacles ou activités sportives, Sortirgratos.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer.</p>
       </div>
     </section>
+
+    <!-- Footer -->
+    <?php include ("footer.php");?>
+    <!-- Fin Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

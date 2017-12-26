@@ -7,10 +7,10 @@
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
-          <root url="file://$APPLICATION_HOME_DIR$/bin" />
+          <root url="file:///Applications/MAMP/bin/php/php7.1.8/bin" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$APPLICATION_HOME_DIR$/bin" />
+          <root url="file:///Applications/MAMP/bin/php/php7.1.8/bin" />
         </SOURCES>
       </library>
     </orderEntry>

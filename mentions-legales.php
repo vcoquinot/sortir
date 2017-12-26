@@ -31,7 +31,7 @@
 				<ul>
 					<li>Adresse de contact : contact@sortirgratos.fr</li>
 					<li>Numéro de téléphone : 04 66 66 66 66 (coût d'un appel local)</li>
-					<li>Responsable de la publication : Monsieur Marc Mannoury</li>
+					<li>Responsable de la publication : Monsieur COQDOUMAN</li>
 					<li><strong>Hébergement du SITE :</strong></li>
 					<li>Nom adresse</li>
 					<li>Enregistré au RCS de Montpellier sous le numéro XXX XXX XXX</li>
@@ -53,7 +53,7 @@
 		</section>
 		<section class="container">
 			<div class="row text-center">
-				<h1>Conditions Géérales d'Utilisation</h1>
+				<h1>Conditions Générales d'Utilisation</h1>
 			</div>
 			<div class="col-md-12">
 				<ul>
@@ -204,36 +204,18 @@
 							<li>XII. Divers</li>
 							<p>Pour toute question relative aux présentes Conditions Générales d’Utilisation, l’Utilisateur est invité à prendre  contact avec : Sortir Gratos - adresseXXX</p>
 
-						
+
+        </section>
 
 
+    <!-- Footer -->
+    <?php include ("footer.php");?>
+    <!-- Fin Footer -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 </html>

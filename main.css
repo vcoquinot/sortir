@@ -1,6 +1,6 @@
 /* Raz */
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: justify-all;
 }
 
@@ -19,6 +19,15 @@ a {
     padding-left: 20px;
 }
 
+input {
+    border: none;
+    border-bottom: 3px solid #E7169D;
+    border-radius: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif !important;
+}
+
 /*----- Header-----*/
 header{
     background-color: #e7169d;
@@ -26,7 +35,7 @@ header{
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 1.2em;
-    height: 95px;
+    height: 90px;
     line-height: 1.2em;
 }
 
@@ -46,7 +55,7 @@ header a{
 /*----- CAROUSEL-----*/
 
 #carousel h2{
-      font-size: 30px;  
+      font-size: 30px;
 }
 
 #carousel {
@@ -71,7 +80,7 @@ header a{
 }
 
 #presentation p{
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0;
 }
 
@@ -97,7 +106,6 @@ header a{
 }
 
 /*----- EVENEMENTS-----*/
-
 #evenements{
     background-color: #E7169D;
     margin-bottom : 15px;
@@ -153,17 +161,48 @@ header a{
     bottom: 10px;
     color:white;
 }
+/*---- FORMULAIRE ----*/
+.form-control {
+    border: none !important;
+    border-bottom: 3px solid #E7169D !important;
+    border-radius: 0 !important;
+}
+
+#formulaire-creation-compte, #formulaire-contribueur {
+    margin-top: 30px;
+    margin-bottom: 20px !important;
+}
+
+.bt_bleu {
+    background-color: #0bb3e8;
+    border-radius: 0 !important;
+    padding: 10px 20px !important;
+    margin-top: 10px;
+    color: white;
+}
+
+.lien_bleu {
+    display: inline-block;
+    background-color: #0bb3e8;
+    border-radius: 0 !important;
+    padding: 10px 20px !important;
+    margin: 10px 10px !important;
+    color: white;
+}
+
+button[type="submit"] {
+    font-family: 'Roboto Slab', serif !important;
+}
 
 
 /*----- FOOTER-----*/
 footer{
-    background-color: #0bb3e8;
+    background-color: #0083b6;
     color:white;
     margin-top: 15px;
     padding-top:5px;
     padding-bottom:5px;
     font-size: 1.2em;
-    /*height: 190px;*/
 }
 
 footer a{
@@ -174,3 +213,7 @@ footer h4 {
     display: inline-block;
 }
 
+footer h6 {
+    text-align: center;
+    margin-top: -1px;
+}

@@ -10,9 +10,8 @@
         </div>
     </div>
 
-    <div class="row text-center">
         <div class="col-md-12 row-text-center">
-                <h6>Copyright ©2017 by Team sortirgratos.fr / All rights reserved</h6>
+                <h6>Copyright ©2018 by Team sortirgratos.fr / All rights reserved</h6>
         </div>
     </div>
 

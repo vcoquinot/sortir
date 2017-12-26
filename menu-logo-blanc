@@ -1,3 +1,3 @@
 <?php
-<a href="index.php"><img src="images/logo.png" alt= "logo"></a>
+    <a href="index.php" title="Page d'accueil sortirgratos.fr"><img src="images/logo.png" alt= "logo"></a>
 ?>

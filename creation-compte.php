@@ -102,53 +102,54 @@
           <!-- Inscription newsletter -->
     <section id="newsletter" class="container">  
       <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
-          <span class="custom-control-description ">Inscription à la newsletter</span>
+        <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Inscription à la newsletter</strong></span>
+        <label class="custom-control custom-radio col-md-1">
+          <input name="radio" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">OUI</span>  
+          </label>
+        <label class="custom-control custom-radio col-md-1">
+          <input name="radio" type="radio" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">NON</span>  
         </label>
-        <div class="col-md-1">
-          <span class="custom-control-indicator">OUI</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-        <div class="col-md-1">
-          <span class="custom-control-indicator">NON</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
       </div>
+        <!-- Périodicité  newsletter -->
       <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
-          <span class="custom-control-description ">Périodicité</span>
+        <span class="custom-control-description col-md-offset-2 col-md-1"><strong>Périodicité</strong></span>
+        <label class="col-md-2">
+          <input name="radio" type="radio" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description ">Hebdomadaire</span>
         </label>
-        <div class="col-md-2">
-          <span class="custom-control-indicator">Hebdomadaire</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-        <div class="col-md-2">
-          <span class="custom-control-indicator">Chaque événement</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
+        <label class="col-md-2">
+          <input name="radio" type="radio" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description ">Chaque événement</span>
+        </label>
       </div>
     </section>
-      <!-- Fin inscription newsletter -->
 
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-3">
-          <span class="custom-control-description ">J'accepte les conditions générales</span>
+        <label class="custom-control custom-radio col-md-offset-2 col-md-3">
+        <input name="radio" type="radio" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description ">J'accepte les conditions générales</span>
         </label>
-        <div class="col-md-1">
-          <input type="checkbox" class="custom-control-input">
-        </div>
       </div>
     </section>
       <!-- Acceptation CGU -->
 
       <!-- bouton creation compte -->
-    <section id="creer-compte" class="container">
-      <form class="row text-center">
-        <input type="submit" value="Je crée mon compte">
-      </form>
+    <section id="bouton-creer-compte" class="container">
+      <div class="row text-center">
+        <button type="button" class="btn btn-light">Je crée mon compte</button>
+      </div>
     </section>
+     
+
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->

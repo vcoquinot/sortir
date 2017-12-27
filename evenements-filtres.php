@@ -11,192 +11,146 @@
 
     <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <a class="navbar-brand" href="index.html"></a>
-                <img src="images/logo.png" alt= "logo"></div>
-            <div class="col-md-2 row">
-                <a href="#"><p>Contribution</p></a>
-            </div>
-            <div class="col-md-2 row">
-                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-            </div>
-        </div>
-    </header>
 
-    <section id="introduction-evenements" class="container">
-        <div class="row text-center">
-            <h1> Les événements filtrés</h1>
-            <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.</p> 
-        </div>
-    </section>
+  <body>
+
+  <?php include ("menu.php");?>
+
+  <section id="introduction-evenements-filtres" class="container-fluid">
+      <div class="col-md-12 row text-center">
+          <h1>Les événements filtrés</h1>
+      </div>
+  </section>
+
+<!-- Présentation -->
+      <section id="presentation" class="container">
+          <div class="row">
+              <p>À l'aide des boutons ci-dessous vous allez pouvoir filtrer les événements.</p>
+          </div>
+      </section>
+<!-- Fin Présentation -->
+
+<!--TODO gestion de l'intitulé par une variable $tri-->
+      <?php $tri = "Événements du jour" ?>
+
+<!-- Partie bandeau BOUTONS EVENEMENTS -->
+  <section id="boutons-evenement" class= "container-fluid">
+      <div class="row">
+          <div class="col-md-6">
+              <h2><?php echo $tri ?></h2>
+          </div>
+          <div class="col-md-6">
+
+          <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
+
+              <button class="boutons-filtres" type="button" >Par public</button>
+              <button class="boutons-filtres" type="button" >Par catégorie</button>
+
+              <button class="boutons-filtres" type="button" >Par département</button>
+              <button class="boutons-filtres" type="button" >Du mois</button>
+              <button class="boutons-filtres" type="button" >De la semaine</button>
+              <button class="boutons-filtres" type="button" >Du jour</button>
+
+          </div>
+  </section>
+
+  <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
+
+
     <section id="boutons-block" class="container">
-        <div class="row col-md-12 text-center">
-            <button type="button" class="btn btn-light">Du jour</button>
-            <button type="button" class="btn btn-light">De la semaine</button>
-            <button type="button" class="btn btn-light">Du mois</button>
-            <button type="button" class="btn btn-light">Par département</button>
-            <button type="button" class="btn btn-light">Par catégorie</button>
-            <button type="button" class="btn btn-light">Par public</button>
-        </div>
+
     </section>
+
+
+
+
+    <!-- Partie EVENEMENTS -->
+
+    <!-- Partie provisoire simulation données de la base -->
+    <?php {
+        $titre = "Vernissage œuvres de Franck Célaire et dégustation de vin « Mas des armes »";
+        $categorie = "Exposition";
+        $date = "23 janvier 2018";
+        $heure = "15:30";
+        $public = "Adulte";
+        $lieu = "Le Rockstore";
+        $departement = "Pyrénées-Orientales";
+        $visuel = "fire-2565561_960_720.jpg";
+        $adresse = "20 Rue de Verdun";
+        $codePostal = "34000";
+        $ville = "Montpellier";
+        $organisateur = "Monsieur Rame";
+        $telephone = "0606060606";
+        $email = "contact@rockstore.fr";
+        $site = "http://www.rockstore.fr/";
+
+        $descriptif = "Xxxxxxxxx xxxx x x x xxxxxxx x x xxxxxxxx";
+    }
+    ?>
+
+    <!--    TODO boucle PHP-->
+
     <section id="evenements" class="container-fluid">
-    <h2>Aujourd'hui date</h2>
-        <article class="evenement-block"> 
-            <div class="evenement-description col-md-5" >
+        <article class="evenement-block">
+            <div class="evenement-description col-xs-5 col-md-5" >
                 <div class="row">
-                    <div class="col-md-4">
-                    <h2>Titre</h2>
+                    <div class="col-xs-7 col-md-8">
+                        <h2><?php echo $titre?></h2>
                     </div>
-                    <div class="col-md-2">
-                    <h2>Categorie</h2>
+                    <div class="col-xs-5 col-md-4">
+                        <h3><?php echo $categorie ?></h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                    <h3>Date / Heure /Public</h3>
+                    <div class="col-md-12">
+                        <h4><?php echo $date ?><span> / </span><span class = "bleu"><?php echo $heure ?></span><span> / </span><?php echo $public ?></h4>
+                        <h4><?php echo $lieu ?><span> / </span><span class = "bleu"><?php echo $departement ?></span></h4>
                     </div>
                 </div>
-                <div class ="row">
-                    <div class="col-md-6">
-                    <h3>Lieu / Département</h3>
-                    </div>
-                </div>
+
                 <img src=./images/concert.jpg alt="concert">
-                <button type="button" class="btn btn-light">+</button>
+                <button type="button" class="btn btn-light buttonPlus">+</button>
             </div>
         </article>
-        <article class="evenement-block"> 
-            <div class="evenement-description  col-md-offset-1 col-md-5">
+
+        <article class="evenement-block">
+            <div class="evenement-description col-md-offset-1 col-md-5" >
                 <div class="row">
-                    <div class="col-md-4">
-                    <h2>Titre</h2>
+                    <div class="col-xs-9 col-md-9">
+                        <h2><?php echo $titre?></h2>
                     </div>
-                    <div class="col-md-2">
-                    <h2>Categorie</h2>
+                    <div class="col-xs-3 col-md-3">
+                        <h3><?php echo $categorie ?></h3>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                        <h3>Date / Heure /Public</h3>
-                        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4><?php echo $date ?><span> / </span><span class = "bleu"><?php echo $heure ?></span><span> / </span><?php echo $public ?></h4>
+                        <h4><?php echo $lieu ?><span> / </span><span class = "bleu"><?php echo $departement ?></span></h4>
                     </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        <h3>Lieu / Département</h3>
-                        </div>
-                    </div>
-                    <img src=./images/concert.jpg alt="concert">
-                    <button type="button" class="btn btn-light">+</button>
                 </div>
-            </article>
-            <article class="evenement-block"> 
-                <div class="evenement-description col-md-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <h2>Titre</h2>
-                        </div>
-                        <div class="col-md-2">
-                        <h2>Categorie</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                        <h3>Date / Heure /Public</h3>
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        <h3>Lieu / Département</h3>
-                        </div>
-                    </div>
-                    <img src=./images/concert.jpg alt="concert">
-                    <button type="button" class="btn btn-light">+</button>
-                </div>
-            </article>            
-            <article class="evenement-block"> 
-                <div class="evenement-description col-md-offset-1 col-md-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <h2>Titre</h2>
-                        </div>
-                        <div class="col-md-2">
-                        <h2>Categorie</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                        <h3>Date / Heure /Public</h3>
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        <h3>Lieu / Département</h3>
-                        </div>
-                    </div>
-                    <img src=./images/concert.jpg alt="concert">
-                    <button type="button" class="btn btn-light">+</button>
-                </div>
-            </article>
-             <article class="evenement-block"> 
-                <div class="evenement-description col-md-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <h2>Titre</h2>
-                        </div>
-                        <div class="col-md-2">
-                        <h2>Categorie</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                         <h3>Date / Heure /Public</h3>
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        <h3>Lieu / Département</h3>
-                        </div>
-                    </div>
-                    <img src=./images/concert.jpg alt="concert">
-                    <button type="button" class="btn btn-light">+</button>
-                </div>
-            </article>
-            <article class="evenement-block"> 
-                <div class="evenement-description col-md-offset-1 col-md-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                        <h2>Titre</h2>
-                        </div>
-                        <div class="col-md-2">
-                        <h2>Categorie</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                        <h3>Date / Heure /Public</h3>
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        <h3>Lieu / Département</h3>
-                        </div>
-                    </div>
-                    <img src=./images/concert.jpg alt="concert">
-                    <button type="button" class="btn btn-light">+</button>
-                </div>
-            </article>             
+
+                <img src=./images/concert.jpg alt="concert">
+                <button type="button" class="btn btn-light buttonPlus">+</button>
+            </div>
+        </article>
     </section>
+
+        <!-- Fin Partie EVENEMENTS -->
+
+  <!-- Footer -->
+  <?php include ("footer.php");?>
+  <!-- Fin Footer -->
 
         
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

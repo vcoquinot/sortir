@@ -21,70 +21,71 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
+
     <?php include ("menu.php");?>
 
 <!-- Caroussel size slides: 650*433-->
-        <section id="slides" class="container-fluid">
-            <div class="carousel slide" data-ride="carousel" id="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0"class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-              <li data-target="#carousel" data-slide-to="2"></li>
-              <li data-target="#carousel" data-slide-to="3"></li>
-              <li data-target="#carousel" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide img-fluid" src="images/slides/salle-logo.png" alt="salle">
-                </div>
-                <div class="item">
-                    <img class="second-slide img-fluid" src="images/slides/spectacle.jpg" alt="spectacle">
-                 </div>
-                <div class="item">
-                    <img class="third-slide img-fluid" src="images/slides/danse.jpg" alt="danse">
-                </div>
-                <div class="item">
-                    <img class="fourth-slide img-fluid" src="images/slides/musee.jpg" alt="musee">
-                </div>
-                <div class="item">
-                    <img class="fifth-slide img-fluid" src="images/slides/rando.jpg" alt="rando">
-                </div>
+    <section id="slides" class="container-fluid">
+        <div class="carousel slide" data-ride="carousel" id="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0"class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide img-fluid" src="images/slides/salle-logo.png" alt="salle">
+            </div>
+            <div class="item">
+                <img class="second-slide img-fluid" src="images/slides/spectacle.jpg" alt="spectacle">
+             </div>
+            <div class="item">
+                <img class="third-slide img-fluid" src="images/slides/danse.jpg" alt="danse">
+            </div>
+            <div class="item">
+                <img class="fourth-slide img-fluid" src="images/slides/musee.jpg" alt="musee">
+            </div>
+            <div class="item">
+                <img class="fifth-slide img-fluid" src="images/slides/rando.jpg" alt="rando">
             </div>
         </div>
-      </section>
+    </div>
+  </section>
 
 <!-- Présentation -->
-        <section id="presentation" class="container">
-            <div class="row">
-                <h1>sortir<strong>gratos</strong>.fr</h1>
-                <p>Sortir Gratos est un agenda en ligne animé par 3 passionnés. Notre mission : rechercher les bons plans sortie de la région et les partager avec vous. 
-                Concerts, expos, spectacles ou activités sportives, Sortir Gratos vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p> 
-            </div>
-        </section>
-
+    <section id="presentation" class="container">
+        <div class="row">
+            <h1>sortir<strong>gratos</strong>.fr</h1>
+            <p>Sortir Gratos est un agenda en ligne animé par 3 passionnés. Notre mission : rechercher les bons plans sortie de la région et les partager avec vous.
+            Concerts, expos, spectacles ou activités sportives, Sortir Gratos vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p>
+        </div>
+    </section>
 <!-- Fin Présentation -->
 
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
-        <section id="boutons-evenement" class= "container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                <h2>Les prochains événements</h2>
-                </div>
-                <div class="col-md-6">
+    <section id="boutons-evenement" class= "container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+            <h2>Les prochains événements</h2>
+            </div>
+            <div class="col-md-6">
 
 <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
-                <a href="#">Rechercher les événements</a>
-                <a href="evenements-filtres.php">Filtrer les événements</a>
-                </div>
-        </section>
+            <a href="#">Rechercher les événements</a>
+            <a href="evenements-filtres.php">Filtrer les événements</a>
+            </div>
+    </section>
 
 <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
 
 <!-- Partie EVENEMENTS -->
 
-    <!-- Partie provisoire simulation données de la base -->
+<!-- Partie provisoire simulation données de la base -->
     <?php {
         $titre = "Vernissage œuvres de Franck Célaire et dégustation de vin « Mas des armes »";
         $categorie = "Exposition";
@@ -162,7 +163,7 @@
 
 <!-- Footer -->
         <?php include ("footer.php");?>
-    <!-- Fin Footer -->
+<!-- Fin Footer -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

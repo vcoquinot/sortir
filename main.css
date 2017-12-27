@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif !important;
 }
 
+.bt.focus, .bt:focus, .bt:hover {
+    color: black !important;
+}
+
+i.focus, i:focus, i:hover {
+    color: black !important;
+}
+
 /*----- HEADER-----*/
 header{
     background-color: #e7169d;
@@ -51,7 +59,6 @@ header{
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 1.2em;
-    /*height: 90px;*/
     line-height: 1.2em;
 }
 
@@ -68,6 +75,10 @@ header a{
     color:white;
 }
 
+header a:focus, header a:hover {
+    color: black !important;
+}
+
 /*----- MENU-----*/
 .menu_logo {
     margin-top: 16px;
@@ -75,7 +86,6 @@ header a{
 
 
 /*----- CAROUSEL-----*/
-
 #carousel h2{
       font-size: 30px;
 }
@@ -140,12 +150,26 @@ header a{
     color: #0bb3e8;
 }
 
+/*----- BOUTONS Filtres-----*/
+.boutons-filtres {
+    background-color: #AF006E;
+    float: right;
+    color: white;
+    margin-top: 30px;
+    border: 0;
+    font-size: 1.2em;
+}
+
+.boutons-filtres.focus, .boutons-filtres:focus, .boutons-filtres:hover {
+    color: black !important;
+}
+
 /*----- EVENEMENTS-----*/
 #evenements, #mes-evenements{
     background-color: #E7169D;
     margin-bottom : 15px;
     padding-bottom : 25px;
-  }
+}
 
 .evenement-block{
     margin-left:80px;/* voir si meilleur moyen de centrer ??*/
@@ -166,6 +190,11 @@ header a{
     font-size: 1.3em;
     text-align: right;
 }
+
+.evenement-description {
+    padding: 0 10px;
+}
+
 #mes-evenements h2 {  /*mise en forme titres*/
     font-size: 1.2em;
     color: black;
@@ -181,6 +210,10 @@ header a{
     color: #E7169D;
     font-size: 1.2em;
     text-align: left;
+}
+
+.marge-article {
+    margin: 0 20px;
 }
 
 #evenements h4 span {
@@ -206,6 +239,11 @@ header a{
     bottom: 10px;
     color:white;
 }
+
+.buttonPlus:focus, .buttonPlus:hover {
+    background-color: #E7169D !important;
+}
+
 /*---- FORMULAIRE ----*/
 .form-control {
     border: none !important;
@@ -222,8 +260,9 @@ header a{
     background-color: #0bb3e8;
     border-radius: 0 !important;
     padding: 10px 20px !important;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     color: white;
+    margin: 12px 5px 0 5px;
 }
 
 .lien_bleu {
@@ -235,12 +274,14 @@ header a{
     color: white;
 }
 
+.lien_bleu.focus, .lien_bleu:focus, .lien_bleu:hover {
+    color: black !important;
+}
+
 button[type="submit"] {
     font-family: 'Roboto Slab', serif !important;
     font-size: 1.2em !important;
     margin-top: 15px;
-
-
 }
 
 .form-group {
@@ -267,6 +308,11 @@ footer a{
 footer h4 {
     display: inline-block;
     padding-left: 8px;
+}
+
+
+footer h4.focus, footer h4:focus, footer h4:hover {
+    color: black !important;
 }
 
 footer i {

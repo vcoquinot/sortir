@@ -24,7 +24,6 @@
   <body>
   <?php include ("menu-logo.php");?>
 
-
     <section id="introduction-creation-compte" class= "container'fluid">
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
@@ -38,76 +37,122 @@
             <!-- Fin Présentation -->
     </section>
 
-
+            <!-- Formulaire création compte -->
     <section id="formulaire-creation-compte" class="container">
-      <form class="form-horizontal">
-        <div class="form-group row "><!--voir si formGroupInputMedium necessaire ?? -->
-       <label class="control-label col-md-2 " for="formGroupInputMedium">Pseudo</label>
-            <div class="col-md-3">
-              <input class="form-control" type="pseudo" id="formGroupInputPseudo">
-            </div>
-          <label class="control-label col-md-2 " for="formGroupInputMedium">Mot de passe</label>
-            <div class="col-md-3">
-              <input class="form-control" type="text" id="formGroupInputPassword">
-            </div>
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="text" placeholder="Pseudo">
         </div>
-      <form class="form-horizontal">
-        <div class="form-group row ">
-          <label class="control-label col-md-2" for="formGroupInputMedium">Type</label>
-            <div class="col-md-3">
-                <select id="class_type " class="form-control" autocomplete="off">
-                  <option>Association</option>
-                  <option>Collectivité</option>
-                  <option>Entreprise</option>
-                  <option>Particulier</option>
-                </select>
-            </div>
-          <label class="control-label col-md-2" for="formGroupInputSmall">Nom entité</label>
-            <div class="col-md-3">
-              <input class="form-control" type="text" id="formGroupInputNomEntite">
-            </div>
-        </div> 
-      <form class="form-horizontal">
-        <div class="form-group row ">
-          <label class="control-label col-md-2" for="formGroupInputMedium">Site web</label>
-            <div class="col-md-3">
-              <input class="form-control" type="text" id="formGroupInputSite">
-            </div>
-          <label class="control-label col-md-2" for="formGroupInputMedium">Mail</label>
-            <div class="col-md-3">
-            <input class="form-control" type="mail" id="formGroupInputMail">
-            </div>
-        </div> 
-      <form class="form-horizontal">
-        <div class="form-group row ">
-          <label class="control-label col-md-2" for="formGroupInputMedium">Adresse</label>
-            <div class="col-md-3">
-              <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
-            </div>
-          <label class="control-label col-md-2" for="formGroupInputMedium">CP</label>  
-            <div class="col-md-3">
-              <input class="form-control" type="number" id="formGroupInputCP">      
-            </div>
-        </div>
-            <form class="form-horizontal">
-        <div class="form-group row ">
-          <label class="control-label col-md-2" for="formGroupInputMedium">Nom</label>
-            <div class="col-md-3">
-              <input class="form-control" type="text" id="formGroupInputNom">
-            </div>
-          <label class="control-label col-md-2" for="formGroupInputMedium">Prénom</label>
-            <div class="col-md-3">
-            <input class="form-control" type="text" id="formGroupInputPrenom">
-            </div>
-        </div> 
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="password" placeholder="Mot de passe">
         </div>
       </form>
+     
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <select id="Type" class="form-control">
+            <option selected>Type</option>
+            <option>Association</option>
+            <option>Collectivité</option>
+            <option>Entreprise</option>
+            <option>Particulier</option>
+          </select>
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="text" placeholder="Nom de l'entité">
+        </div>
+      </form> 
+     
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="text" placeholder="Site web">
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="mail" placeholder="Mail">
+        </div>
+      </form> 
+     
+       <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
+        </div>  
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="number" placeholder="CP"> 
+          <input class="form-control" type="text" placeholder="Ville">      
+        </div>
       </form>
-      </form>
-      </form>
-      </form>
-  </section>
 
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="text" placeholder="Nom">
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="text" placeholder="Prénom">
+        </div>
+      </form> 
+       
+      <form class="form-group row ">
+        <div class="col-md-offset-6 col-md-3">
+          <input class="form-control" type="number" placeholder="Téléphone">
+        </div>
+      </form>
+    </section>
+          <!-- Fin formulaire -->
+
+          <!-- Inscription newsletter -->
+    <section id="newsletter" class="container">  
+      <div class="label-group row">
+        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
+          <span class="custom-control-description ">Inscription à la newsletter</span>
+        </label>
+        <div class="col-md-1">
+          <span class="custom-control-indicator">OUI</span>
+          <input type="checkbox" class="custom-control-input">
+        </div>
+        <div class="col-md-1">
+          <span class="custom-control-indicator">NON</span>
+          <input type="checkbox" class="custom-control-input">
+        </div>
+      </div>
+      <div class="label-group row">
+        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
+          <span class="custom-control-description ">Périodicité</span>
+        </label>
+        <div class="col-md-2">
+          <span class="custom-control-indicator">Hebdomadaire</span>
+          <input type="checkbox" class="custom-control-input">
+        </div>
+        <div class="col-md-2">
+          <span class="custom-control-indicator">Chaque événement</span>
+          <input type="checkbox" class="custom-control-input">
+        </div>
+      </div>
+    </section>
+
+    <section id="CGU" class="container">
+      <div class="label-group row">
+        <label class="custom-control custom-checkbox col-md-offset-2 col-md-3">
+          <span class="custom-control-description ">J'accepte les conditions générales</span>
+        </label>
+        <div class="col-md-1">
+          <input type="checkbox" class="custom-control-input">
+        </div>
+      </div>
+    </section>
+
+    <section id="creer-compte" class="container">
+      <form class="row text-center">
+        <input type="submit" value="Je crée mon compte">
+      </form>
+    </section>
+  <!-- Footer -->
+  <?php include ("footer.php");?>
+  <!-- Fin Footer -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Footer -->
   <?php include ("footer.php");?>

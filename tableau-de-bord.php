@@ -87,7 +87,7 @@
 
 <!--    TODO boucle PHP-->
   <section id="mes-evenements" class="container-fluid">
-      <article class="evenement-block">
+      <article class="evenement-block row text-center">
           <div class="evenement-description col-md-12" >
               <div class="row">
                   <div class="col-md-5">

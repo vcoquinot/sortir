@@ -24,9 +24,9 @@
   
 </head>
 
-<body>
+<body> 
+    <?php include ("menu.php");?>
     <section id="introduction-nouvel-evenement" class="container'fluid">
-        <img src="images/logo.png" alt= "logo">
         <div class="col-md-12 row text-center">
             <h1> Création évènement</h1>
             <div class="col-md-offset-3 col-md-6 row text-center">

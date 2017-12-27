@@ -28,6 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif !important;
 }
 
+.display_inline_block {
+    display: inline-block;
+}
+
+.float_left {
+    float: left;
+}
+
 /*----- Header-----*/
 header{
     background-color: #e7169d;
@@ -35,12 +43,12 @@ header{
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 1.2em;
-    height: 90px;
+    /*height: 90px;*/
     line-height: 1.2em;
 }
 
 header img{
-    max-width:10%;
+    max-height:75px;
     margin-top: 8px;
 }
 
@@ -51,6 +59,8 @@ header p, header a{ /* voir le vertical align*/
 header a{
     color:white;
 }
+
+
 
 /*----- CAROUSEL-----*/
 
@@ -75,6 +85,7 @@ header a{
 }
 
 #presentation h1{
+    font-family: 'Ubuntu', sans-serif !important;
     font-size: 2.5em;
     padding-bottom: 10px;
     margin: 0;
@@ -218,3 +229,8 @@ footer h6 {
     text-align: center;
     margin-top: -1px;
 }
+
+
+
+
+

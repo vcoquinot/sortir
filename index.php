@@ -64,9 +64,9 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img class="first-slide img-fluid" src="images/slides/salle-logo.png" alt="salle">
-                    <div class="carousel-caption">
-                        <h2>Sortir<strong>gratos.fr</strong></h2>
-                    </div>
+<!--                    <div class="carousel-caption">-->
+<!--                        <h2>Sortir<strong>gratos.fr</strong></h2>-->
+<!--                    </div>-->
                 </div>
                 <div class="item">
                     <img class="second-slide img-fluid" src="images/slides/spectacle.jpg" alt="spectacle">

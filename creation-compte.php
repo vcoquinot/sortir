@@ -100,55 +100,28 @@
           <!-- Fin formulaire -->
 
           <!-- Inscription newsletter -->
-    <section id="newsletter" class="container">  
-      <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
-          <span class="custom-control-description ">Inscription à la newsletter</span>
-        </label>
-        <div class="col-md-1">
-          <span class="custom-control-indicator">OUI</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-        <div class="col-md-1">
-          <span class="custom-control-indicator">NON</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-      </div>
-      <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-2">
-          <span class="custom-control-description ">Périodicité</span>
-        </label>
-        <div class="col-md-2">
-          <span class="custom-control-indicator">Hebdomadaire</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-        <div class="col-md-2">
-          <span class="custom-control-indicator">Chaque événement</span>
-          <input type="checkbox" class="custom-control-input">
-        </div>
-      </div>
-    </section>
-      <!-- Fin inscription newsletter -->
+          <?php include ("inscription-newsletter.php");?>
 
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-2 col-md-3">
-          <span class="custom-control-description ">J'accepte les conditions générales</span>
+        <label class="custom-control custom-radio col-md-offset-2 col-md-4">
+        <input name="radio" type="radio" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
         </label>
-        <div class="col-md-1">
-          <input type="checkbox" class="custom-control-input">
-        </div>
       </div>
     </section>
       <!-- Acceptation CGU -->
 
       <!-- bouton creation compte -->
-    <section id="creer-compte" class="container">
-      <form class="row text-center">
-        <input type="submit" value="Je crée mon compte">
-      </form>
+    <section id="bouton-creer-compte" class="container">
+      <div class="row text-center">
+        <button type="button" class="btn btn-light">Je crée mon compte</button>
+      </div>
     </section>
+     
+
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->

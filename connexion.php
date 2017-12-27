@@ -38,31 +38,24 @@
           <!-- Fin Présentation -->
     </section>
 
-
-<!--  essayer de faire plus large comme sur contact  -->
-<!--  essayer de faire plus large comme sur contact  -->
-<!--  essayer de faire plus large comme sur contact  -->
-
-    <section id="formulaire-contribueur" class= "container">
-      <div class="col-md-12 row text-center">
-        <form class="form-inline">
-          <div class="form-group">
-              <input type="text" id="inputPseudo" class="form-control" placeholder="Pseudo">
+    <section id="formulaire-contributeur" class="container">
+      <form class="form-horizontal">
+        <div class="form-group row">
+          <div class="col-md-offset-3 col-md-3">
+            <input class="form-control" type="nom" placeholder="Pseudo">
           </div>
-          <div class="form-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe">
+          <div class="col-md-3">
+            <input class="form-control" type="email" placeholder="Mot de passe">
+            <small><a href="#">Mot de passe oublié</a></small>
           </div>
-            <div>
-            <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
-            </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
 
-    <section id="boutons-contributeur" class= "container"><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
+    <section id="boutons-contributeur" class= "container"><!--!!!!!!!!! TO DO AJOUTER LIENS!!!!!!!-->
       <div class="col-md-12 row text-center">
-          <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
-          <a href="#" class="lien_bleu font_roboto">Mot de passe oublié</a>
+        <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
+        <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>   
       </div>
     </section>
 

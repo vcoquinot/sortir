@@ -128,7 +128,9 @@
         </div>
       </div>
     </section>
+      <!-- Fin inscription newsletter -->
 
+      <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
         <label class="custom-control custom-checkbox col-md-offset-2 col-md-3">
@@ -139,21 +141,14 @@
         </div>
       </div>
     </section>
+      <!-- Acceptation CGU -->
 
+      <!-- bouton creation compte -->
     <section id="creer-compte" class="container">
       <form class="row text-center">
         <input type="submit" value="Je crée mon compte">
       </form>
     </section>
-  <!-- Footer -->
-  <?php include ("footer.php");?>
-  <!-- Fin Footer -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->

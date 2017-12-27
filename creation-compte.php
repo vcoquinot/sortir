@@ -105,10 +105,10 @@
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
-        <label class="custom-control custom-radio col-md-offset-2 col-md-3">
+        <label class="custom-control custom-radio col-md-offset-2 col-md-4">
         <input name="radio" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
-        <span class="custom-control-description ">J'accepte les conditions générales</span>
+        <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
         </label>
       </div>
     </section>

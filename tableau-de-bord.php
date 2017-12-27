@@ -87,28 +87,30 @@
 
 <!--    TODO boucle PHP-->
   <section id="mes-evenements" class="container-fluid">
-      <article class="evenement-block row">
-    <div class="marge-article">
-        <div class="evenement-description col-md-12" >
-              <div class="row">
-                  <div class="col-md-4">
-                      <h2><?php echo $titre ?></h2>
-                  </div>
-                  <div class="col-md-1">
-                      <h3><?php echo $categorie ?></h3>
-                  </div>
-                  <div class="col-md-2">
-                      <h3><?php echo $date ?></h3>
-                  </div>
-                  <div class="col-md-5 text-right">
-                      <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-                      <button type="button" class="btn btn-light bt_bleu">Supprimer</button>
-                      <button type="button" class="btn btn-light bt_bleu">Dupliquer</button>
-                  </div>
-              </div>
-          </div>
-    </div>
-      </article>
+
+
+            <article class="evenement-block row">
+                <div class="marge-article">
+                    <div class="evenement-description col-md-12" >
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2><?php echo $titre ?></h2>
+                            </div>
+                            <div class="col-md-1">
+                                <h3><?php echo $categorie ?></h3>
+                            </div>
+                            <div class="col-md-2">
+                                <h3><?php echo $date ?></h3>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
+                                <button type="button" class="btn btn-light bt_bleu">Supprimer</button>
+                                <button type="button" class="btn btn-light bt_bleu">Dupliquer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
       <article class="evenement-block row">
           <div class="marge-article">

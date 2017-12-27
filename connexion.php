@@ -27,18 +27,24 @@
     <section id="introduction-contributeur" class= "container'fluid">
       <div class="col-md-12 row text-center">
       <h1>Connexion contributeur</h1>
+
           <!-- Présentation -->
           <section id="presentation" class="container">
               <div class="row">
-
-                  <p>Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis</p>
+                  <p>Si vous voulez contribuer (annoncer vos événements), créez votre compte.</p>
+                  <p>Si vous avez déjà un compte, entrez votre pseudo et votre mot de passe, puis cliquez sur connexion.</p>
               </div>
           </section>
           <!-- Fin Présentation -->
     </section>
 
+
+<!--  essayer de faire plus large comme sur contact  -->
+<!--  essayer de faire plus large comme sur contact  -->
+<!--  essayer de faire plus large comme sur contact  -->
+
     <section id="formulaire-contribueur" class= "container">
-      <div class="col-md-offset-3 col-md-6 row text-center">
+      <div class="col-md-12 row text-center">
         <form class="form-inline">
           <div class="form-group">
               <input type="text" id="inputPseudo" class="form-control" placeholder="Pseudo">
@@ -46,15 +52,17 @@
           <div class="form-group">
               <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe">
           </div>
+            <div>
+            <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
+            </div>
         </form>
       </div>
     </section>
 
     <section id="boutons-contributeur" class= "container"><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
       <div class="col-md-12 row text-center">
-          <a href="#" class="lien_bleu">Connexion</a>
-          <a href="#" class="lien_bleu">Mot de passe oublié</a>
-          <a href="#" class="lien_bleu">Créer un compte</a>
+          <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
+          <a href="#" class="lien_bleu font_roboto">Mot de passe oublié</a>
       </div>
     </section>
 

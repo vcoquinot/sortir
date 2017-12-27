@@ -22,14 +22,22 @@
   </head>
 
   <body>
-    <section id="introduction-creation-compte" class="container'fluid">
-      <?php include ("menu-logo.php");?>
-      <div class="col-md-12 row text-center">
-      <h1> Connexion contributeur</h1>
-      <div class="col-md-offset-4 col-md-4 row text-center">
-      <p>Créez votre compte et diffusez gratuitement votre évènement sur Sortirgratos.fr.</p>
-      </div>
+  <?php include ("menu-logo.php");?>
+
+
+    <section id="introduction-creation-compte" class= "container'fluid">
+        <div class="col-md-12 row text-center">
+            <h1>Création Compte Contributeur</h1>
+
+            <!-- Présentation -->
+            <section id="presentation" class="container">
+                <div class="row">
+                    <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>
+                </div>
+            </section>
+            <!-- Fin Présentation -->
     </section>
+
 
     <section id="formulaire-creation-compte" class="container">
       <form class="form-horizontal">

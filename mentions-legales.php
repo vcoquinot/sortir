@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
     <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,21 +25,21 @@
 		<section class="container">
 			<div class="row text-center">
 				<h1>Mentions légales</h1>
-				<h2>Site « www.sortirgratos.fr »</h2>
+				<h2>Site <span class="font_ubuntu">www.sortir<strong>gratos</strong>.fr</span></h2>
 			</div>
 
 			<div class="row col-md-12">
 				<ul>
 					<li>Adresse de contact : contact@sortirgratos.fr</li>
 					<li>Numéro de téléphone : 04 66 66 66 66 (coût d'un appel local)</li>
-					<li>Responsable de la publication : Monsieur COQDOUMAN</li>
+					<li>Responsable de la publication : Madame COQDOUMAN</li>
 					<li><strong>Hébergement du SITE :</strong></li>
 					<li>Nom adresse</li>
 					<li>Enregistré au RCS de Montpellier sous le numéro XXX XXX XXX</li>
 				</ul>
 			</div>
 			<div class="row col-md-12">
-				<h2><strong>Politique en matière de données personnelles</strong></h2>
+				<h2 class="font_roboto">Politique en matière de données personnelles</h2>
 					<ul>
 						<li>1.1 Déclaration CNIL :</li>
 							<p>Le site www.sortirgratos.fr a fait l'objet d'une déclaration à la CNIL sous le numéro : XXXXXXX v 0</p>
@@ -200,7 +201,7 @@
 								<li>une atteinte à l’ordre public et aux bonnes mœurs.</li>
 							</ul>
 							A ce titre, il reconnaît à Sortir Gratos qu’il détient tous les droits et autorisations nécessaires de la part des ayants droit concernés et garantit Mapado contre tous recours et actions à cet égard.<br />
-							De manière générale, l’Utilisateur garantit Sortir Gratos contre toute demande, réclamation et/ou condamnation à des dommages intérêts dont elle pourrait être menacée ou être l’objet, et/ou qui pourraient être prononcées contre elle, en ce compris les frais raisonnables d’avocats qui auraient pu être exposés, dès lors que celles-ci auraient pour cause, fondement ou origine la violation des présentes Conditions Générales d’Utilisation et/ou de toutes règles ou lignes de conduite additionnelles et spécifiques applicables aux Sites Mapado par l’Utilisateur.</p>
+							De manière générale, l’Utilisateur garantit Sortir Gratos contre toute demande, réclamation et/ou condamnation à des dommages intérêts dont elle pourrait être menacée ou être l’objet, et/ou qui pourraient être prononcées contre elle, en ce compris les frais raisonnables d’avocats qui auraient pu être exposés, dès lors que celles-ci auraient pour cause, fondement ou origine la violation des présentes Conditions Générales d’Utilisation et/ou de toutes règles ou lignes de conduite additionnelles et spécifiques applicables aux Sites Mapado par l’Utilisateur.</ul>
 							<li>XII. Divers</li>
 							<p>Pour toute question relative aux présentes Conditions Générales d’Utilisation, l’Utilisateur est invité à prendre  contact avec : Sortir Gratos - adresseXXX</p>
 

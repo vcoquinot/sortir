@@ -11,8 +11,10 @@
 
     <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,10 +25,10 @@
     <?php include ("menu-logo.php");?>
     <section class="container">
       <div class="row text-center">
-        <img src= "./images/teamwork.jpg">
+        <img src= "./images/teamwork.jpg" alt="L'équipe">
         <h1>Qui sommes-nous ?</h1>
-        <p>Sortirgratos.fr est un agenda en ligne animé par 3 passionnés.<br />
-        <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous. Concerts, expos, spectacles ou activités sportives, Sortirgratos.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer.</p>
+        <p class="col-md-offset-3 col-md-6">sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés.<br />
+        <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous. Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer.</p>
       </div>
     </section>
 

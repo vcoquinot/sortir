@@ -49,14 +49,12 @@
               </div>
             </div>
 
-          <form class="form-horizontal">
             <div class="form-group row ">
               <div class="col-md-offset-3 col-md-6">
                 <textarea class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea>
               </div>
             </div>
             <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
-          </form>
           </form>
         </section>
       </div>

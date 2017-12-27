@@ -57,7 +57,7 @@
         <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
       </div>
       <div class="col-md-12 row text-center">
-        <h3> Envie de devenir un nouveau contributeur ?</h3>
+        <h3> Envie de devenir contributeur ?</h3>
         <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>   
       </div>
     </section>

@@ -55,6 +55,8 @@
     <section id="boutons-contributeur" class= "container"><!--!!!!!!!!! TO DO AJOUTER LIENS!!!!!!!-->
       <div class="col-md-12 row text-center">
         <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
+      </div>
+      <div class="col-md-12 row text-center">
         <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>   
       </div>
     </section>

@@ -88,40 +88,28 @@
 <!--    TODO boucle PHP-->
   <section id="mes-evenements" class="container-fluid">
       <article class="evenement-block">
-          <div class="evenement-description col-xs-12 col-md-12" >
+          <div class="evenement-description col-md-12" >
               <div class="row">
-                  <div class="col-xs-5 col-md-5">
+                  <div class="col-md-5">
                       <h2><?php echo $titre?></h2>
                   </div>
-                  <div class="col-xs-2 col-md-2">
+                  <div class="col-md-1">
                       <h3><?php echo $categorie ?></h3>
                   </div>
-                  <div class="col-offset-md-1 col-md-2">
+                  <div class="col-offset-md-1 col-md-1">
                       <h3><?php echo $date ?></h3>
                   </div>
-                  <div class="col-xs-3 col-md-3">
-                      <button type="button" class="btn btn-light">Modifier</button>
-                      <button type="button" class="btn btn-light">Supprimer</button>
-                      <button type="button" class="btn btn-light">Dupliquer</button>
+                  <div class="col-md-5">
+                      <button type="button" class="btn btn-light bt_bleu">Modifier</button>
+                      <button type="button" class="btn btn-light bt_bleu">Supprimer</button>
+                      <button type="button" class="btn btn-light bt_bleu">Dupliquer</button>
                   </div>
-                  <div class="row">
 
-                  </div>
 
               </div>
           </div>
       </article>
    </section>
-
-
-  <section id="mes-evenements" class="container-fluid">
-      <div class= "mes-evenements-block">
-
-
-      </div>
-  </section>
-
-
 
 
 

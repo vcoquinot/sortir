@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-offset-3 col-md-5 row text-right">
 
-            <!--ajouter variable php contributeur connecté-->
+            <!--TODO ajouter variable php contributeur connecté-->
             <!--ajouter variable php contributeur connecté-->
             <!--ajouter variable php contributeur connecté-->
 

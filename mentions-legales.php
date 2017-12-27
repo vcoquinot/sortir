@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/Mentions légales</title>
+    <title>Sortirgratos / Mentions légales</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -22,22 +22,33 @@
   </head>
   <body><?php include ("menu-logo.php"); ?>
 
-		<section class="container">
-			<div class="row text-center">
-				<h1>Mentions légales</h1>
-				<h2>Site <span class="font_ubuntu">www.sortir<strong>gratos</strong>.fr</span></h2>
-			</div>
+  <section id="introduction-contact" class="container-fluid">
 
-			<div class="row col-md-12">
-				<ul>
-					<li>Adresse de contact : contact@sortirgratos.fr</li>
-					<li>Numéro de téléphone : 04 66 66 66 66 (coût d'un appel local)</li>
-					<li>Responsable de la publication : Madame COQDOUMAN</li>
-					<li><strong>Hébergement du SITE :</strong></li>
-					<li>Nom adresse</li>
-					<li>Enregistré au RCS de Montpellier sous le numéro XXX XXX XXX</li>
-				</ul>
-			</div>
+      <div class="col-md-12 row text-center">
+          <h1>Mentions légales</h1>
+          <h2>Site <span class="font_ubuntu">sortir<strong>gratos</strong>.fr</span></h2>
+
+          <!-- Présentation -->
+      <section id="presentation" class="container">
+          <div class="row">
+              <div class="row col-md-12">
+                      Adresse de contact : contact@sortirgratos.fr<br/>
+                      Numéro de téléphone : 04 66 66 66 66 (coût d'un appel local)<br/>
+                      Responsable de la publication : Madame COQDOUMAN<br/><br/>
+                      <strong>Hébergement du SITE :</strong><br/>
+                      Nom adresse<br/>
+                      Enregistré au RCS de Montpellier sous le numéro XXX XXX XXX
+              </div>
+          </div>
+      </section>
+      </div>
+  </section>
+
+  <!-- Fin Présentation -->
+
+
+		<section class="container">
+
 			<div class="row col-md-12">
 				<h2 class="font_roboto">Politique en matière de données personnelles</h2>
 					<ul>

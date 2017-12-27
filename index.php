@@ -92,20 +92,19 @@
                 Concerts, expos, spectacles ou activités sportives, Sortir Gratos vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p> 
             </div>
         </section>
-        
+
 <!-- Fin Présentation -->
 
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
-
-       
-        </section>
-        <section id="boutons-evenement" class= "container-fluid"><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
+        <section id="boutons-evenement" class= "container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                <h2><strong>Les prochains événements</strong></h2>
+                <h2>Les prochains événements</h2>
                 </div>
                 <div class="col-md-6">
+
+<!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
                 <a href="#">Rechercher les événements</a>
                 <a href="evenements-filtres.php">Filtrer les événements</a>
                 </div>
@@ -117,6 +116,7 @@
 
 
         <!-- Evénements  -->
+<!--    TODO boucle PHP-->
 
         <section id="evenements" class="container-fluid">
             <article class="evenement-block">

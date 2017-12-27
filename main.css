@@ -108,6 +108,17 @@ header a{
     margin: 0;
 }
 
+#en-tete-mes-evenements {
+    margin-top: 20px;
+    background-color: #AF006E;
+}
+
+#en-tete-mes-evenements h2{
+    color: white;
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+
 /*----- BOUTONS EVENEMENTS-----*/
 #boutons-evenement{
     background-color: #AF006E;

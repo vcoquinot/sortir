@@ -21,6 +21,8 @@
     <![endif]-->
   </head>
   <body>
+
+
   <section id="introduction-mes-evenements" class="container'fluid">
       <?php include ("menu-contributeur.php");?>
       <div class="col-md-12 row text-center">

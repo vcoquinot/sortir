@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/Qui sommes-nous ?</title>
+    <title>Sortirgratos / Qui sommes-nous ?</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -23,12 +23,23 @@
   </head>
   <body>
     <?php include ("menu-logo.php");?>
+
+
+
+    <!-- Présentation -->
+    <section id="presentation" class="container">
+        <div class="row">
+            <h1>Qui sommes-nous ?</h1>
+            <p>sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés.<br/>
+                <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous.<br/>
+                Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évéements gratuits à ne pas manquer.</p>
+        </div>
+    </section>
+    <!-- Fin Présentation -->
+
     <section class="container">
       <div class="row text-center">
         <img src= "./images/teamwork.jpg" alt="L'équipe">
-        <h1>Qui sommes-nous ?</h1>
-        <p class="col-md-offset-3 col-md-6">sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés.<br />
-        <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous. Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer.</p>
       </div>
     </section>
 

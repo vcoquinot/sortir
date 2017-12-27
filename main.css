@@ -141,7 +141,7 @@ header a{
 }
 
 /*----- EVENEMENTS-----*/
-#evenements{
+#evenements, #mes-evenements{
     background-color: #E7169D;
     margin-bottom : 15px;
     padding-bottom : 25px;
@@ -162,6 +162,16 @@ header a{
 }
 
 #evenements h3 { /*mise en forme catégories*/
+    color: #0bb3e8;
+    font-size: 1.3em;
+    text-align: right;
+}
+#mes-evenements h2 {  /*mise en forme titres*/
+    font-size: 1.2em;
+    color: black;
+}
+
+#mes-evenements h3 { /*mise en forme catégories*/
     color: #0bb3e8;
     font-size: 1.3em;
     text-align: right;

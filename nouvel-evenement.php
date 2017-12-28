@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-md-offset-1 col-md-3">
                 <select id="categorie" class="form-control">
-                    <option selected>catégorie...</option>
+                    <option selected>Catégorie...</option>
                     <option>atelier</option>
                     <option>cinema</option>
                     <option>conférence</option>
@@ -61,6 +61,18 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
+                    <select id="categorie" class="form-control">
+                        <option selected>Public...</option>
+                        <option>tout public</option>
+                        <option>adulte</option>
+                        <option>étudiant</option>
+                        <option>ado</option>
+                        <option>enfant</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Date" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
@@ -69,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <img src="images/image.png" alt="image-grisée">
+                    <img src="images/image-grise.png" alt="image-grisée"><!--270*140p-->
                     <button type="button" class="btn btn-light">Télecharger une image</button>
                     <!-- TO DO check if necessary 
                     <small id="passwordHelpBlock" class="form-text text-muted">Format png de taille xxxx</small>
@@ -126,7 +138,17 @@
             <div class="row ">
                 <div class="col-md-offset-2 col-md-8">
                     <textarea class="form-control" rows="8" placeholder="Descriptif de l'événement"></textarea>
-                </div>       
+                </div>  
+            </div> 
+            <div class="label-group row">
+                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Accès handicapé</strong>
+                </span>
+                    <label class="custom-control custom-radio col-md-1">
+                        <input name="radio" type="radio" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">OUI</span>  
+                    </label> 
+            </div>     
         </form>
     </section>
 
@@ -152,7 +174,7 @@
       </div>
 
           <!-- bouton création événement -->
-          <section id="bouton-creer-compte" class="container">
+    <section id="bouton-creer-compte" class="container">
       <div class="row text-center">
         <button type="button" class="btn btn-light">Créer l'événement</button>
       </div>

@@ -75,6 +75,12 @@
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description ">À chaque événement</span>
                 </label>
+                <div class="label-group row">
+                    <label class="custom-control custom-radio">
+                    <input name="radio" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
+                </div>
                 <div>
                 <button type="submit" class="btn btn-light">Je m'inscris</button>
                 <div>

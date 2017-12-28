@@ -21,7 +21,7 @@
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description ">chaque semaine</span>
         </label>
-        <label class="col-md-2">
+        <label class="col-md-3">
           <input name="radio" type="radio" class="custom-control-input">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description ">à chaque nouvel événement</span>

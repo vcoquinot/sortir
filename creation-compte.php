@@ -24,7 +24,7 @@
   <body>
   <?php include ("menu-logo.php");?>
 
-    <section id="introduction-creation-compte" class= "container'fluid">
+    <section id="introduction-creation-compte" class= "container-fluid">
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
 

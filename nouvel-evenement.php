@@ -25,7 +25,7 @@
 </head>
 
 <body> 
-    <?php include ("menu.php");?>
+    <?php include ("menu-contributeur.php");?>
     <section id="introduction-nouvel-evenement" class="container-fluid">
         <div class="col-md-12 row text-center">
             <h1> Création évènement</h1>

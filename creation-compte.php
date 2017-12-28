@@ -42,43 +42,9 @@
       <form class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
           <input class="form-control" type="text" placeholder="Pseudo">
-        </div>
-        <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="password" placeholder="Mot de passe">
-        </div>
-      </form>
-     
-      <form class="form-group row ">
-        <div class="col-md-offset-2 col-md-3">
-          <select id="Type" class="form-control">
-            <option selected>Type</option>
-            <option>Association</option>
-            <option>Collectivité</option>
-            <option>Entreprise</option>
-            <option>Particulier</option>
-          </select>
-        </div>
-        <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="text" placeholder="Nom de l'entité">
-        </div>
-      </form> 
-     
-      <form class="form-group row ">
-        <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="text" placeholder="Site web">
-        </div>
-        <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="mail" placeholder="Mail">
-        </div>
-      </form> 
-     
-       <form class="form-group row ">
-        <div class="col-md-offset-2 col-md-3">
-          <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="number" placeholder="CP"> 
-          <input class="form-control" type="text" placeholder="Ville">      
+          <input class="form-control" type="mail" placeholder="Mail">
         </div>
       </form>
 
@@ -90,9 +56,46 @@
           <input class="form-control" type="text" placeholder="Prénom">
         </div>
       </form> 
-       
+
       <form class="form-group row ">
-        <div class="col-md-offset-6 col-md-3">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="password" placeholder="Mot de passe">
+        </div>
+      <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="password" placeholder="Confirmer votre mot de passe">
+        </div>
+      </form>
+     
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="text" placeholder="Nom de l'entité">
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <select id="Type" class="form-control">
+              <option selected>Type</option>
+              <option>Association</option>
+              <option>Collectivité</option>
+              <option>Entreprise</option>
+              <option>Particulier</option>
+          </select>  
+        </div>
+      </form>
+
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
+        </div>  
+        <div class="col-md-offset-1 col-md-3">
+          <input class="form-control" type="number" placeholder="CP"> 
+          <input class="form-control" type="text" placeholder="Ville">      
+        </div>
+      </form>
+
+      <form class="form-group row ">
+        <div class="col-md-offset-2 col-md-3">
+          <input class="form-control" type="text" placeholder="Site web">
+        </div> 
+        <div class="col-md-offset-1 col-md-3">
           <input class="form-control" type="number" placeholder="Téléphone">
         </div>
       </form>

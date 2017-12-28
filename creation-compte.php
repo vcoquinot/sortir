@@ -100,7 +100,7 @@
           <!-- Fin formulaire -->
 
           <!-- Inscription newsletter -->
-          <?php include ("inscription-newsletter.php");?>
+          <?php include ("newsletter.php");?>
 
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">

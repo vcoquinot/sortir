@@ -7,9 +7,10 @@
     <title>Sortirgratos/evenements-filtres</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-    <!-- Bootstrap -->
+
+      <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 

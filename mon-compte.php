@@ -5,7 +5,8 @@
     <title>Sortirgratos/mon compte</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+
 
     <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">

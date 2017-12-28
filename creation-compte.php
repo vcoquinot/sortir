@@ -7,7 +7,8 @@
     <title>Sortirgratos/creation-compte</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+
 
     <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +29,7 @@
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
 
-            <!-- Présentation -->
+<!-- Présentation -->
             <section id="presentation" class="container">
                 <div class="row">
                     <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>

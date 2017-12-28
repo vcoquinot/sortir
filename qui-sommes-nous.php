@@ -7,9 +7,10 @@
     <title>Sortirgratos / Qui sommes-nous ?</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-    <!-- Bootstrap -->
+
+      <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -32,7 +33,7 @@
             <h1>Qui sommes-nous ?</h1>
             <p>sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés.<br/>
                 <strong>Notre mission :</strong> rechercher les bons plans loisirs de la région et les partager avec vous.<br/>
-                Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évéements gratuits à ne pas manquer.</p>
+                Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et événements gratuits à ne pas manquer.</p>
         </div>
     </section>
     <!-- Fin Présentation -->

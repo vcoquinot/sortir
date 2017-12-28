@@ -8,7 +8,7 @@
     <title>Sortirgratos / Les évènements gratuits dans votre région</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,8 +60,8 @@
     <section id="presentation" class="container">
         <div class="row">
             <h1>sortir<strong>gratos</strong>.fr</h1>
-            <p>Sortir Gratos est un agenda en ligne animé par 3 passionnés. Notre mission : rechercher les bons plans sortie de la région et les partager avec vous.
-            Concerts, expos, spectacles ou activités sportives, Sortir Gratos vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p>
+            <p>sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés. Notre mission : rechercher les bons plans sortie de la région et les partager avec vous.
+            Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p>
         </div>
     </section>
 <!-- Fin Présentation -->

@@ -1,7 +1,20 @@
+/* code couleur
+bleu #0bb3e8
+bleu foncé #0083b6
+magenta #E7169D
+magenta foncé #AF006E
+*/
+
+
 /* Raz */
 *{
     font-family: 'Ubuntu', sans-serif;
     text-align: justify-all;
+}
+
+strong {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 
 body{
@@ -216,6 +229,13 @@ header a:focus, header a:hover {
     margin: 0 20px;
 }
 
+.marge-article-bloc {
+    /*padding: 20px;*/
+    width: 98%;
+}
+
+
+
 #evenements h4 span {
     color: black;
 }
@@ -225,7 +245,8 @@ header a:focus, header a:hover {
 }
 
 .evenement-description img{
-    min-width: 100%;
+    min-width: 99%;
+    max-width: 99%;
     margin-bottom: 15px;
   }
 #evenements img {

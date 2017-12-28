@@ -29,18 +29,18 @@
       <div class="col-md-12 row text-center">
           <h1>Nous contacter</h1>
 
-      <!-- Présentation -->
-      <section id="presentation" class="container-fluid">
-          <div class="row">
+          <!-- Présentation -->
+          <section id="presentation" class="container">
+              <div class="row">
 
-              <p>Si vous avez des questions, des suggestions n'hésitez pas à nous envoyer un message, nous ne manquerons pas de vous répondre.</p>
-          </div>
-      </section>
-      <!-- Fin Présentation -->
+                  <p>Si vous avez des questions, des suggestions n'hésitez pas à nous envoyer un message, nous ne manquerons pas de vous répondre.</p>
+              </div>
+          </section>
+          <!-- Fin Présentation -->
 
         <section id="formulaire-creation-compte" class="container">
           <form class="form-horizontal">
-            <div class="form-group row"><!--voir si formGroupInputMedium necessaire ?? -->
+            <div class="form-group row">
               <div class="col-md-offset-3 col-md-3">
                 <input class="form-control" type="nom" id="formGroupInputNom" placeholder="Nom">
               </div>

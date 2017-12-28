@@ -47,7 +47,7 @@
             <!-- Formulaire -->
     <section id="formulaire-newsletter" class="container">
         <div class="row text-center">
-            <p>Si vous avez déjà un compte, connectez-vous et modifiez vos préférences sur la page<a href="#">Gérer mon compte</a></p>
+            <p>Si vous avez déjà un compte, connectez-vous et modifiez vos préférences sur la page<a href="#">mon compte</a></p>
         </div>
         <form>
             <div class="form-group col-md-offset-4 col-md-3">

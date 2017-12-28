@@ -99,20 +99,48 @@
     </section>
           <!-- Fin formulaire -->
 
-          <!-- Inscription newsletter -->
-          <?php include ("newsletter.php");?>
+          <!-- Inscription newsletter -->         
+    <section id="newsletter" class="container">  
+      <div class="label-group row">
+        <span class="custom-control-description col-md-offset-3 col-md-2"><strong>Inscription à la newsletter</strong></span>
+        <label class="custom-control custom-radio col-md-1">
+          <input name="radio" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">OUI</span>  
+          </label>
+        <label class="custom-control custom-radio col-md-1">
+          <input name="radio" type="radio" class="custom-control-input" checked>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">NON</span>  
+        </label>
+      </div>
+        <!-- Périodicité  newsletter -->
+      <div class="label-group row">
+        <span class="custom-control-description col-md-offset-3 col-md-1"><strong>Périodicité</strong></span>
+        <label class="custom-control custom-radio col-md-2">
+          <input name="radio" type="radio" class="custom-control-input" checked>
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description ">Hebdomadaire</span>
+        </label>
+        <label class="custom-control custom-radio col-md-2">
+          <input name="radio" type="radio" class="custom-control-input">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description ">Chaque événement</span>
+        </label>
+      </div>
+    </section>
 
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
-        <label class="custom-control custom-radio col-md-offset-2 col-md-4">
+        <label class="custom-control custom-radio col-md-offset-4 col-md-4">
         <input name="radio" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
         </label>
       </div>
     </section>
-      <!-- Acceptation CGU -->
+     
 
       <!-- bouton creation compte -->
     <section id="bouton-creer-compte" class="container">

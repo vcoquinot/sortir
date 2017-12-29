@@ -117,6 +117,7 @@ header a:focus, header a:hover {
     margin-top:15px;
     margin-bottom : 25px;
     width: 60%;
+    text-align: left;
 }
 
 #presentation h1{
@@ -234,8 +235,6 @@ header a:focus, header a:hover {
     width: 98%;
 }
 
-
-
 #evenements h4 span {
     color: black;
 }
@@ -270,6 +269,7 @@ header a:focus, header a:hover {
     border: none !important;
     border-bottom: 3px solid #E7169D !important;
     border-radius: 0 !important;
+    margin-top: 5px;
 }
 
 #formulaire-creation-compte, #formulaire-contribueur {
@@ -311,6 +311,34 @@ button[type="submit"] {
     margin: 10px 10px 0 10px;
 }
 
+#CGU {
+    margin-top: 20px;
+}
+
+input[type=checkbox], input[type=radio], select {
+    cursor: pointer;
+}
+
+.bt_aide {
+    font-weight: bold;
+    float: right;
+    background-color: #0bb3e8;
+    color: black;
+    border: none;
+}
+
+.bt_aide.focus, .bt_aide:focus, .bt_aide:hover {
+    color: white !important;
+}
+
+
+.visuel {
+    margin-top: 15px;
+}
+
+.marginTop {
+    margin-top: 18px;
+}
 
 /*----- FOOTER-----*/
 footer{

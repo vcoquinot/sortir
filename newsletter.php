@@ -1,30 +1,36 @@
-          <!-- Inscription newsletter -->
-    <section id="newsletter" class="container">  
-      <div class="label-group row">
-        <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong>M'inscrire à la newsletter</strong></span>
-        <label class="custom-control custom-radio col-md-1">
-          <input name="radio" type="radio" class="custom-control-input">
+
+<!-- Inscription newsletter -->
+<section id="newsletter" class="container">
+    <div class="label-group row">
+    <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong>Je souhaite recevoir la newsletter&nbsp;:</strong></span>
+    <form>
+        <label class="custom-control custom-radio col-md-1 text-left">
+            <input name="radio" type="radio" class="custom-control-input" value="oui">
             <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">OUI</span>  
-          </label>
-        <label class="custom-control custom-radio col-md-1">
-          <input name="radio" type="radio" class="custom-control-input" checked>
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">NON</span>  
+            <span class="custom-control-description">OUI</span>
         </label>
-      </div>
-        <!-- Périodicité  newsletter -->
-      <div class="label-group row">
-        <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong>Recevoir la newsletter</strong></span>
-        <label class="col-md-2">
-          <input name="radio" type="radio" class="custom-control-input" checked>
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description ">chaque semaine</span>
+        <label class="custom-control custom-radio col-md-1 text-left">
+            <input name="radio" type="radio" class="custom-control-input" value="non" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">NON</span>
         </label>
-        <label class="col-md-3">
-          <input name="radio" type="radio" class="custom-control-input">
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description ">à chaque nouvel événement</span>
+        </form>
+    </div>
+
+<!-- Périodicité  newsletter -->
+    <div class="label-group row">
+    <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong></strong></span>
+    <form>
+        <label class="custom-control custom-radio col-md-2 text-left">
+            <input name="radio" type="radio" class="custom-control-input" value="semaine" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">chaque semaine</span>
         </label>
-      </div>
-    </section>
+        <label class="custom-control custom-radio col-md-3 text-left">
+            <input name="radio" type="radio" class="custom-control-input" value="événement">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description ">à chaque événement</span>
+        </label>
+    </form>
+    </div>
+</section>

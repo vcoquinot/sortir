@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,94 +26,109 @@
 
 <body> 
     <?php include ("menu-contributeur.php");?>
-    <section id="introduction-mon-compte" class="container-fluid">
+
+    <section id="introduction-creation-compte" class= "container-fluid">
         <div class="col-md-12 row text-center">
             <h1>Mon compte</h1>
-            <!-- Modification profil -->
-            <section id="modification" class="container">
+
+            <!-- Présentation -->
+            <section id="presentation" class="container">
                 <div class="row">
-                    <h3>Modifiez votre profil</h3>
+                    <p>Modifiez votre profil puis cliquez sur “Modifiez mes préférences”</p>
                 </div>
             </section>
+            <!-- Fin Présentation -->
+
     </section>
 
-            <!-- Formulaire modification profil -->
+
+    <!-- Formulaire création compte -->
     <section id="formulaire-creation-compte" class="container">
         <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
-                <input class="form-control" type="password" placeholder="Mot de passe">
+            <div class="col-md-offset-2 col-md-3">
+                <input class="form-control" type="text" placeholder="Pseudo">
             </div>
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>
-        </form>
-
-        <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
-                <input class="form-control" type="text" placeholder="Nom de l'entité">
-            </div>
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>
-        </form> 
-        
-        <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
-                <input class="form-control" type="text" placeholder="Site web">
-            </div>
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>
-        </form>
-
-        <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
+            <div class="col-md-offset-1 col-md-3">
                 <input class="form-control" type="mail" placeholder="Mail">
             </div>
-            <div class="col-md-2 text-right">
-                    <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>
-        </form> 
-     
-       <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
-                <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
-                <input class="form-control" type="number" placeholder="CP"> 
-                <input class="form-control" type="text" placeholder="Ville">
-            </div>  
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>
         </form>
 
         <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
+            <div class="col-md-offset-2 col-md-3">
                 <input class="form-control" type="text" placeholder="Nom">
             </div>
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-            </div>    
-        </form> 
-       
-        <form class="form-group row ">
-            <div class="col-md-offset-3 col-md-3">
-                <input class="form-control" type="number" placeholder="Téléphone">
+            <div class="col-md-offset-1 col-md-3">
+                <input class="form-control" type="text" placeholder="Prénom">
             </div>
-            <div class="col-md-2 text-right">
-                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
+        </form>
+
+        <form class="form-group row ">
+            <div class="col-md-offset-2 col-md-3">
+                <input class="form-control" type="password" placeholder="Mot de passe">
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <input class="form-control" type="password" placeholder="Confirmer votre mot de passe">
+            </div>
+        </form>
+
+        <form class="form-group row ">
+            <div class="col-md-offset-2 col-md-3">
+                <input class="form-control" type="text" placeholder="Nom de l'entité">
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <select id="Type" class="form-control">
+                    <option selected>Type</option>
+                    <option>Association</option>
+                    <option>Collectivité</option>
+                    <option>Entreprise</option>
+                    <option>Particulier</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="form-group row ">
+            <div class="col-md-offset-2 col-md-3">
+                <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <input class="form-control" type="number" placeholder="CP">
+                <input class="form-control" type="text" placeholder="Ville">
+            </div>
+        </form>
+
+        <form class="form-group row ">
+            <div class="col-md-offset-2 col-md-3">
+                <input class="form-control" type="text" placeholder="Site web">
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <input class="form-control" type="number" placeholder="Téléphone">
             </div>
         </form>
     </section>
-          <!-- Fin formulaire modification profil -->
+    <!-- Fin formulaire -->
 
-          <!-- Préférences newsletter -->
-     <section id="modification" class="container">
-        <div class="col-md-12 row text-center">
-            <h3>Modifiez vos préférences</h3>
+    <!-- Inscription newsletter -->
+    <?php include ("newsletter.php");?>
+
+
+
+
+    <!-- bouton creation compte -->
+    <section id="bouton-creer-compte" class="container">
+        <div class="row text-center">
+            <button type="submit" class="btn btn-ligh bt_bleu">Modifiez mes préférences</button>
         </div>
-
-        <?php include ("newsletter.php");?>
-
     </section>
-         
 
+
+    <!-- Footer -->
+    <?php include ("footer.php");?>
+    <!-- Fin Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

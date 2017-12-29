@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/inscription-newsletter</title>
+    <title>sortirgratos.fr / Inscription à la newsletter</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -32,13 +32,9 @@
             <!-- Présentation -->
             <section id="presentation" class="container">
                 <div class="row">
-                    <p>Nous avons conçu cette newsletter comme un mail super pratique qui vous permettra de passer gratuitement de bons moments dans la région.
-                    <br />Vous y trouverez :
-                        <ul>
-                        <li>Les événements gratuits à ne pas rater</li>
-                        <li>Nos coups de coeur</li>
-                    Alors, n'hésitez plus : confiez-nous votre adresse mail pour la recevoir.
-                    <br /> On ne vous enverra pas de la pub, on ne la transmettra pas à des tiers et vous pourrez très simplement vous désabonner si elle ne répond pas à vos attentes.</p>
+                    <p>Nous avons conçu cette newsletter comme un mail super pratique qui vous permettra de passer gratuitement de bons moments dans la région.</p>
+                    <p><br/>Vous y trouverez les événements gratuits à ne pas rater et nos coups de cœur. On ne vous enverra pas de la pub, on ne la transmettra pas à des tiers et vous pourrez très simplement vous désabonner si elle ne répond pas à vos attentes.</p>
+                    <p><br/>Alors, n'hésitez plus&nbsp;! Confiez-nous votre adresse mail pour la recevoir.</p>
                     </p>
                 </div>
             </section>
@@ -60,34 +56,41 @@
             <div class="form-group col-md-offset-4 col-md-3">
                 <input type="text" class="form-control" placeholder="Nom">
             </div>
-        
-            <!-- Périodicité -->
-            <div class="row text-center col-md-12">
-                <span class="custom-control-description ">
-                    <strong>Je souhaite recevoir la newsletter</strong>
-                </span>
-                <label >
-                    <input name="radio" type="radio" class="custom-control-input" >
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description ">Toutes les semaines</span>
-                </label>
-                <label>
-                    <input name="radio" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description ">À chaque événement</span>
-                </label>
-                <div class="label-group row">
-                    <label class="custom-control custom-radio">
-                    <input name="radio" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
-                </div>
-                <div>
-                <button type="submit" class="btn btn-light">Je m'inscris</button>
-                <div>
-            </div>
+
+            <!-- Inscription newsletter -->
+            <?php include ("newsletter.php");?>
+
         </form>     
     </section>
 
-    
-   
+
+  <!-- Acceptation CGU -->
+  <section id="CGU" class="container">
+      <div class="label-group row">
+          <label class="custom-control custom-checkbox col-md-offset-4 col-md-4 text-center">
+              <input name="CGU" type="checkbox" class="custom-control-input" value="accepte">
+              <span class="custom-control-indicator"></span>
+              <a href="mentions-legales.php"><span class="custom-control-description">J'accepte les conditions générales</span></a>
+          </label>
+      </div>
+  </section>
+
+  <!-- bouton creation compte -->
+  <section id="bouton-creer-compte" class="container">
+      <div class="row text-center">
+          <button type="submit" class="btn btn-ligh bt_bleu">Je m'inscris</button>
+      </div>
+  </section>
+
+
+  <!-- Footer -->
+  <?php include ("footer.php");?>
+  <!-- Fin Footer -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

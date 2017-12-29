@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/nouvel-evenement</title>
+    <title>sortirgratos.fr / Nouvel événement</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -27,12 +27,22 @@
 
 <body> 
     <?php include ("menu-contributeur.php");?>
+
+
     <section id="introduction-nouvel-evenement" class="container-fluid">
+
         <div class="col-md-12 row text-center">
-            <h1> Création évènement</h1>
-            <div class="col-md-offset-3 col-md-6 row text-center">
-                <p>Enregistrez votre nouvel événement à l'aide du formulaire ci-dessous.
-                    <br />Besoin d'aide ? Cliquez sur le bouton pour obtenir des informations supplémentaires</p>
+            <h1>Création d'un nouvel évènement</h1>
+
+            <!-- Présentation -->
+            <section id="presentation" class="container">
+                <div class="row">
+                    <p>Enregistrez votre nouvel événement à l'aide du formulaire ci-dessous.<button type="button" class="bt_aide" onclick="alert('Texte aide à rédiger')">Aide</button></p>
+            </section>
+            <!-- Fin Présentation -->
+
+
+
             </div>
     </section>
 
@@ -40,35 +50,34 @@
         <form>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Titre de l'événement">
+                    <input type="text" class="form-control" placeholder="Titre de l'événement" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                <select id="categorie" class="form-control">
+                <select id="categorie" class="form-control" required>
                     <option selected>Catégorie...</option>
-                    <option>atelier</option>
-                    <option>cinema</option>
-                    <option>conférence</option>
-                    <option>danse</option>
-                    <option>expo</option>
-                    <option>festival</option>
-                    <option>fête</option>
-                    <option>foire</option>
-                    <option>musée</option>
-                    <option>musique</option>
-                    <option>salon</option>
-                    <option>sport</option>
+                    <option>Atelier</option>
+                    <option>Cinéma</option>
+                    <option>Conférence</option>
+                    <option>Danse</option>
+                    <option>Expo</option>
+                    <option>Festival</option>
+                    <option>Fête</option>
+                    <option>Foire</option>
+                    <option>Musée</option>
+                    <option>Musique</option>
+                    <option>Salon</option>
+                    <option>Sport</option>
                 </select>
               </div>
             </div>
             <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <select id="categorie" class="form-control">
+                <div class="col-md-offset-6 col-md-3">
+                    <select id="categorie" class="form-control" required>
                         <option selected>Public...</option>
-                        <option>tout public</option>
-                        <option>adulte</option>
-                        <option>étudiant</option>
-                        <option>ado</option>
-                        <option>enfant</option>
+                        <option>Tout public</option>
+                        <option>Enfant</option>
+                        <option>Ado</option>
+                        <option>Adulte</option>
                     </select>
                 </div>
             </div>
@@ -80,16 +89,16 @@
                     <input type="text" class="form-control" placeholder="Heure" required>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <img src="images/image-grise.png" alt="image-grisée"><!--270*140p-->
-                    <button type="button" class="btn btn-light">Télecharger une image</button>
-                    <!-- TO DO check if necessary 
+            <div class="row visuel text-center">
+                <div class="col-md-offset-2 col-md-3 text-center">
+                    <img src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
+                    <button type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
+                    <!-- TODO check if necessary
                     <small id="passwordHelpBlock" class="form-text text-muted">Format png de taille xxxx</small>
                     -->
                         
                 </div> 
-                <!--TO DO  taille image à télécharger + verif script??-->
+                <!--TODO  taille image à télécharger + verif script??-->
                         <!--<input id="input-dim-4" name="input-dim-4[]" multiple type="file" accept="image/*">-->
                     <script> 
                     $("#input-dim-1").fileinput({
@@ -118,7 +127,7 @@
                     <input type="text" class="form-control" placeholder="Contact" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <select id="Département" class="form-control">
+                    <select id="Département" class="form-control" required>
                         <option selected>Département</option>
                         <option>Aude (11)</option>
                         <option>Gard (30)</option>
@@ -130,31 +139,34 @@
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Téléphone" required>
+                    <input type="tel" class="form-control" placeholder="Téléphone" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
                     <input type="text" class="form-control" placeholder="Site web" required>
                 </div>
+                <div class="col-md-offset-2 col-md-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="label-group row">
+                    <span class="custom-control-description col-md-offset-1 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
+                    <label class="custom-control custom-radio col-md-1 marginTop">
+                        <input name="checkbox" type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">OUI</span>
+                    </label>
+                </div>
             </div> 
             <div class="row ">
-                <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-offset-2 col-md-7">
                     <textarea class="form-control" rows="8" placeholder="Descriptif de l'événement"></textarea>
                 </div>  
             </div> 
-            <div class="label-group row">
-                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Accès handicapé</strong>
-                </span>
-                    <label class="custom-control custom-radio col-md-1">
-                        <input name="radio" type="radio" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">OUI</span>  
-                    </label> 
-            </div>     
+
         </form>
     </section>
 
       <!-- Statut événement -->
-      <section id="statut-evenement" class="container">  
+      <section id="statut-evenement" class="container marginTop">
       <div class="label-group row">
         <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
         <label class="custom-control custom-radio col-md-2">
@@ -163,28 +175,49 @@
             <span class="custom-control-description">Brouillon</span>  
           </label>
         <label class="custom-control custom-radio col-md-2">
-          <input name="radio" type="radio" class="custom-control-input">
+          <input name="radio" type="radio" class="custom-control-input" checked>
           <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Publié</span>  
+          <span class="custom-control-description">Publié</span>
         </label>
         <label class="custom-control custom-radio col-md-2">
-          <input name="radio" type="radio" class="custom-control-input">
+          <input name="radio" type="radio" class="custom-control-input" disabled>
           <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">refusé</span>  
+          <span class="custom-control-description">Refusé</span>
         </label>
       </div>
 
           <!-- bouton création événement -->
     <section id="bouton-creer-compte" class="container">
-      <div class="row text-center">
-        <button type="button" class="btn btn-light">Créer l'événement</button>
+      <div class="row text-center col-md-offset-2 col-md-7">
+        <button type="submit" class="btn btn-ligh bt_bleu">Créer l'événement</button>
       </div>
     </section>
-        <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    </body>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <?php include ("footer.php");?>
+  <!-- Fin Footer -->
+
+          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
+          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
+          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
+          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
+          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
+
+          <!-- JQuery -->
+          <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+          <!-- Bootstrap tooltips -->
+          <script type="text/javascript" src="js/popper.min.js"></script>
+          <!-- Bootstrap core JavaScript -->
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

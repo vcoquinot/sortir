@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sortirgratos/creation-compte</title>
+    <title>sortirgratos.fr / Creation compte</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -35,7 +36,8 @@
                     <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>
                 </div>
             </section>
-            <!-- Fin Présentation -->
+<!-- Fin Présentation -->
+
     </section>
 
             <!-- Formulaire création compte -->
@@ -109,10 +111,10 @@
       <!-- Acceptation CGU -->
     <section id="CGU" class="container">
       <div class="label-group row">
-        <label class="custom-control custom-radio col-md-offset-4 col-md-4">
-        <input name="radio" type="radio" class="custom-control-input">
+        <label class="custom-control custom-checkbox col-md-offset-4 col-md-4 text-center">
+        <input name="CGU" type="checkbox" class="custom-control-input" value="accepte">
         <span class="custom-control-indicator"></span>
-        <a href="mentions-legales.php"><span class="custom-control-description ">J'accepte les conditions générales</span></a>
+        <a href="mentions-legales.php"><span class="custom-control-description">J'accepte les conditions générales</span></a>
         </label>
       </div>
     </section>
@@ -121,7 +123,7 @@
       <!-- bouton creation compte -->
     <section id="bouton-creer-compte" class="container">
       <div class="row text-center">
-        <button type="button" class="btn btn-light">Je crée mon compte</button>
+        <button type="submit" class="btn btn-ligh bt_bleu">Je crée mon compte</button>
       </div>
     </section>
      

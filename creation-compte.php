@@ -49,7 +49,7 @@
           <input name="pseudo" class="form-control" type="text" placeholder="Pseudo" required>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input name="mail" class="form-control" type="mail" placeholder="Mail" required>
+          <input name="email" class="form-control" type="email" placeholder="Email" required>
         </div>
       </div>
 
@@ -101,7 +101,7 @@
           <input name="site" class="form-control" type="text" placeholder="Site web">
         </div> 
         <div class="col-md-offset-1 col-md-3">
-          <input name="tel" class="form-control" type="text" placeholder="Téléphone">
+          <input name="tel" class="form-control" type="tel" placeholder="Téléphone">
         </div>
       </div>
     </section>

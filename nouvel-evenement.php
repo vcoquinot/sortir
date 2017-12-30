@@ -39,22 +39,20 @@
                 <div class="row">
                     <p>Enregistrez votre nouvel événement à l'aide du formulaire ci-dessous.<button type="button" class="bt_aide" onclick="alert('Texte aide à rédiger')">Aide</button></p>
             </section>
-            <!-- Fin Présentation -->
-
-
-
-            </div>
+        </div>
     </section>
+    <!-- Fin Présentation -->
+
+    <form action="X------------------------------------------X.php" method="POST">
 
     <section id="formulaire-nouvel-evenement" class="container">
-        <form action="X------------------------------------------X.php" method="POST">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Titre de l'événement" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
                 <select id="categorie" class="form-control" name="categorie" required>
-                    <option  value="non definie" selected>Catégorie...</option>
+                    <option value="non definie" selected>Catégorie...</option>
                     <option value="Atelier">Atelier</option>
                     <option value="Cinéma">Cinéma</option>
                     <option value="Conférence">Conférence</option>
@@ -86,7 +84,7 @@
                     <input  name="date" type="date" class="form-control" placeholder="Date" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <input  name="heure" type="text" class="form-control" placeholder="Heure" required>
+                    <input  name="heure" type="time" class="form-control" placeholder="Heure" required>
                 </div>
             </div>
             <div class="row visuel text-center">
@@ -134,35 +132,38 @@
                         <option value="Hérault (34)">Hérault (34)</option>
                         <option value="Lozère (48)">Lozère (48)</option>
                         <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
-                    </select> value="non definie"
+                    </select>
                 </div>        
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="tel" class="form-control" placeholder="Téléphone" required>
+                    <input name="tel" type="tel" class="form-control" placeholder="Téléphone" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <input type="text" class="form-control" placeholder="Site web" required>
+                    <input name="site" type="text" class="form-control" placeholder="Site web" required>
                 </div>
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input name="email" type="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="label-group row">
                     <span class="custom-control-description col-md-offset-1 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
                     <label class="custom-control custom-radio col-md-1 marginTop">
-                        <input name="checkbox" type="checkbox" class="custom-control-input">
+                        <input name="handicape" type="checkbox" class="custom-control-input" value="oui">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">OUI</span>
+                        <span class="custom-control-description">Oui</span>
+                    </label>
+                    <label class="custom-control custom-radio col-md-1 marginTop">
+                        <input name="handicape" type="checkbox" class="custom-control-input" value="non">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Non</span>
                     </label>
                 </div>
             </div> 
             <div class="row ">
                 <div class="col-md-offset-2 col-md-7">
-                    <textarea class="form-control" rows="8" placeholder="Descriptif de l'événement"></textarea>
+                    <textarea name="descriptif" class="form-control" rows="8" placeholder="Descriptif de l'événement"></textarea>
                 </div>  
-            </div> 
-
-        </form>
+            </div>
     </section>
 
       <!-- Statut événement -->
@@ -170,17 +171,17 @@
       <div class="label-group row">
         <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
         <label class="custom-control custom-radio col-md-2">
-          <input name="radio" type="radio" class="custom-control-input">
+          <input name="statut" type="radio" class="custom-control-input" value="brouillon">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description">Brouillon</span>  
           </label>
         <label class="custom-control custom-radio col-md-2">
-          <input name="radio" type="radio" class="custom-control-input" checked>
+          <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">Publié</span>
         </label>
         <label class="custom-control custom-radio col-md-2">
-          <input name="radio" type="radio" class="custom-control-input" disabled>
+          <input name="statut" type="radio" class="custom-control-input" value="refusé" disabled>
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">Refusé</span>
         </label>
@@ -194,7 +195,7 @@
     </section>
 </section>
 
-
+    </form>
 
 
   <!-- Footer -->

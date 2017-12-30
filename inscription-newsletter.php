@@ -41,36 +41,40 @@
             <!-- Fin Présentation -->
         </div>
     </section>
-            <!-- Formulaire -->
+
+<!-- Formulaire -->
+  <form action="traitement_newsletter.php" target="_blank" method="POST">
+
     <section id="formulaire-newsletter" class="container">
-        <div class="row text-center">
-            <p>Si vous avez déjà un compte,<a href="connexion.php">connectez-vous</a> et modifiez vos préférences depuis votre compte</p>
-        </div>
-        <form>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email"  name="Email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text" class="form-control" placeholder="Prénom">
+                <input type="text" name="Prénom" class="form-control" placeholder="Prénom">
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text" class="form-control" placeholder="Nom">
+                <input type="text"  name="Nom" class="form-control" placeholder="Nom">
             </div>
-
-            <!-- Inscription newsletter -->
-            <?php include ("newsletter.php");?>
-
-        </form>     
     </section>
+
+
+
+    <!-- Inscription newsletter -->
+    <?php include ("newsletter.php");?>
 
 
   <!-- Acceptation CGU -->
   <section id="CGU" class="container">
       <div class="label-group row">
-          <label class="custom-control custom-checkbox col-md-offset-4 col-md-4 text-center">
-              <input name="CGU" type="checkbox" class="custom-control-input" value="accepte">
+          <label class="custom-control custom-checkbox col-md-offset-3 col-md-5 text-center">
+              <a href="mentions-legales.php" target="_blank"><span class="custom-control-description">J'accepte les conditions générales&nbsp;</span></a>
+              <input name="CGU" type="radio" class="custom-control-input" value="accepte">
               <span class="custom-control-indicator"></span>
-              <a href="mentions-legales.php"><span class="custom-control-description">J'accepte les conditions générales</span></a>
+              <span class="custom-control-description">Oui&nbsp;</span>
+
+              <input name="CGU" type="radio" class="custom-control-input" value="accepte pas" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Non</span>
           </label>
       </div>
   </section>
@@ -79,8 +83,11 @@
   <section id="bouton-creer-compte" class="container">
       <div class="row text-center">
           <button type="submit" class="btn btn-ligh bt_bleu">Je m'inscris</button>
+
       </div>
   </section>
+  </form>
+
 
 
   <!-- Footer -->

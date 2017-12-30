@@ -24,7 +24,7 @@
             <span class="custom-control-description">chaque semaine</span>
         </label>
         <label class="custom-control custom-radio col-md-3 text-left">
-            <input name="periodicite" type="radio" class="custom-control-input" value="événement">
+            <input name="periodicite" type="radio" class="custom-control-input" value="evenement">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description ">à chaque événement</span>
         </label>

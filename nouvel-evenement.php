@@ -47,46 +47,46 @@
     </section>
 
     <section id="formulaire-nouvel-evenement" class="container">
-        <form>
+        <form action="X------------------------------------------X.php" method="POST">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Titre de l'événement" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                <select id="categorie" class="form-control" required>
-                    <option selected>Catégorie...</option>
-                    <option>Atelier</option>
-                    <option>Cinéma</option>
-                    <option>Conférence</option>
-                    <option>Danse</option>
-                    <option>Expo</option>
-                    <option>Festival</option>
-                    <option>Fête</option>
-                    <option>Foire</option>
-                    <option>Musée</option>
-                    <option>Musique</option>
-                    <option>Salon</option>
-                    <option>Sport</option>
+                <select id="categorie" class="form-control" name="categorie" required>
+                    <option  value="non definie" selected>Catégorie...</option>
+                    <option value="Atelier">Atelier</option>
+                    <option value="Cinéma">Cinéma</option>
+                    <option value="Conférence">Conférence</option>
+                    <option value="Danse">Danse</option>
+                    <option value="Expo">Expo</option>
+                    <option value="Festival">Festival</option>
+                    <option value="Fête">Fête</option>
+                    <option value="Foire">Foire</option>
+                    <option value="Musée">Musée</option>
+                    <option value="Musique">Musique</option>
+                    <option value="Salon">Salon</option>
+                    <option value="Sport">Sport</option>
                 </select>
               </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-6 col-md-3">
-                    <select id="categorie" class="form-control" required>
-                        <option selected>Public...</option>
-                        <option>Tout public</option>
-                        <option>Enfant</option>
-                        <option>Ado</option>
-                        <option>Adulte</option>
+                    <select id="categorie" class="form-control" name="public" required>
+                        <option value="non definie" selected>Public...</option>
+                        <option value="Tout public">Tout public</option>
+                        <option value="Enfant">Enfant</option>
+                        <option value="Ado">Ado</option>
+                        <option value="Adulte">Adulte</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Date" required>
+                    <input  name="date" type="date" class="form-control" placeholder="Date" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <input type="text" class="form-control" placeholder="Heure" required>
+                    <input  name="heure" type="text" class="form-control" placeholder="Heure" required>
                 </div>
             </div>
             <div class="row visuel text-center">
@@ -109,32 +109,32 @@
                     });
                     </script>
                 <div class="col-md-offset-1 col-md-3">
-                    <input type="text" class="form-control" placeholder="Lieu" required>
-                    <input type="text" class="form-control" placeholder="Adresse" required>
-                    <input type="text" class="form-control" placeholder="Code postal" required>
+                    <input name="lieu" type="text" class="form-control" placeholder="Lieu" required>
+                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>
+                    <input name="cp" type="text" class="form-control" placeholder="Code postal" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Légende" required>
+                    <input name="legende" type="text" class="form-control" placeholder="Légende" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <input type="text" class="form-control" placeholder="Ville" required>
+                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Contact" required>
+                    <input name="contact" type="text" class="form-control" placeholder="Contact" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <select id="Département" class="form-control" required>
-                        <option selected>Département</option>
-                        <option>Aude (11)</option>
-                        <option>Gard (30)</option>
-                        <option>Hérault (34)</option>
-                        <option>Lozère (48)</option>
-                        <option>Pyrénées-Orientales (66)</option>
-                    </select>
+                    <select id="Département" class="form-control" name="departement" required>
+                        <option value="non definie" selected>Département...</option>
+                        <option value="Aude (11)">Aude (11)</option>
+                        <option value="Gard (30)">Gard (30)</option>
+                        <option value="Hérault (34)">Hérault (34)</option>
+                        <option value="Lozère (48)">Lozère (48)</option>
+                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
+                    </select> value="non definie"
                 </div>        
             </div>
             <div class="row">
@@ -201,23 +201,10 @@
   <?php include ("footer.php");?>
   <!-- Fin Footer -->
 
-          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
-          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
-          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
-          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
-          <!-- SCRIPTS !!! ! !! ? ? ? ? ? ? ? ? ? ? ? ? ? -->
 
-          <!-- JQuery -->
-          <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-          <!-- Bootstrap tooltips -->
-          <script type="text/javascript" src="js/popper.min.js"></script>
-          <!-- Bootstrap core JavaScript -->
-          <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

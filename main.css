@@ -65,6 +65,10 @@ i.focus, i:focus, i:hover {
     color: black !important;
 }
 
+.fond_blanc {
+    background-color: white;
+}
+
 /*----- HEADER-----*/
 header{
     background-color: #e7169d;

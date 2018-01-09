@@ -121,7 +121,6 @@
                 </div>
             </div>
             <div id="visuel" class="row visuel text-center">
-            <!-- TODO espacement formulaire : bloc image legende -->
                 <div class="col-md-offset-2 col-md-3 text-center">
                     <img src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
                     <button type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
@@ -138,7 +137,7 @@
                     });
                     </script>-->
                 <div class="col-md-offset-1 col-md-3">
-                    <textarea name="descriptif" class="form-control" rows="8" placeholder="Descriptif de l'événement" required></textarea>
+                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement" required></textarea>
                 </div> 
             </div>                   
             <div class="label-group row">

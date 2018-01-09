@@ -43,7 +43,7 @@
     </section>
 
 <!-- Formulaire -->
-  <form action="traitement_newsletter.php" target="_blank" method="POST">
+  <form action="traitement_newsletter.php" method="POST">
 
     <section id="formulaire-newsletter" class="container">
             <div class="form-group col-md-offset-4 col-md-3">

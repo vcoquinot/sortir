@@ -40,10 +40,9 @@
 
     </section>
 
-  <form action="X------------------------------------------X.php" method="POST">
-
             <!-- Formulaire création compte -->
     <section id="formulaire-creation-compte" class="container">
+    <form  action="traitement_creation_compte.php" method="POST">
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
           <input name="pseudo" class="form-control" type="text" placeholder="Pseudo" required>
@@ -76,7 +75,7 @@
           <input name="nom_entite" class="form-control" type="text" placeholder="Nom de l'entité">
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <select id="Type" class="form-control" name="type">
+          <select required class="form-control" name="type">
               <option value="non definie" selected>Type...</option>
               <option value="Association">Association</option>
               <option value="Collectivité">Collectivité</option>
@@ -88,11 +87,11 @@
 
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse"></textarea>
+          <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse" required></textarea>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input name="cp" class="form-control" type="text" placeholder="CP">
-          <input name="ville" class="form-control" type="text" placeholder="Ville">
+          <input name="cp" class="form-control" type="text" placeholder="CP" required>
+          <input name="ville" class="form-control" type="text" placeholder="Ville" required>
         </div>
       </div>
 
@@ -101,7 +100,7 @@
           <input name="site" class="form-control" type="text" placeholder="Site web">
         </div> 
         <div class="col-md-offset-1 col-md-3">
-          <input name="tel" class="form-control" type="tel" placeholder="Téléphone">
+          <input name="tel" class="form-control" type="tel" placeholder="Téléphone" required>
         </div>
       </div>
     </section>

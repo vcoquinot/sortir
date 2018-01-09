@@ -38,15 +38,14 @@
           <!-- Fin Présentation -->
     </section>
 
-<<<<<<< HEAD
     <section id="formulaire-contributeur" class="container">
       <form  action="traitement_connexion.php" method="POST" class="form-horizontal">
         <div class="form-group row">
           <div class="col-md-offset-3 col-md-3">
-            <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" require>
+            <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" required>
           </div>
           <div class="col-md-3">
-            <input class="form-control" type="password" placeholder="Mot de passe" name="Mot de passe" require>
+            <input class="form-control" type="password" placeholder="Mot de passe" name="Mot de passe" required>
             <small><a href="#" >Mot de passe oublié</a></small>
           </div>
           <div class="col-md-12 row text-center">
@@ -58,39 +57,10 @@
 
     <section id="boutons-contributeur" class= "container"><!--!!!!!!!!! TO DO AJOUTER LIENS!!!!!!!-->
       <div class="col-md-12 row text-center">
-=======
-    <form action="X------------------------------------------X.php" target="_blank" method="POST">
-        <section id="formulaire-contributeur" class="container">
-          <div class="form-horizontal">
-            <div class="form-group row">
-              <div class="col-md-offset-3 col-md-3">
-                <input name="pseudo" class="form-control" type="text" placeholder="Pseudo">
-              </div>
-              <div class="col-md-3">
-                <input name="password" class="form-control" type="password" placeholder="Mot de passe">
-                <small><a href="#" >Mot de passe oublié</a></small>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-horizontal">
-              <div class="form-group row">
-                  <div id="boutons-contributeur" class= "container">
-                      <div class="col-md-12 row text-center">
-                      <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </section>
-    </form>
-
-
-    <div class="col-md-12 row text-center fond_blanc">
->>>>>>> origin/master
         <h3> Envie de devenir contributeur ?</h3>
         <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
       </div>
+    </section>
 
 
 

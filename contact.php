@@ -42,31 +42,32 @@
 
           <!-- Fin Présentation -->
 
-    <form action="X------------------------------------------X.php" method="POST">
+    
 
         <section id="formulaire-creation-compte" class="container">
+        <form action="traitement_contact.php" method="POST">
           <div class="form-horizontal">
             <div class="form-group row">
               <div class="col-md-offset-3 col-md-3">
-                <input name="Nom" class="form-control" type="text" id="formGroupInputNom" placeholder="Nom">
+                <input name="nom" class="form-control" type="text" placeholder="Nom" required>
               </div>
               <div class="col-md-3">
-               <input name="Mail" class="form-control" type="email" id="formGroupInputEmail" placeholder="Mail">
+               <input name="mail" class="form-control" type="email" placeholder="Mail" required>
               </div>
             </div>
 
             <div class="form-group row ">
               <div class="col-md-offset-3 col-md-6">
-                <textarea name="message" class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea>
+                <textarea name="message" class="form-control" placeholder="Votre message" rows="8" required></textarea>
               </div>
                 <div class="col-md-offset-3 col-md-6 text-center">
                     <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
                 </div>
             </div>
-
           </div>
+          </form>
         </section>
-    </form>
+
 
 
 

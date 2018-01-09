@@ -47,13 +47,13 @@
 
     <section id="formulaire-newsletter" class="container">
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="email"  name="Email" class="form-control" placeholder="Email">
+                <input type="email"  name="Email" class="form-control" placeholder="Email" required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text" name="Prénom" class="form-control" placeholder="Prénom">
+                <input type="text" name="Prénom" class="form-control" placeholder="Prénom" required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text"  name="Nom" class="form-control" placeholder="Nom">
+                <input type="text"  name="Nom" class="form-control" placeholder="Nom" required>
             </div>
     </section>
 

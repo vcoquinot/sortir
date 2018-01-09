@@ -45,85 +45,85 @@
 
     <section id="formulaire-nouvel-evenement" class="container">
     <form  action="traitement_nouvel_evenement.php" method="POST">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Titre de l'événement" name="titre" required>
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                <select name="categorie" class="form-control" required>
-                    <option value="" selected>Catégorie...</option>
-                    <option value="Atelier">Atelier</option>
-                    <option value="Cinéma">Cinéma</option>
-                    <option value="Conférence">Conférence</option>
-                    <option value="Danse">Danse</option>
-                    <option value="Expo">Expo</option>
-                    <option value="Festival">Festival</option>
-                    <option value="Fête">Fête</option>
-                    <option value="Foire">Foire</option>
-                    <option value="Musée">Musée</option>
-                    <option value="Musique">Musique</option>
-                    <option value="Salon">Salon</option>
-                    <option value="Sport">Sport</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-6 col-md-3">
-                    <select name="public" class="form-control"  required>
-                        <option value="" selected>Public...</option>
-                        <option value="Tout public">Tout public</option>
-                        <option value="Enfant">Enfant</option>
-                        <option value="Ado">Ado</option>
-                        <option value="Adulte">Adulte</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="date" type="date" class="form-control" placeholder="Date" required>
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                    <input name="heure" type="time" class="form-control" placeholder="Heure" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="lieu" type="text" class="form-control" placeholder="Lieu">
-                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                <input name="cp" type="text" class="form-control" placeholder="Code postal" required>
-                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>
-                    <select class="form-control" name="departement" required>
-                        <option value="" selected>Département...</option>
-                        <option value="Aude (11)">Aude (11)</option>
-                        <option value="Gard (30)">Gard (30)</option>
-                        <option value="Hérault (34)">Hérault (34)</option>
-                        <option value="Lozère (48)">Lozère (48)</option>
-                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="contact" type="text" class="form-control" placeholder="Contact">
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                <input name="tel" type="tel" class="form-control" placeholder="Téléphone">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="email" type="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                    <input name="site" type="text" class="form-control" placeholder="Site web">
-                </div>
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-2 col-md-3">-->
+<!--                    <input type="text" class="form-control" placeholder="Titre de l'événement" name="titre" required>-->
+<!--                </div>-->
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                <select name="categorie" class="form-control" required>-->
+<!--                    <option value="" selected>Catégorie...</option>-->
+<!--                    <option value="Atelier">Atelier</option>-->
+<!--                    <option value="Cinéma">Cinéma</option>-->
+<!--                    <option value="Conférence">Conférence</option>-->
+<!--                    <option value="Danse">Danse</option>-->
+<!--                    <option value="Expo">Expo</option>-->
+<!--                    <option value="Festival">Festival</option>-->
+<!--                    <option value="Fête">Fête</option>-->
+<!--                    <option value="Foire">Foire</option>-->
+<!--                    <option value="Musée">Musée</option>-->
+<!--                    <option value="Musique">Musique</option>-->
+<!--                    <option value="Salon">Salon</option>-->
+<!--                    <option value="Sport">Sport</option>-->
+<!--                </select>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-6 col-md-3">-->
+<!--                    <select name="public" class="form-control"  required>-->
+<!--                        <option value="" selected>Public...</option>-->
+<!--                        <option value="Tout public">Tout public</option>-->
+<!--                        <option value="Enfant">Enfant</option>-->
+<!--                        <option value="Ado">Ado</option>-->
+<!--                        <option value="Adulte">Adulte</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-2 col-md-3">-->
+<!--                    <input name="date" type="date" class="form-control" placeholder="Date" required>-->
+<!--                </div>-->
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                    <input name="heure" type="time" class="form-control" placeholder="Heure" required>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-2 col-md-3">-->
+<!--                    <input name="lieu" type="text" class="form-control" placeholder="Lieu">-->
+<!--                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>-->
+<!--                </div>-->
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                <input name="cp" type="text" class="form-control" placeholder="Code postal" required>-->
+<!--                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>-->
+<!--                    <select class="form-control" name="departement" required>-->
+<!--                        <option value="" selected>Département...</option>-->
+<!--                        <option value="Aude (11)">Aude (11)</option>-->
+<!--                        <option value="Gard (30)">Gard (30)</option>-->
+<!--                        <option value="Hérault (34)">Hérault (34)</option>-->
+<!--                        <option value="Lozère (48)">Lozère (48)</option>-->
+<!--                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-2 col-md-3">-->
+<!--                    <input name="contact" type="text" class="form-control" placeholder="Contact">-->
+<!--                </div>-->
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                <input name="tel" type="tel" class="form-control" placeholder="Téléphone">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-offset-2 col-md-3">-->
+<!--                    <input name="email" type="email" class="form-control" placeholder="Email">-->
+<!--                </div>-->
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                    <input name="site" type="text" class="form-control" placeholder="Site web">-->
+<!--                </div>-->
             </div>
             <div id="visuel" class="row visuel text-center">
                 <div class="col-md-offset-2 col-md-3 text-center">
-                    <img src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
-                    <button type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
+                    <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
+                    <button id="bt_image" type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
                     <input name="legende" type="text" class="form-control" placeholder="Légende">
                 </div> 
                 <!--TODO  taille image à télécharger + verif script?? + JS-->
@@ -193,6 +193,9 @@
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->
+
+<!--  Javascript pour affichage image téléchargée  -->
+    <script type="text/javascript" src="gestion_image.js"></script
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

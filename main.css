@@ -36,9 +36,7 @@ input {
     border: none;
     border-bottom: 3px solid #E7169D;
     border-radius: 0;
-    margin-top: 15px !important;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif !important;
 }
@@ -122,7 +120,7 @@ header a:focus, header a:hover {
     padding: 40px !important;
     margin-top:15px;
     margin-bottom : 25px;
-   /* width: 60%;*/
+    width: 60%;
     text-align: left;
 }
 
@@ -344,10 +342,6 @@ input[type=checkbox], input[type=radio], select {
 
 .marginTop {
     margin-top: 18px;
-}
-
-#visuel {
-    margin: 35px 0;
 }
 
 /*----- FOOTER-----*/

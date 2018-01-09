@@ -39,13 +39,13 @@
     </section>
 
     <section id="formulaire-contributeur" class="container">
-      <form class="form-horizontal">
+      <form action="traitement_connexion.php" method="POST" class="form-horizontal">
         <div class="form-group row">
           <div class="col-md-offset-3 col-md-3">
-            <input class="form-control" type="nom" placeholder="Pseudo">
+            <input class="form-control" type="nom" placeholder="Pseudo" require>
           </div>
           <div class="col-md-3">
-            <input class="form-control" type="email" placeholder="Mot de passe">
+            <input class="form-control" type="email" placeholder="Mot de passe" require>
             <small><a href="#" >Mot de passe oublié</a></small>
           </div>
         </div>

@@ -44,7 +44,7 @@
     <!-- Fin Présentation -->
 
     <section id="formulaire-nouvel-evenement" class="container">
-    <form  action="traitement_nouvel_evenement.php" method="POST"
+    <form  action="traitement_nouvel_evenement.php" method="POST">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Titre de l'événement" name="titre" required>
@@ -86,16 +86,48 @@
                     <input name="heure" type="time" class="form-control" placeholder="Heure" required>
                 </div>
             </div>
-            <div class="row visuel text-center">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3">
+                    <input name="lieu" type="text" class="form-control" placeholder="Lieu">
+                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                <input name="cp" type="text" class="form-control" placeholder="Code postal" required>
+                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>
+                    <select class="form-control" name="departement" required>
+                        <option value="" selected>Département...</option>
+                        <option value="Aude (11)">Aude (11)</option>
+                        <option value="Gard (30)">Gard (30)</option>
+                        <option value="Hérault (34)">Hérault (34)</option>
+                        <option value="Lozère (48)">Lozère (48)</option>
+                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3">
+                    <input name="contact" type="text" class="form-control" placeholder="Contact">
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                <input name="tel" type="tel" class="form-control" placeholder="Téléphone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3">
+                    <input name="email" type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                    <input name="site" type="text" class="form-control" placeholder="Site web">
+                </div>
+            </div>
+            <div id="visuel" class="row visuel text-center">
+            <!-- TODO espacement formulaire : bloc image legende -->
                 <div class="col-md-offset-2 col-md-3 text-center">
                     <img src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
                     <button type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
-                    <!-- TODO check if necessary
-                    <small id="passwordHelpBlock" class="form-text text-muted">Format png de taille xxxx</small>
-                    -->
-                        
+                    <input name="legende" type="text" class="form-control" placeholder="Légende">
                 </div> 
-                <!--TODO  taille image à télécharger + verif script??-->
+                <!--TODO  taille image à télécharger + verif script?? + JS-->
                         <!--<input id="input-dim-4" name="input-dim-4[]" multiple type="file" accept="image/*">
                     <script> 
                     $("#input-dim-1").fileinput({
@@ -106,63 +138,23 @@
                     });
                     </script>-->
                 <div class="col-md-offset-1 col-md-3">
-                    <input name="lieu" type="text" class="form-control" placeholder="Lieu">
-                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>
-                    <input name="cp" type="text" class="form-control" placeholder="Code postal" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="legende" type="text" class="form-control" placeholder="Légende">
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="contact" type="text" class="form-control" placeholder="Contact">
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                    <select class="form-control" name="departement" required>
-                        <option value="" selected>Département...</option>
-                        <option value="Aude (11)">Aude (11)</option>
-                        <option value="Gard (30)">Gard (30)</option>
-                        <option value="Hérault (34)">Hérault (34)</option>
-                        <option value="Lozère (48)">Lozère (48)</option>
-                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
-                    </select>
-                </div>        
-            </div>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="tel" type="tel" class="form-control" placeholder="Téléphone">
-                </div>
-                <div class="col-md-offset-1 col-md-3">
-                    <input name="site" type="text" class="form-control" placeholder="Site web">
-                </div>
-                <div class="col-md-offset-2 col-md-3">
-                    <input name="email" type="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="label-group row">
-                    <span class="custom-control-description col-md-offset-1 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
-                    <label class="custom-control custom-radio col-md-1 marginTop">
-                        <input name="handicape" type="radio" class="custom-control-input" value="oui" required >
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Oui</span>
-                    </label>
-                    <label class="custom-control custom-radio col-md-1 marginTop">
-                        <input name="handicape" type="radio" class="custom-control-input" value="non">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Non</span>
-                    </label>
-                </div>
-            </div> 
-            <div class="row ">
-                <div class="col-md-offset-2 col-md-7">
                     <textarea name="descriptif" class="form-control" rows="8" placeholder="Descriptif de l'événement" required></textarea>
-                </div>  
+                </div> 
+            </div>                   
+            <div class="label-group row">
+                <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
+                <label class="custom-control custom-radio col-md-1 marginTop">
+                    <input name="handicape" type="radio" class="custom-control-input" value="oui" required >
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Oui</span>
+                </label>
+                <label class="custom-control custom-radio col-md-1 marginTop">
+                    <input name="handicape" type="radio" class="custom-control-input" value="non">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Non</span>
+                </label>
             </div>
+            </form>
     </section>
 
       <!-- Statut événement -->

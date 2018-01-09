@@ -115,7 +115,7 @@
 
         <section id="evenements" class="container-fluid">
             <article class="evenement-block">
-                <div class="evenement-description col-xs-5 col-md-5" >
+                <div class="evenement-description col-xs-12 col-md-5" >
                     <div class="row">
                         <div class="col-xs-7 col-md-8">
                             <h2><?php echo $titre?></h2>
@@ -137,7 +137,7 @@
             </article>
 
             <article class="evenement-block">
-                <div class="evenement-description col-md-offset-1 col-md-5" >
+                <div class="evenement-description col-xs-12 col-md-offset-1 col-md-5" >
                     <div class="row">
                         <div class="col-xs-9 col-md-9">
                             <h2><?php echo $titre?></h2>

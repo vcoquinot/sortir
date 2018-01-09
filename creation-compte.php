@@ -75,8 +75,8 @@
           <input name="nom_entite" class="form-control" type="text" placeholder="Nom de l'entité">
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <select required class="form-control" name="type">
-              <option value="non definie" selected>Type...</option>
+          <select class="form-control" name="type" required>
+              <option value="" selected>Type...</option>
               <option value="Association">Association</option>
               <option value="Collectivité">Collectivité</option>
               <option value="Entreprise">Entreprise</option>

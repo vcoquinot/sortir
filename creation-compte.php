@@ -40,85 +40,92 @@
 
     </section>
 
+  <form action="X------------------------------------------X.php" method="POST">
+
             <!-- Formulaire création compte -->
     <section id="formulaire-creation-compte" class="container">
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="text" placeholder="Pseudo">
+          <input name="pseudo" class="form-control" type="text" placeholder="Pseudo" required>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="mail" placeholder="Mail">
+          <input name="email" class="form-control" type="email" placeholder="Email" required>
         </div>
-      </form>
+      </div>
 
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="text" placeholder="Nom">
+          <input name="nom" class="form-control" type="text" placeholder="Nom" required>
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="text" placeholder="Prénom">
+          <input name="prenom" class="form-control" type="text" placeholder="Prénom" required>
         </div>
-      </form> 
+      </div>
 
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="password" placeholder="Mot de passe">
+          <input name="psw" class="form-control" type="password" placeholder="Mot de passe" required>
         </div>
       <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="password" placeholder="Confirmer votre mot de passe">
+          <input name="psw_confirm" class="form-control" type="password" placeholder="Confirmer votre mot de passe" required>
         </div>
-      </form>
+      </div>
      
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="text" placeholder="Nom de l'entité">
+          <input name="nom_entite" class="form-control" type="text" placeholder="Nom de l'entité">
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <select id="Type" class="form-control">
-              <option selected>Type</option>
-              <option>Association</option>
-              <option>Collectivité</option>
-              <option>Entreprise</option>
-              <option>Particulier</option>
+          <select id="Type" class="form-control" name="type">
+              <option value="non definie" selected>Type...</option>
+              <option value="Association">Association</option>
+              <option value="Collectivité">Collectivité</option>
+              <option value="Entreprise">Entreprise</option>
+              <option value="Particulier">Particulier</option>
           </select>  
         </div>
-      </form>
+      </div>
 
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <textarea class="form-control" rows="3" placeholder="Adresse"></textarea>
+          <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse"></textarea>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="number" placeholder="CP"> 
-          <input class="form-control" type="text" placeholder="Ville">      
+          <input name="cp" class="form-control" type="text" placeholder="CP">
+          <input name="ville" class="form-control" type="text" placeholder="Ville">
         </div>
-      </form>
+      </div>
 
-      <form class="form-group row ">
+      <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input class="form-control" type="text" placeholder="Site web">
+          <input name="site" class="form-control" type="text" placeholder="Site web">
         </div> 
         <div class="col-md-offset-1 col-md-3">
-          <input class="form-control" type="number" placeholder="Téléphone">
+          <input name="tel" class="form-control" type="tel" placeholder="Téléphone">
         </div>
-      </form>
-    </section>
-          <!-- Fin formulaire -->
-
-          <!-- Inscription newsletter -->         
-          <?php include ("newsletter.php");?>
-
-      <!-- Acceptation CGU -->
-    <section id="CGU" class="container">
-      <div class="label-group row">
-        <label class="custom-control custom-checkbox col-md-offset-4 col-md-4 text-center">
-        <input name="CGU" type="checkbox" class="custom-control-input" value="accepte">
-        <span class="custom-control-indicator"></span>
-        <a href="mentions-legales.php"><span class="custom-control-description">J'accepte les conditions générales</span></a>
-        </label>
       </div>
     </section>
-     
+
+
+      <!-- Inscription newsletter -->
+      <?php include ("newsletter.php");?>
+
+      <!-- Acceptation CGU -->
+     <section id="CGU" class="container">
+        <div class="label-group row">
+          <label class="custom-control custom-checkbox col-md-offset-3 col-md-5 text-center">
+              <a href="mentions-legales.php" target="_blank"><span class="custom-control-description">J'accepte les conditions générales&nbsp;</span></a>
+              <input name="CGU" type="radio" class="custom-control-input" value="accepte">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Oui&nbsp;</span>
+
+              <input name="CGU" type="radio" class="custom-control-input" value="refuse" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Non</span>
+          </label>
+        </div>
+     </section>
+
 
       <!-- bouton creation compte -->
     <section id="bouton-creer-compte" class="container">
@@ -126,7 +133,10 @@
         <button type="submit" class="btn btn-ligh bt_bleu">Je crée mon compte</button>
       </div>
     </section>
-     
+  </form>
+  <!-- Fin formulaire -->
+
+
 
   <!-- Footer -->
   <?php include ("footer.php");?>

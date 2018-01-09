@@ -31,36 +31,43 @@
           <h1>Nous contacter</h1>
 
           <!-- Présentation -->
-          <section id="presentation" class="container">
+          <div id="presentation" class="container">
               <div class="row">
 
                   <p>Si vous avez des questions, des suggestions n'hésitez pas à nous envoyer un message, nous ne manquerons pas de vous répondre.</p>
               </div>
-          </section>
+          </div>
+      </div>
+    </section>
+
           <!-- Fin Présentation -->
 
+    <form action="X------------------------------------------X.php" method="POST">
+
         <section id="formulaire-creation-compte" class="container">
-          <form class="form-horizontal">
+          <div class="form-horizontal">
             <div class="form-group row">
               <div class="col-md-offset-3 col-md-3">
-                <input class="form-control" type="nom" id="formGroupInputNom" placeholder="Nom">
+                <input name="Nom" class="form-control" type="text" id="formGroupInputNom" placeholder="Nom">
               </div>
               <div class="col-md-3">
-               <input class="form-control" type="email" id="formGroupInputEmail" placeholder="Mail">
+               <input name="Mail" class="form-control" type="email" id="formGroupInputEmail" placeholder="Mail">
               </div>
             </div>
 
             <div class="form-group row ">
               <div class="col-md-offset-3 col-md-6">
-                <textarea class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea>
+                <textarea name="message" class="form-control" id="FormControlTextarea" placeholder="Votre message" rows="8"></textarea>
               </div>
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
+                </div>
             </div>
-            <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
-          </form>
-        </section>
-      </div>
 
-    </section>
+          </div>
+        </section>
+    </form>
+
 
 
   <!-- Footer -->

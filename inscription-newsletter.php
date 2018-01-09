@@ -72,7 +72,7 @@
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description">Oui&nbsp;</span>
 
-              <input name="CGU" type="radio" class="custom-control-input" value="accepte pas" checked>
+              <input name="CGU" type="radio" class="custom-control-input" value="refuse" checked>
               <span class="custom-control-indicator"></span>
               <span class="custom-control-description">Non</span>
           </label>

@@ -41,8 +41,8 @@
     <section id="formulaire-contributeur" class="container">
       <form  action="traitement_connexion.php" method="POST" class="form-horizontal">
         <div class="form-group row">
-          <div class="col-md-offset-3 col-md-3">
-            <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" required>
+          <div class="col-md-offset-3 col-md-3"><!--TODO   header("Location: .php")-->
+            <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" value="<?php echo $_POST['login'] ?> required>
           </div>
           <div class="col-md-3">
             <input class="form-control" type="password" placeholder="Mot de passe" name="Mot de passe" required>

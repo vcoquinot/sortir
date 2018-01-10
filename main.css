@@ -344,6 +344,23 @@ input[type=checkbox], input[type=radio], select {
     margin-top: 18px;
 }
 
+input[type="file"] {
+    background-color: #0bb3e8 !important;
+}
+
+.label-file {
+    cursor: pointer;
+    font-weight: bold;
+}
+.label-file:hover {
+    color: black;
+}
+
+.input-file {
+     display: none !important;
+   }
+
+
 /*----- FOOTER-----*/
 footer{
     background-color: #0083b6;

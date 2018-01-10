@@ -51,20 +51,20 @@
 <!--                </div>-->
 <!--                <div class="col-md-offset-1 col-md-3">-->
 <!--                <select name="categorie" class="form-control" required>-->
-<!--                    <option value="" selected>Catégorie...</option>-->
-<!--                    <option value="Atelier">Atelier</option>-->
-<!--                    <option value="Cinéma">Cinéma</option>-->
-<!--                    <option value="Conférence">Conférence</option>-->
-<!--                    <option value="Danse">Danse</option>-->
-<!--                    <option value="Expo">Expo</option>-->
-<!--                    <option value="Festival">Festival</option>-->
-<!--                    <option value="Fête">Fête</option>-->
-<!--                    <option value="Foire">Foire</option>-->
-<!--                    <option value="Musée">Musée</option>-->
-<!--                    <option value="Musique">Musique</option>-->
-<!--                    <option value="Salon">Salon</option>-->
-<!--                    <option value="Sport">Sport</option>-->
-<!--                </select>-->
+            <!--                    <option value="" selected>Catégorie...</option>-->
+            <!--                    <option value="Atelier">Atelier</option>-->
+            <!--                    <option value="Cinéma">Cinéma</option>-->
+            <!--                    <option value="Conférence">Conférence</option>-->
+            <!--                    <option value="Danse">Danse</option>-->
+            <!--                    <option value="Expo">Expo</option>-->
+            <!--                    <option value="Festival">Festival</option>-->
+            <!--                    <option value="Fête">Fête</option>-->
+            <!--                    <option value="Foire">Foire</option>-->
+            <!--                    <option value="Musée">Musée</option>-->
+            <!--                    <option value="Musique">Musique</option>-->
+            <!--                    <option value="Salon">Salon</option>-->
+            <!--                    <option value="Sport">Sport</option>-->
+            <!--                </select>-->
 <!--              </div>-->
 <!--            </div>-->
 <!--            <div class="row">-->
@@ -123,7 +123,11 @@
             <div id="visuel" class="row visuel text-center">
                 <div class="col-md-offset-2 col-md-3 text-center">
                     <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
-                    <button id="bt_image" type="file" class="btn btn-light bt_bleu">Télecharger une image</button>
+
+                    <label for="file_image" class="btn btn-light bt_bleu">Télecharger une image</label>
+                    <input id="file_image" name="chemin_image" class="input-file" type="file" >
+
+<!--                    <input id="bt_image"  type="file" class="btn btn-light bt_bleu" placeholder="Télecharger une image">-->
                     <input name="legende" type="text" class="form-control" placeholder="Légende">
                 </div> 
                 <!--TODO  taille image à télécharger + verif script?? + JS-->
@@ -136,40 +140,39 @@
                         minImageHeight: 50
                     });
                     </script>-->
-                <div class="col-md-offset-1 col-md-3">
-                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement" required></textarea>
-                </div> 
-            </div>                   
-            <div class="label-group row">
-                <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
-                <label class="custom-control custom-radio col-md-1 marginTop">
-                    <input name="handicape" type="radio" class="custom-control-input" value="oui" required >
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Oui</span>
-                </label>
-                <label class="custom-control custom-radio col-md-1 marginTop">
-                    <input name="handicape" type="radio" class="custom-control-input" value="non">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Non</span>
-                </label>
-            </div>
-            </form>
-    </section>
+<!--                <div class="col-md-offset-1 col-md-3">-->
+<!--                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement" required></textarea>-->
+<!--                </div> -->
+<!--            </div>                   -->
+<!--            <div class="label-group row">-->
+<!--                <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé</strong></span>-->
+<!--                <label class="custom-control custom-radio col-md-1 marginTop">-->
+<!--                    <input name="handicape" type="radio" class="custom-control-input" value="oui" required >-->
+<!--                    <span class="custom-control-indicator"></span>-->
+<!--                    <span class="custom-control-description">Oui</span>-->
+<!--                </label>-->
+<!--                <label class="custom-control custom-radio col-md-1 marginTop">-->
+<!--                    <input name="handicape" type="radio" class="custom-control-input" value="non">-->
+<!--                    <span class="custom-control-indicator"></span>-->
+<!--                    <span class="custom-control-description">Non</span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--    </section>-->
 
       <!-- Statut événement -->
-      <section id="statut-evenement" class="container marginTop">
-      <div class="label-group row">
-        <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
-        <label class="custom-control custom-radio col-md-2">
-          <input name="statut" type="radio" class="custom-control-input" value="brouillon">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Brouillon</span>  
-          </label>
-        <label class="custom-control custom-radio col-md-2">
-          <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
-          <span class="custom-control-indicator"></span>
-          <span class="custom-control-description">Publié</span>
-        </label>
+<!--      <section id="statut-evenement" class="container marginTop">-->
+<!--      <div class="label-group row">-->
+<!--        <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>-->
+<!--        <label class="custom-control custom-radio col-md-2">-->
+<!--          <input name="statut" type="radio" class="custom-control-input" value="brouillon">-->
+<!--            <span class="custom-control-indicator"></span>-->
+<!--            <span class="custom-control-description">Brouillon</span>  -->
+<!--          </label>-->
+<!--        <label class="custom-control custom-radio col-md-2">-->
+<!--          <input name="statut" type="radio" class="custom-control-input" value="publié" checked>-->
+<!--          <span class="custom-control-indicator"></span>-->
+<!--          <span class="custom-control-description">Publié</span>-->
+<!--        </label>-->
 <!-- TODO à utiliser pour formulaire mode édition        
         <label class="custom-control custom-radio col-md-2">
           <input name="statut" type="radio" class="custom-control-input" value="refusé" disabled>

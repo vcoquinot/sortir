@@ -1,9 +1,16 @@
+
 var photoEvenement = document.getElementById("visuel_evenement");
-var boutonTelechargerImage = document.getElementById("bt_image");
+var boutonTelechargerImage = document.getElementById("file_image");
 
 console.log(photoEvenement);
 console.log(boutonTelechargerImage);
 
+
+boutonTelechargerImage.addEventListener("change", function() {
+    console.log("click bouton");
+});
+
+//var src = element.getAttribute("src");
 
 // var imageSourceOriginel = element.src;
 // var index = 0;

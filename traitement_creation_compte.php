@@ -39,6 +39,7 @@ print_r($_POST);
     if($psw_confirm != $psw ) 
     {
         echo "les deux mots de passe doivent être identiques <br/>";
+        header("Location: creation-compte.php");
     }
     else{
         echo "Votre compte a bien été créé";

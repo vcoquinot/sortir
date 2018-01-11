@@ -19,5 +19,18 @@ print_r($_POST);
     ?>
 </pre>
 
+    <?php
+    // Connexion à la base de données
+    // Valeurs à modifier selon vos paramètres configuration
+    try
+    {
+    $bdd = new PDO('mysql:host=localhost;dbname=sortirgratos;charset=utf8', 'root', '');
+    }
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    }
+    ?>
+
 </body>
 </html>

@@ -26,6 +26,36 @@
   <body>
   <?php include ("menu-logo.php");?>
 
+  <?php //TODO mysql_real_escape_string
+    if(isset($_POST['pseudo'])) 
+    { 
+        $pseudo = $_POST['pseudo'];
+        $email= $_POST['email'];
+        $nom = $_POST['nom'];
+        $prenom= $_POST['prenom'];
+        $psw= $_POST['psw'];
+        $psw_confirm = $_POST['psw_confirm'];
+        $type= $_POST['type'];
+        $adresse= $_POST['adresse'];
+        $cp= $_POST['cp'];
+        $ville= $_POST['ville'];
+        $tel= $_POST['tel'];
+
+        if($_POST['psw_confirm'] != $_POST['psw'])
+        {
+            echo "les deux mots de passe doivent être identiques <br/>";
+        }
+        else
+        {
+            echo "Votre compte a bien été créé";
+            //TODO enregistrement BDD
+        }
+    }
+
+    //vérification password et password_confirm identiques
+    
+    ?>
+
     <section id="introduction-creation-compte" class= "container-fluid">
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
@@ -42,31 +72,37 @@
 
             <!-- Formulaire création compte -->
     <section id="formulaire-creation-compte" class="container">
-    <form  action="traitement_creation_compte.php" method="POST">
+    <form method="POST">
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input name="pseudo" class="form-control" type="text" placeholder="Pseudo" required>
-        </div>  
+          <input name="pseudo" class="form-control" type="text" placeholder="Pseudo" 
+          value="<?php echo (isset($_POST['pseudo'])) ? ($_POST['pseudo']) : "" ;?>" required>
+        </div>  <!-- si pseudo existe tu me le mets sinon tu mets rien-->
         <div class="col-md-offset-1 col-md-3">
-          <input name="email" class="form-control" type="email" placeholder="Email" required>
+          <input name="email" class="form-control" type="email" placeholder="Email" 
+          value="<?php echo (isset($_POST['email'])) ? ($_POST['email']) : "" ;?>"required>
         </div>
       </div>
 
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input name="nom" class="form-control" type="text" placeholder="Nom" required>
+          <input name="nom" class="form-control" type="text" placeholder="Nom" 
+          value="<?php echo (isset($_POST['nom'])) ? ($_POST['nom']) : "" ;?>"required>
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <input name="prenom" class="form-control" type="text" placeholder="Prénom" required>
+          <input name="prenom" class="form-control" type="text" placeholder="Prénom" 
+          value="<?php echo (isset($_POST['prenom'])) ? ($_POST['prenom']) : "" ;?>"required>
         </div>
       </div>
 
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input name="psw" class="form-control" type="password" placeholder="Mot de passe" required>
+          <input name="psw" class="form-control" type="password" placeholder="Mot de passe" 
+          value="<?php echo (isset($_POST['psw'])) ? ($_POST['psw']) : "" ;?>"required>
         </div>
       <div class="col-md-offset-1 col-md-3">
-          <input name="psw_confirm" class="form-control" type="password" placeholder="Confirmer votre mot de passe" required>
+          <input name="psw_confirm" class="form-control" type="password" placeholder="Confirmer votre mot de passe" 
+          value="<?php echo (isset($_POST['psw_confirm'])) ? ($_POST['psw_confirm']) : "" ;?>"required>
         </div>
       </div>
      
@@ -75,7 +111,8 @@
           <input name="nom_entite" class="form-control" type="text" placeholder="Nom de l'entité">
         </div>
         <div class="col-md-offset-1 col-md-3">
-          <select class="form-control" name="type" required>
+          <select class="form-control" name="type" 
+          value="<?php echo (isset($_POST['type'])) ? ($_POST['type']) : "" ;?>"required>
               <option value="" selected>Type...</option>
               <option value="Association">Association</option>
               <option value="Collectivité">Collectivité</option>
@@ -87,11 +124,14 @@
 
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse" required></textarea>
+          <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse" 
+          value="<?php echo (isset($_POST['adresse'])) ? ($_POST['adresse']) : "" ;?>" required></textarea>
         </div>  
         <div class="col-md-offset-1 col-md-3">
-          <input name="cp" class="form-control" type="text" placeholder="CP" required>
-          <input name="ville" class="form-control" type="text" placeholder="Ville" required>
+          <input name="cp" class="form-control" type="text" placeholder="CP" 
+          value="<?php echo (isset($_POST['cp'])) ? ($_POST['cp']) : "" ;?>"required>
+          <input name="ville" class="form-control" type="text" placeholder="Ville" 
+          value="<?php echo (isset($_POST['ville'])) ? ($_POST['ville']) : "" ;?>"required>
         </div>
       </div>
 
@@ -100,7 +140,8 @@
           <input name="site" class="form-control" type="text" placeholder="Site web">
         </div> 
         <div class="col-md-offset-1 col-md-3">
-          <input name="tel" class="form-control" type="tel" placeholder="Téléphone" required>
+          <input name="tel" class="form-control" type="tel" placeholder="Téléphone" 
+          value="<?php echo (isset($_POST['tel'])) ? ($_POST['tel']) : "" ;?>" required>
         </div>
       </div>
     </section>

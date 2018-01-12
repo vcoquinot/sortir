@@ -1,28 +1,15 @@
-
+/* récupère l'objet image*/
 var photoEvenement = document.getElementById("visuel_evenement");
+
+/* récupère l'objet bouton téléchargemnt*/
 var boutonTelechargerImage = document.getElementById("file_image");
 
-console.log(photoEvenement);
-console.log(boutonTelechargerImage);
-
-
+/* positionne une écoute sur le bouton et réagi au changement (sélection d'un fichier) */
 boutonTelechargerImage.addEventListener("change", function() {
-    console.log("click bouton");
+
+/* charge dans la variable curFiles un objet qui contient les informations*/
+var curFiles = boutonTelechargerImage.files;
+
+/* change le visuel par défaut avec le fichier sélectionné */
+photoEvenement.src = window.URL.createObjectURL(curFiles[0]);
 });
-
-//var src = element.getAttribute("src");
-
-// var imageSourceOriginel = element.src;
-// var index = 0;
-// var tableauImage = [
-//     imageSourceOriginel,
-//     "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?h=350&auto=compress&cs=tinysrgb",
-//     "https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?h=350&auto=compress&cs=tinysrgb",
-// ];
-//
-//
-// setInterval(function () {
-//     //element.width
-//     index = index < tableauImage.length-1 ? index+1 : 0;
-//     element.src = tableauImage[index];
-// }, 1000);

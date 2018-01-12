@@ -44,7 +44,7 @@
     <!-- Fin Présentation -->
 
     <section id="formulaire-nouvel-evenement" class="container">
-    <form  action="traitement_nouvel_evenement.php" method="POST">
+    <form  action="traitement_nouvel_evenement.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Titre de l'événement" name="titre" required>
@@ -122,15 +122,19 @@
             </div>
             <div id="visuel" class="row visuel text-center">
                 <div class="col-md-offset-2 col-md-3 text-center">
-                    <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée" width=260px ><!--270*140p-->
+                    <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée"><!--270*140p-->
 
                     <label for="file_image" class="btn btn-light bt_bleu">Télecharger une image</label>
                     <input id="file_image" name="chemin_image" class="input-file" type="file" >
 
 <!--                    <input id="bt_image"  type="file" class="btn btn-light bt_bleu" placeholder="Télecharger une image">-->
                     <input name="legende" type="text" class="form-control" placeholder="Légende">
-                </div> 
-                <!--TODO  taille image à télécharger + verif script?? + JS-->
+                </div>
+
+
+                <!--TODO  taille image à télécharger + verif script?? + JS
+                voir script page https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/file
+                -->
 <!--                        <input id="input-dim-4" name="input-dim-4[]" multiple type="file" accept="image/*">-->
 <!--                    <script>-->
 <!--                    $("#input-dim-1").fileinput({-->
@@ -140,6 +144,8 @@
 <!--                        minImageHeight: 50-->
 <!--                    });-->
 <!--                    </script>-->
+
+
                 <div class="col-md-offset-1 col-md-3">
                     <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement" required></textarea>
                 </div>
@@ -172,6 +178,8 @@
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">Publié</span>
         </label>
+
+
 <!-- TODO à utiliser pour formulaire mode édition
         <label class="custom-control custom-radio col-md-2">
           <input name="statut" type="radio" class="custom-control-input" value="refusé" disabled>

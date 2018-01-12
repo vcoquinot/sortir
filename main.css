@@ -360,6 +360,11 @@ input[type="file"] {
      display: none !important;
    }
 
+#visuel_evenement {
+    width: 260px;
+    height: 134px;
+}
+
 
 /*----- FOOTER-----*/
 footer{

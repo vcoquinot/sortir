@@ -57,7 +57,7 @@
   </section>
 
 <!-- Présentation -->
-    <section id="presentation" class="container anim_bandeau">
+    <section id="presentation" class="container">
         <div class="row">
             <h1>sortir<strong>gratos</strong>.fr</h1>
             <p>sortir<strong>gratos</strong>.fr est un agenda en ligne animé par 3 passionnés. Notre mission : rechercher les bons plans sortie de la région et les partager avec vous.

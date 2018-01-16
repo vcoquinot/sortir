@@ -122,6 +122,13 @@ header a:focus, header a:hover {
     margin-bottom : 25px;
     width: 60%;
     text-align: left;
+
+    /*  animation du bandeau bleu */
+    position: relative;
+    -webkit-animation-name: anim_bandeau; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: anim_bandeau;
+    animation-duration: 5s;
 }
 
 #presentation h1{

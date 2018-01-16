@@ -28,7 +28,7 @@
   include ("acces-bdd.php");
   include ("fonctions.php");?>
 
-  <?php //TODO mysql_real_escape_string
+  <?php 
     if(isset($_POST['pseudo'])) 
     { 
         $pseudo = $_POST['pseudo'];
@@ -43,15 +43,6 @@
         $ville= $_POST['ville'];
         $tel= $_POST['tel'];
 
-        if($_POST['psw_confirm'] != $_POST['psw'])
-        {
-            echo "les deux mots de passe doivent être identiques <br/>";
-        }
-        else
-        {
-            echo "Votre compte a bien été créé";
-            //TODO enregistrement BDD
-        }
     }
 
     //vérification password et password_confirm identiques
@@ -71,7 +62,18 @@
 <!-- Fin Présentation -->
     </section>
 
-    <?php displayFormCreationCompte();
+    <?php 
+        if (!(isset($_POST[pseudo]))) {
+             displayFormCreationCompte();
+        }
+        else {
+            if (($psw != $psw_confirm) || ($CGU != 'accepte')){
+                displayFormCreationCompte();
+            }
+            else {
+                echo "valide";
+            } 
+        }
     ?>
 
   <!-- Footer -->

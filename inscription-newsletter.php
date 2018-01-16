@@ -23,7 +23,8 @@
   </head>
 
   <body>
-  <?php include ("menu-logo.php");?>
+  <?php include ("menu-logo.php");
+  include ("acces-bdd.php"); ?>
 
     <section id="introduction-inscription-newsletter" class= "container'fluid">
         <div class="col-md-12 row text-center">

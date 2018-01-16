@@ -48,13 +48,13 @@
 
     <section id="formulaire-newsletter" class="container">
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="email"  name="Email" class="form-control" placeholder="Email" required>
+                <input type="email"  name="Email" class="form-control" placeholder="Email" value='<?php echo (isset($_POST['email'])) ? ($_POST['email']) : "" ;?> ' required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text" name="Prénom" class="form-control" placeholder="Prénom" required>
+                <input type="text" name="prenom" class="form-control" placeholder="Prénom" value ='<?php echo (isset($_POST['prenom'])) ? ($_POST['prenom']) : "" ;?>' required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text"  name="Nom" class="form-control" placeholder="Nom" required>
+                <input type="text"  name="nom" class="form-control" placeholder="Nom" value ='<?php echo (isset($_POST['nom'])) ? ($_POST['nom']) : "" ;?>' required>
             </div>
     </section>
 
@@ -66,6 +66,7 @@
 
   <!-- Acceptation CGU -->
   <section id="CGU" class="container">
+    <form  action="traitement_newsletter.php" method="POST"
       <div class="label-group row">
           <label class="custom-control custom-checkbox col-md-offset-3 col-md-5 text-center">
               <a href="mentions-legales.php" target="_blank"><span class="custom-control-description">J'accepte les conditions générales&nbsp;</span></a>

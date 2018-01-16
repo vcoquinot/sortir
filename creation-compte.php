@@ -1,3 +1,5 @@
+<?php include("acces-bdd.php"); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

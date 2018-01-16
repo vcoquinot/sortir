@@ -24,7 +24,8 @@
   </head>
 
   <body>
-  <?php include ("menu-logo.php");?>
+  <?php include ("menu-logo.php");
+  include ("acces-bdd.php");?>
 
   <?php //TODO mysql_real_escape_string
     if(isset($_POST['pseudo'])) 

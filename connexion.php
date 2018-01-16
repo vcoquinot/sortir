@@ -1,5 +1,3 @@
-<?php include("acces-bdd.php"); ?>
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -25,6 +23,7 @@
 
   <body>
     <?php include ("menu-logo.php");?>
+    <?php include ("acces-bdd.php");?>
 
     <section id="introduction-contributeur" class= "container'fluid">
       <div class="col-md-12 row text-center">

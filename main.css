@@ -154,6 +154,14 @@ header a:focus, header a:hover {
     line-height: 1.8em;
 }
 
+/*----- DIVERS -----*/
+.message {
+    text-align: center;
+    font-size: 1.5em;
+    color: FF0000;
+}
+
+
 /*----- BOUTONS EVENEMENTS-----*/
 #boutons-evenement{
     background-color: #AF006E;

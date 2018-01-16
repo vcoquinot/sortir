@@ -399,8 +399,47 @@ footer h6 {
     text-align: center;
     margin-top: -1px;
 }
+/*----- Animation -------*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mouvement_logo {
+    0%   {left:-250px;}
+    25%  {left:50px; transform: rotate(20deg);}
+    100% {left:0px;}
+}
+
+/* Standard syntax */
+@keyframes mouvement_logo {
+    0%   {left:-250px;}
+    25%  {left:50px; transform: rotate(20deg);}
+    100% {left:0px;}
+}
+
+.anim_logo {
+    position: relative;
+    -webkit-animation-name: mouvement_logo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: mouvement_logo;
+    animation-duration: 3s;
+}
 
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes anim_bandeau {
+    0%   {opacity: 0;}
+    100%  {opacity: 1;}
+}
 
+/* Standard syntax */
+@keyframes anim_bandeau {
+    0%   {opacity: 0;}
+    100%  {opacity: 1;}
+}
 
-
+.anim_bandeau {
+    position: relative;
+    -webkit-animation-name: anim_bandeau; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: anim_bandeau;
+    animation-duration: 5s;
+}

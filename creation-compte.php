@@ -42,7 +42,7 @@
         $cp= $_POST['cp'];
         $ville= $_POST['ville'];
         $tel= $_POST['tel'];
-
+        $CGU= $_POST['CGU'];
     }
 
     //vérification password et password_confirm identiques
@@ -63,15 +63,17 @@
     </section>
 
     <?php 
-        if (!(isset($_POST[pseudo]))) {
+        if (!(isset($_POST['pseudo']))) {
              displayFormCreationCompte();
         }
         else {
-            if (($psw != $psw_confirm) || ($CGU != 'accepte')){
+            if (($psw != $psw_confirm) || ($_POST['CGU'] != 'accepte')){
+                echo "<p class='message'> Veuillez remplir....</p>";
                 displayFormCreationCompte();
             }
             else {
-                echo "valide";
+                echo "<p class='message'> Valide</p>";
+
             } 
         }
     ?>

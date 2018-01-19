@@ -61,7 +61,7 @@
 
 
     <!-- Inscription newsletter -->
-    <?php include ("newsletter.php");?>
+    <?php include ("newsletter-periodicite.php");?>
 
 
   <!-- Acceptation CGU -->

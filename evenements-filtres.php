@@ -26,6 +26,7 @@
   <body>
 
   <?php include ("menu.php");?>
+  <?php include ("acces-bdd.php");?>
 
   <section id="introduction-evenements-filtres" class="container-fluid">
       <div class="col-md-12 row text-center">

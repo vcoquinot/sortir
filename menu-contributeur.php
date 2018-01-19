@@ -11,7 +11,7 @@
             <!--ajouter variable php contributeur connecté-->
             <!--ajouter variable php contributeur connecté-->
 
-            <span><?php echo "En attente variable nom contributeur PHP"?></span>
+            <span><?php echo $_SESSION['pseudo']; ?></span>
             <a class="display_inline_block" href="#"><p>Déconnexion</p></a>
         </div>
 

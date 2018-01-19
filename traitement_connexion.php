@@ -13,11 +13,18 @@
 
 <body>
 
-<!--<pre>
+<!--TO ERASE
+********TO ERASE
+********TO ERASE
+
+    <pre>
     <?php
 //print_r($_POST);
     ?>
 </pre>
+********TO ERASE
+********TO ERASE 
+-->
 
     <?php
     // Connexion à la base de données

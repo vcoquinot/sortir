@@ -41,7 +41,6 @@
     session_start ();
 		
 		$_SESSION['pseudo'] = $_POST['pseudo'];
-        $_SESSION['password'] = $_POST['password'];
         header ('location: tableau-de-bord.php');
     ?>
 

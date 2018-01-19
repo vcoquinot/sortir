@@ -13,9 +13,9 @@
 
 <body>
 
-<pre>
+<!--<pre>
     <?php
-print_r($_POST);
+//print_r($_POST);
     ?>
 </pre>
 
@@ -30,6 +30,12 @@ print_r($_POST);
     {
         die('Erreur : '.$e->getMessage());
     }
+
+    session_start ();
+		
+		$_SESSION['pseudo'] = $_POST['pseudo'];
+        $_SESSION['password'] = $_POST['password'];
+        header ('location: tableau-de-bord.php');
     ?>
 
 </body>

@@ -93,6 +93,7 @@
 
   <!-- Footer -->
   <?php include ("footer.php");?>
+  <?php include ("acces-bdd.php");?>
   <!-- Fin Footer -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

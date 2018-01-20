@@ -13,37 +13,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.69621027">
+    <splitter split-orientation="horizontal" split-proportion="0.2372215">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="463">
-                  <caret line="136" column="22" lean-forward="true" selection-start-line="116" selection-start-column="11" selection-end-line="136" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bloc_evenement.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/bloc_evenement.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+                <state relative-caret-position="631">
+                  <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
                   <folding>
-                    <marker date="1516371336000" expanded="true" signature="62:85" ph="SELECT * FRO... evenement" />
-                    <marker date="1516371336000" expanded="true" signature="68:75" ph="select * FRO... " />
+                    <marker date="1516456939000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="evenements-filtres.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
+          <file leaf-file-name="bloc-evenement.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/bloc-evenement.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-187">
-                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#925#931#0#HTML" expanded="true" />
+                    <element signature="e#931#937#0#HTML" expanded="true" />
+                    <element signature="e#940#946#0#HTML" expanded="true" />
+                    <element signature="e#946#952#0#HTML" expanded="true" />
+                    <element signature="e#995#1001#0#HTML" expanded="true" />
+                    <element signature="e#1001#1007#0#HTML" expanded="true" />
+                    <element signature="e#1009#1015#0#HTML" expanded="true" />
+                    <element signature="e#1015#1021#0#HTML" expanded="true" />
+                    <element signature="e#1093#1099#0#HTML" expanded="true" />
+                    <element signature="e#1099#1105#0#HTML" expanded="true" />
+                    <element signature="e#1106#1112#0#HTML" expanded="true" />
+                    <element signature="e#1112#1118#0#HTML" expanded="true" />
+                    <element signature="e#1262#1268#0#HTML" expanded="true" />
+                    <element signature="e#1268#1274#0#HTML" expanded="true" />
+                    <element signature="e#1277#1283#0#HTML" expanded="true" />
+                    <element signature="e#1283#1289#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="nouvel-evenement.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -52,18 +68,64 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="acces-bdd.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/acces-bdd.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.73081326">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="test-bdd.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/test-bdd.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="482">
+                      <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="48" />
+                      <folding>
+                        <element signature="e#2245#2251#0#HTML" expanded="true" />
+                        <element signature="e#2251#2257#0#HTML" expanded="true" />
+                        <element signature="e#2260#2266#0#HTML" expanded="true" />
+                        <element signature="e#2266#2272#0#HTML" expanded="true" />
+                        <element signature="e#2315#2321#0#HTML" expanded="true" />
+                        <element signature="e#2321#2327#0#HTML" expanded="true" />
+                        <element signature="e#2329#2335#0#HTML" expanded="true" />
+                        <element signature="e#2335#2341#0#HTML" expanded="true" />
+                        <element signature="e#2413#2419#0#HTML" expanded="true" />
+                        <element signature="e#2419#2425#0#HTML" expanded="true" />
+                        <element signature="e#2426#2432#0#HTML" expanded="true" />
+                        <element signature="e#2432#2438#0#HTML" expanded="true" />
+                        <element signature="e#2590#2596#0#HTML" expanded="true" />
+                        <element signature="e#2596#2602#0#HTML" expanded="true" />
+                        <element signature="e#2605#2611#0#HTML" expanded="true" />
+                        <element signature="e#2611#2617#0#HTML" expanded="true" />
+                        <marker date="1516470720000" expanded="true" signature="1181:1204" ph="SELECT * FRO... evenement" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="evenements-filtres.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-938">
+                      <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/main.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="168">
+                      <caret line="279" column="20" lean-forward="true" selection-start-line="279" selection-start-column="20" selection-end-line="279" selection-end-column="20" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -88,6 +150,10 @@
       <find>get</find>
       <find>img</find>
       <find>file_image</find>
+      <find>center-block</find>
+      <find>box</find>
+      <find>border</find>
+      <find>display</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,7 +173,6 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/mes-evenements.php" />
         <option value="$PROJECT_DIR$/menu-contributeur.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/mon-compte.php" />
         <option value="$PROJECT_DIR$/evenements-filtres.php" />
         <option value="$PROJECT_DIR$/mentions-legales.php" />
@@ -119,10 +184,14 @@
         <option value="$PROJECT_DIR$/inscription-newsletter.php" />
         <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/creation-compte.php" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/gestion_image.js" />
         <option value="$PROJECT_DIR$/nouvel-evenement.php" />
+        <option value="$PROJECT_DIR$/acces-bdd.php" />
         <option value="$PROJECT_DIR$/bloc_evenement.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/test-bdd.php" />
+        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/bloc-evenement.php" />
       </list>
     </option>
   </component>
@@ -138,16 +207,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1.8">
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
     <include_path>
       <path value="/Applications/MAMP/bin/php/php7.1.8/bin" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="70" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="28" />
+    <option name="y" value="33" />
+    <option name="width" value="2527" />
+    <option name="height" value="1277" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -172,6 +241,17 @@
             <path>
               <item name="sortir" type="b2602c69:ProjectViewProjectNode" />
               <item name="sortir" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sortir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sortir" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sortir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sortir" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -229,11 +309,15 @@
       <workItem from="1516280051962" duration="591000" />
       <workItem from="1516282441449" duration="985000" />
       <workItem from="1516365403419" duration="3932000" />
+      <workItem from="1516378573048" duration="1941000" />
+      <workItem from="1516427822218" duration="8301000" />
+      <workItem from="1516450204595" duration="471000" />
+      <workItem from="1516455347079" duration="12933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98786000" />
+    <option name="totallyTimeSpent" value="122432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -245,10 +329,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="70" width="1920" height="1053" extended-state="0" />
+    <frame x="28" y="33" width="2527" height="1277" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07887324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -301,20 +385,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tableau-de-bord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -465,13 +535,7 @@
     <entry file="file://$USER_HOME$/der/footer.php" />
     <entry file="file://$PROJECT_DIR$/menu-logo-blanc" />
     <entry file="file://$PROJECT_DIR$/menu-logo-blanc.php" />
-    <entry file="file:///Volumes/STORE N GO/sortir 26-12-17/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Volumes/STORE N GO/sortir 26-12-17/menu.php" />
     <entry file="file://$PROJECT_DIR$/mes-evenements.php" />
     <entry file="file://$PROJECT_DIR$/mentions-legales.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,25 +586,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fonctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fonctions.php" />
     <entry file="file://$PROJECT_DIR$/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="363" column="1" lean-forward="false" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -590,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,49 +647,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="135" column="98" lean-forward="false" selection-start-line="135" selection-start-column="98" selection-end-line="135" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="136" column="22" lean-forward="true" selection-start-line="116" selection-start-column="11" selection-end-line="136" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/acces-bdd.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bloc_evenement.php">
+    <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="6513" column="13" lean-forward="false" selection-start-line="6513" selection-start-column="1" selection-end-line="6513" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding>
-            <marker date="1516371336000" expanded="true" signature="62:85" ph="SELECT * FRO... evenement" />
-            <marker date="1516371336000" expanded="true" signature="68:75" ph="select * FRO... " />
+            <marker date="1516456939000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-bdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="48" />
+          <folding>
+            <element signature="e#2245#2251#0#HTML" expanded="true" />
+            <element signature="e#2251#2257#0#HTML" expanded="true" />
+            <element signature="e#2260#2266#0#HTML" expanded="true" />
+            <element signature="e#2266#2272#0#HTML" expanded="true" />
+            <element signature="e#2315#2321#0#HTML" expanded="true" />
+            <element signature="e#2321#2327#0#HTML" expanded="true" />
+            <element signature="e#2329#2335#0#HTML" expanded="true" />
+            <element signature="e#2335#2341#0#HTML" expanded="true" />
+            <element signature="e#2413#2419#0#HTML" expanded="true" />
+            <element signature="e#2419#2425#0#HTML" expanded="true" />
+            <element signature="e#2426#2432#0#HTML" expanded="true" />
+            <element signature="e#2432#2438#0#HTML" expanded="true" />
+            <element signature="e#2590#2596#0#HTML" expanded="true" />
+            <element signature="e#2596#2602#0#HTML" expanded="true" />
+            <element signature="e#2605#2611#0#HTML" expanded="true" />
+            <element signature="e#2611#2617#0#HTML" expanded="true" />
+            <marker date="1516470720000" expanded="true" signature="1181:1204" ph="SELECT * FRO... evenement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bloc-evenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#925#931#0#HTML" expanded="true" />
+            <element signature="e#931#937#0#HTML" expanded="true" />
+            <element signature="e#940#946#0#HTML" expanded="true" />
+            <element signature="e#946#952#0#HTML" expanded="true" />
+            <element signature="e#995#1001#0#HTML" expanded="true" />
+            <element signature="e#1001#1007#0#HTML" expanded="true" />
+            <element signature="e#1009#1015#0#HTML" expanded="true" />
+            <element signature="e#1015#1021#0#HTML" expanded="true" />
+            <element signature="e#1093#1099#0#HTML" expanded="true" />
+            <element signature="e#1099#1105#0#HTML" expanded="true" />
+            <element signature="e#1106#1112#0#HTML" expanded="true" />
+            <element signature="e#1112#1118#0#HTML" expanded="true" />
+            <element signature="e#1262#1268#0#HTML" expanded="true" />
+            <element signature="e#1268#1274#0#HTML" expanded="true" />
+            <element signature="e#1277#1283#0#HTML" expanded="true" />
+            <element signature="e#1283#1289#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="279" column="20" lean-forward="true" selection-start-line="279" selection-start-column="20" selection-end-line="279" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

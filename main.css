@@ -7,6 +7,7 @@ magenta foncé #AF006E
 
 
 /* Raz */
+/* ----------------------------------------------------------------------------- */
 *{
     font-family: 'Ubuntu', sans-serif;
     text-align: justify-all;
@@ -70,6 +71,7 @@ i.focus, i:focus, i:hover {
 }
 
 /*----- HEADER-----*/
+/* ----------------------------------------------------------------------------- */
 header{
     background-color: #e7169d;
     color:white;
@@ -97,12 +99,14 @@ header a:focus, header a:hover {
 }
 
 /*----- MENU-----*/
+/* ----------------------------------------------------------------------------- */
 .menu_logo {
     margin-top: 16px;
 }
 
 
 /*----- CAROUSEL-----*/
+/* ----------------------------------------------------------------------------- */
 #carousel h2{
       font-size: 30px;
 }
@@ -114,6 +118,7 @@ header a:focus, header a:hover {
 
 
 /*----- PRESENTATION-----*/
+/* ----------------------------------------------------------------------------- */
 #presentation{
     background-color: #0bb3e8;
     color:white;
@@ -155,6 +160,7 @@ header a:focus, header a:hover {
 }
 
 /*----- DIVERS -----*/
+/* ----------------------------------------------------------------------------- */
 .message {
     text-align: center;
     font-size: 1.5em;
@@ -163,6 +169,7 @@ header a:focus, header a:hover {
 
 
 /*----- BOUTONS EVENEMENTS-----*/
+/* ----------------------------------------------------------------------------- */
 #boutons-evenement{
     background-color: #AF006E;
 }
@@ -184,6 +191,7 @@ header a:focus, header a:hover {
 }
 
 /*----- BOUTONS Filtres-----*/
+/* ----------------------------------------------------------------------------- */
 .boutons-filtres {
     background-color: #AF006E;
     float: right;
@@ -198,61 +206,72 @@ header a:focus, header a:hover {
 }
 
 /*----- EVENEMENTS-----*/
+/* ----------------------------------------------------------------------------- */
 #evenements, #mes-evenements{
     background-color: #E7169D;
-    margin-bottom : 15px;
-    padding-bottom : 25px;
+/*    margin-bottom : 15px;
+    padding-bottom : 15px;*/
 }
 
 .evenement-block{
-    margin-left:80px;/* voir si meilleur moyen de centrer ??*/
+    /*margin-left:80px;/* voir si meilleur moyen de centrer ??*/
 }
 
 .evenement-description{
     background-color: white;
+    /*
     margin-top:25px;
+    */
+    box-sizing: border-box;
+    border: 15px #E7169D solid;
+    /*
+    padding: 20px !important;
+    */
 }
 
 #evenements h2 {  /*mise en forme titres*/
-    font-size: 1.2em;
+    font-size: 1.58em;
     color: black;
+    font-weight: bold;
 }
 
 #evenements h3 { /*mise en forme catégories*/
     color: #0bb3e8;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: right;
+    display: inline;
 }
 
 .evenement-description {
     padding: 0 10px;
 }
 
-#mes-evenements h2 {  /*mise en forme titres*/
+/*#mes-evenements h2 {  !*mise en forme titres*!
     font-size: 1.2em;
     color: black;
 }
 
-#mes-evenements h3 { /*mise en forme catégories*/
+#mes-evenements h3 { !*mise en forme catégories*!
     color: #0bb3e8;
     font-size: 1.3em;
     text-align: right;
-}
+}*/
 
 #evenements h4 { /*mise en forme date, heure, public, lieu, département*/
     color: #E7169D;
     font-size: 1.2em;
     text-align: left;
+    display: inline;
 }
 
-.marge-article {
+/*.marge-article {
     margin: 0 20px;
 }
 
 .marge-article-bloc {
-    /*padding: 20px;*/
+    !*padding: 20px;*!
     width: 98%;
-}
+}*/
 
 #evenements h4 span {
     color: black;
@@ -283,7 +302,12 @@ header a:focus, header a:hover {
     background-color: #E7169D !important;
 }
 
+.annonceur {
+    margin: 20px auto !important;
+}
+
 /*---- FORMULAIRE ----*/
+/* ----------------------------------------------------------------------------- */
 .form-control {
     border: none !important;
     border-bottom: 3px solid #E7169D !important;
@@ -325,8 +349,6 @@ button[type="submit"] {
 }
 
 .form-group {
-    /*margin-left: 10px;*/
-    /*margin-right: 10px;*/
     margin: 10px 10px 0 10px;
 }
 
@@ -382,6 +404,7 @@ input[type="file"] {
 
 
 /*----- FOOTER-----*/
+/* ----------------------------------------------------------------------------- */
 footer{
     background-color: #0083b6;
     color:white;
@@ -415,6 +438,7 @@ footer h6 {
     margin-top: -1px;
 }
 /*----- Animation -------*/
+/* ----------------------------------------------------------------------------- */
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mouvement_logo {

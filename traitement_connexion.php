@@ -26,7 +26,6 @@ print_r($_POST);
     $pseudo= $_POST['pseudo'];
     $password= $_POST['password'];
 
-    //$donneebdd_pseudo = $bdd->query('SELECT `pseudo` from `utilisateur` WHERE `pseudo` = $pseudo');
     $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
     $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pwd = '$password'");
 

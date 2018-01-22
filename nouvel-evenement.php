@@ -1,5 +1,6 @@
 <?php
 session_start ();
+include ("acces-bdd.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +41,6 @@ session_start ();
     Brouillon : à tout moment vous avez la possibilité d’enregistrer  votre événement sans le publier en cliquant sur ”Brouillon” et de revenir dessus plus tard.
     Créer l’événement : lorsque vous avez complété le formulaire, cliquez sur “créer l’événement”. Celui-ci sera validé après vérification puis mis en ligne. Il passera alors en statut “publié”. Vous pourrez modifier votre événement par la suite, même après publication."
     ?>
-
 
     <section id="introduction-nouvel-evenement" class="container-fluid">
 

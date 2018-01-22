@@ -45,6 +45,7 @@ print_r($_POST);
         echo "Votre compte a bien été créé";
         //header("Location: tableau-de-bord.php");
     }
+
     ?>
 
 

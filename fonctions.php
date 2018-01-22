@@ -108,3 +108,31 @@ function displayFormCreationCompte(){
 <?php
 }
 ?>
+<?php
+function displayFormConnexion(){
+?><!-- formulaire connexion-->
+<section id="formulaire-contributeur" class="container">
+    <form  action="traitement_connexion.php" method="POST" class="form-horizontal">
+      <div class="form-group row">
+        <div class="col-md-offset-3 col-md-3"><!--TODO   header("Location: .php")-->
+            <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" value="<?php echo (isset($_POST['pseudo'])) ? ($_POST['pseudo']) : "" ;?>" required>
+        </div>
+        <div class="col-md-3">
+            <input class="form-control" type="password" placeholder="Mot de passe" name="password" value="<?php echo (isset($_POST['password'])) ? ($_POST['password']) : "" ;?>" required>
+            <small><a href="#" >Mot de passe oublié</a></small>
+        </div>
+        <div class="col-md-12 row text-center">
+            <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
+        </div>
+      </div>
+    </form>
+</section>
+<section id="boutons-contributeur" class= "container"><!--!!!!!!!!! TO DO AJOUTER LIENS!!!!!!!-->
+  <div class="col-md-12 row text-center">
+    <h3> Envie de devenir contributeur ?</h3>
+    <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
+  </div>
+</section>
+<?php
+  }
+  ?>

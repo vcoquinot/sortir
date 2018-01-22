@@ -1,5 +1,7 @@
-<?php
-session_start ();
+<?php 
+session_start();
+if(!(isset($_SESSION['user'])))
+header('Location:connexion.php');
 ?>
 <!--traitement du formulaire connexion-->
 <!DOCTYPE html>
@@ -12,12 +14,13 @@ session_start ();
 </head>
 
 <body>
+<?php include ("fonctions.php");?>
 
     <pre>
-    <?php
-print_r($_POST);
+ <!--   <?php
+//print_r($_POST);
     ?>
-</pre>
+</pre>-->
 
     <?php
 
@@ -39,6 +42,8 @@ print_r($_POST);
             
                 if($password == $donnee_pwd['pwd'])
                 {
+                    session_start ();
+                    $_SESSION['user'] = $donnee_pseudo['utilisateur'];
                     header('Location:tableau-de-bord.php');
                 }
                 else

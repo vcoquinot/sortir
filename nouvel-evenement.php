@@ -27,7 +27,19 @@ session_start ();
 </head>
 
 <body> 
-    <?php include ("menu-contributeur.php");?>
+    <?php include ("menu-contributeur.php");
+    $aide = "Les informations relatives à votre événement doivent être à la fois claires et détaillées afin de retenir l’attention de votre public.
+    Titre : choisissez un titre explicite, synthétique et accrocheur
+    Lieu : il peut s’agir d’un lieu-dit, d’un nom de salle...
+    Ce champ n’est pas obligatoire.
+    Contact et téléphone : indiquez le nom et / ou prénom d’une personne dédiée et son numéro de téléphone.
+    Ces champs ne sont  pas obligatoires.
+    Image : téléchargez le visuel de votre événement ou une image en rapport avec celui-ci. Comme le titre, l’image doit être explicite. Les dimensions doivent être du 400x267 px.
+    Site web : si vous avez un site, indiquez le lien vers la page d’accueil ou vers la page de l’événement.
+    Descriptif : expliquez en quelques lignes ce que vous proposez.
+    Brouillon : à tout moment vous avez la possibilité d’enregistrer  votre événement sans le publier en cliquant sur ”Brouillon” et de revenir dessus plus tard.
+    Créer l’événement : lorsque vous avez complété le formulaire, cliquez sur “créer l’événement”. Celui-ci sera validé après vérification puis mis en ligne. Il passera alors en statut “publié”. Vous pourrez modifier votre événement par la suite, même après publication."
+    ?>
 
 
     <section id="introduction-nouvel-evenement" class="container-fluid">
@@ -38,21 +50,23 @@ session_start ();
             <!-- Présentation -->
             <section id="presentation" class="container">
                 <div class="row">
-                    <p>Enregistrez votre nouvel événement à l'aide du formulaire ci-dessous.<button type="button" class="bt_aide" onclick="alert('Texte aide à rédiger')">Aide</button></p>
+                    <p>Enregistrez votre nouvel événement à l'aide du formulaire ci-dessous.<button type="button" class="bt_aide" onclick="alert('Les informations relatives à votre événement doivent être à la fois claires et détaillées afin de retenir l’attention de votre public.\n\n ->Titre : choisissez un titre explicite, synthétique et accrocheur.\n\n->Lieu : il peut s’agir d’un lieu-dit, d’un nom de salle... (ce champ n’est pas obligatoire).\n\n->Contact et téléphone : indiquez le nom et / ou prénom d’une personne dédiée et son numéro de téléphone (ces champs ne sont  pas obligatoires).\n\n->Image : téléchargez le visuel de votre événement ou une image en rapport avec celui-ci. Comme le titre, l’image doit être explicite. Les dimensions doivent être du 400x267px.\n\n->Site web : si vous avez un site, indiquez le lien vers la page d’accueil ou vers la page de l’événement.\n\n->Descriptif : expliquez en quelques lignes ce que vous proposez.\n\n->Brouillon : à tout moment vous avez la possibilité d’enregistrer votre événement sans le publier en cliquant sur ”Brouillon” et de revenir dessus plus tard.\n\n->Créer l’événement : lorsque vous avez complété le formulaire, cliquez sur “créer l’événement”. Celui-ci sera validé après vérification puis mis en ligne. Il passera alors en statut “publié”. Vous pourrez modifier votre événement par la suite, même après publication.')">Aide</button></p>
+                    <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
             </section>
         </div>
     </section>
     <!-- Fin Présentation -->
 
     <section id="formulaire-nouvel-evenement" class="container">
+
     <form  action="traitement_nouvel_evenement.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input type="text" class="form-control" placeholder="Titre de l'événement" name="titre" required>
+                    <input type="text" class="form-control" placeholder="Titre de l'événement*" name="titre" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
                 <select name="categorie" class="form-control" required>
-                                <option value="" selected>Catégorie...</option>
+                                <option value="" selected>Catégorie...*</option>
                                 <option value="Atelier">Atelier</option>
                                 <option value="Cinéma">Cinéma</option>
                                 <option value="Conférence">Conférence</option>
@@ -71,7 +85,7 @@ session_start ();
             <div class="row">
                 <div class="col-md-offset-6 col-md-3">
                     <select name="public" class="form-control"  required>
-                        <option value="" selected>Public...</option>
+                        <option value="" selected>Public...*</option>
                         <option value="Tout public">Tout public</option>
                         <option value="Enfant">Enfant</option>
                         <option value="Ado">Ado</option>
@@ -81,27 +95,27 @@ session_start ();
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input name="date" type="date" class="form-control" placeholder="Date" required>
+                    <input name="date" type="date" class="form-control" placeholder="Date*" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                    <input name="heure" type="time" class="form-control" placeholder="Heure" required>
+                    <input name="heure" type="time" class="form-control" placeholder="Heure*" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input name="lieu" type="text" class="form-control" placeholder="Lieu">
-                    <input name="adresse" type="text" class="form-control" placeholder="Adresse" required>
+                    <input name="adresse" type="text" class="form-control" placeholder="Adresse*" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
-                <input name="cp" type="text" class="form-control" placeholder="Code postal" required>
-                    <input name="ville" type="text" class="form-control" placeholder="Ville" required>
+                <input name="cp" type="text" class="form-control" placeholder="Code postal*" required>
+                    <input name="ville" type="text" class="form-control" placeholder="Ville*" required>
                     <select class="form-control" name="departement" required>
-                        <option value="" selected>Département...</option>
-                        <option value="Aude (11)">Aude (11)</option>
-                        <option value="Gard (30)">Gard (30)</option>
-                        <option value="Hérault (34)">Hérault (34)</option>
-                        <option value="Lozère (48)">Lozère (48)</option>
-                        <option value="Pyrénées-Orientales (66)">Pyrénées-Orientales (66)</option>
+                        <option value="" selected>Département...*</option>
+                        <option value="Aude">Aude (11)</option>
+                        <option value="Gard">Gard (30)</option>
+                        <option value="Hérault">Hérault (34)</option>
+                        <option value="Lozère">Lozère (48)</option>
+                        <option value="Pyrénées-Orientales">Pyrénées-Orientales (66)</option>
                     </select>
                 </div>
             </div>
@@ -148,11 +162,11 @@ session_start ();
 
 
                 <div class="col-md-offset-1 col-md-3">
-                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement" required></textarea>
+                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement*" required></textarea>
                 </div>
             </div>
             <div class="label-group row">
-                <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé</strong></span>
+                <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé*</strong></span>
                 <label class="custom-control custom-radio col-md-1 marginTop">
                     <input name="handicape" type="radio" class="custom-control-input" value="oui" required >
                     <span class="custom-control-indicator"></span>

@@ -17,14 +17,46 @@
     <splitter split-orientation="horizontal" split-proportion="0.6768868">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="996">
-                  <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+                <state relative-caret-position="142">
+                  <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
                   <folding>
-                    <marker date="1516607859000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
+                    <marker date="1516641612000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test-bdd.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test-bdd.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
+                  <folding>
+                    <marker date="1516648996000" expanded="true" signature="197:220" ph="SELECT * FRO... evenement" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="acces-bdd.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/acces-bdd.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="nouvel-evenement.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1020">
+                  <caret line="67" column="71" lean-forward="false" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -32,45 +64,9 @@
           <file leaf-file-name="bloc-evenement.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/bloc-evenement.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="59" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="94" lean-forward="false" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="nouvel-evenement.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="53" column="98" lean-forward="false" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
-                  <folding>
-                    <marker date="1516626901000" expanded="true" signature="2735:2797" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="4775:5837" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="4847:5816" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="5886:6413" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="5941:6394" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6015:6371" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6443:6824" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6498:6623" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6678:6805" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6854:7979" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="6909:7132" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="7187:7960" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="7472:7937" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8009:8373" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8064:8185" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8240:8354" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8403:8769" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8458:8576" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8631:8750" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8830:10339" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="8897:9459" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="9483:9653" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="10231:10339" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="12129:12193" ph="..." />
-                    <marker date="1516626901000" expanded="true" signature="12982:13033" ph="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -83,7 +79,7 @@
             <entry file="file://$PROJECT_DIR$/main.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="624">
-                  <caret line="406" column="19" lean-forward="false" selection-start-line="406" selection-start-column="19" selection-end-line="406" selection-end-column="19" />
+                  <caret line="411" column="19" lean-forward="false" selection-start-line="411" selection-start-column="19" selection-end-line="411" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -151,13 +147,13 @@
         <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/creation-compte.php" />
         <option value="$PROJECT_DIR$/gestion_image.js" />
-        <option value="$PROJECT_DIR$/acces-bdd.php" />
         <option value="$PROJECT_DIR$/bloc_evenement.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/test-bdd.php" />
-        <option value="$PROJECT_DIR$/bloc-evenement.php" />
         <option value="$PROJECT_DIR$/nouvel-evenement.php" />
         <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/test-bdd.php" />
+        <option value="$PROJECT_DIR$/acces-bdd.php" />
+        <option value="$PROJECT_DIR$/bloc-evenement.php" />
       </list>
     </option>
   </component>
@@ -173,15 +169,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1.8">
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
     <include_path>
       <path value="/Applications/MAMP/bin/php/php7.1.8/bin" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1619" />
-    <option name="height" value="1053" />
+    <option name="width" value="2085" />
+    <option name="height" value="1167" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -287,11 +283,13 @@
       <workItem from="1516450204595" duration="471000" />
       <workItem from="1516455347079" duration="12933000" />
       <workItem from="1516624173888" duration="2405000" />
+      <workItem from="1516641685200" duration="4484000" />
+      <workItem from="1516649405628" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124837000" />
+    <option name="totallyTimeSpent" value="129372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,20 +301,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1619" height="1053" extended-state="0" />
+    <frame x="0" y="23" width="2085" height="1167" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21432984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16886932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -623,14 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acces-bdd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -646,64 +637,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-bdd.php" />
-    <entry file="file://$PROJECT_DIR$/bloc-evenement.php">
+    <entry file="file://$PROJECT_DIR$/test-bdd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <marker date="1516607859000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
+            <marker date="1516648996000" expanded="true" signature="197:220" ph="SELECT * FRO... evenement" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="53" column="98" lean-forward="false" selection-start-line="53" selection-start-column="98" selection-end-line="53" selection-end-column="98" />
-          <folding>
-            <marker date="1516626901000" expanded="true" signature="2735:2797" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="4775:5837" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="4847:5816" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="5886:6413" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="5941:6394" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6015:6371" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6443:6824" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6498:6623" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6678:6805" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6854:7979" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="6909:7132" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="7187:7960" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="7472:7937" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8009:8373" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8064:8185" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8240:8354" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8403:8769" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8458:8576" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8631:8750" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8830:10339" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="8897:9459" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="9483:9653" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="10231:10339" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="12129:12193" ph="..." />
-            <marker date="1516626901000" expanded="true" signature="12982:13033" ph="..." />
-          </folding>
+        <state relative-caret-position="1020">
+          <caret line="67" column="71" lean-forward="false" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bloc-evenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="94" lean-forward="false" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acces-bdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
-          <caret line="406" column="19" lean-forward="false" selection-start-line="406" selection-start-column="19" selection-end-line="406" selection-end-column="19" />
+          <caret line="411" column="19" lean-forward="false" selection-start-line="411" selection-start-column="19" selection-end-line="411" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding>
+            <marker date="1516641612000" expanded="true" signature="3990:4013" ph="SELECT * FRO... evenement" />
+          </folding>
         </state>
       </provider>
     </entry>

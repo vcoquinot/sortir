@@ -4,6 +4,8 @@ $compteur = 0;
 while ($valeurs = $donnees_bdd->fetch()) {
     $compteur++;
     if ($compteur%7 == 0) {
+
+
         ?>
         <article class="evenement-block">
             <div class="evenement-description col-xs-12 col-md-12">
@@ -26,7 +28,7 @@ while ($valeurs = $donnees_bdd->fetch()) {
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <h3><?php echo $valeurs['categorie'] ?></h3>
-                    <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo $valeurs['date'] ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo $valeurs['heure'] ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
+                    <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo strftime('%A %e %b. %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo strftime('%H:%M', strtotime(strval($valeurs['heure']))) ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
 
                 </div>
 

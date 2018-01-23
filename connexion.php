@@ -1,7 +1,9 @@
-<?php
-session_start ();
+<?php 
+/*
+if(!(isset($_SESSION['user'])))
+session_start();
+*/
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -27,7 +29,8 @@ session_start ();
 
   <body>
     <?php include ("menu-logo.php");
-    include ("fonctions.php");?>
+    include ("fonctions.php");
+    include ("acces-bdd.php")?>
 
     <section id="introduction-contributeur" class= "container'fluid">
       <div class="col-md-12 row text-center">
@@ -46,6 +49,44 @@ session_start ();
     <?php 
         if (!(isset($_POST['pseudo']))) {
              displayFormConnexion();
+        }
+        else
+        {
+          $pseudo= $_POST['pseudo'];
+          $password= $_POST['password'];
+
+          $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
+          $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pwd = '$password'");
+
+          //VERIF SI PSEUDO EXISTE DANS BDD
+          $donnee_pseudo = $donneebdd_pseudo->fetch();
+    
+        if ($pseudo == $donnee_pseudo['pseudo']) 
+        {
+            //VERIF SI PWD CORRECT
+            $donnee_pwd = $donneebdd_pwd->fetch(); 
+            
+                if($password == $donnee_pwd['pwd'])
+                {
+                    header('Location:tableau-de-bord.php');
+                    session_start ();
+                   // $_SESSION['user'] = $donnee_pseudo['utilisateur'];
+                }
+                else
+                {
+                    echo "Mot de passe incorrect";
+                }
+        }
+        else
+        {
+            echo "Ce pseudo n'existe pas";
+        }
+    
+
+        $donneebdd_pseudo->closeCursor();
+        $donneebdd_pwd->closeCursor();
+        
+
         }
 ?>
 

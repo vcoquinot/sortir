@@ -193,16 +193,20 @@ header a:focus, header a:hover {
 /*----- BOUTONS Filtres-----*/
 /* ----------------------------------------------------------------------------- */
 .boutons-filtres {
-    background-color: #AF006E;
-    float: right;
+    background-color: #e7169d;
+    border-radius: 0 !important;
+    padding: 10px 20px !important;
     color: white;
-    margin-top: 30px;
-    border: 0;
-    font-size: 1.2em;
+    margin: 12px 5px 0 5px;
+
 }
 
 .boutons-filtres.focus, .boutons-filtres:focus, .boutons-filtres:hover {
     color: black !important;
+}
+
+.bandeau_bt_filtre {
+    margin: 30px 0;
 }
 
 /*----- EVENEMENTS-----*/

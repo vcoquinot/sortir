@@ -39,28 +39,36 @@ session_start ();
 <!-- Présentation -->
       <section id="presentation" class="container">
           <div class="row">
-              <p>À l'aide des boutons ci-dessous à droite vous allez pouvoir filtrer les événements.</p>
+              <p>À l'aide des boutons ci-dessous vous allez pouvoir filtrer les événements.</p>
           </div>
       </section>
 <!-- Fin Présentation -->
 
+<!-- TODO isset $_GET["tri"]-->
+<!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-<!-- Partie bandeau BOUTONS EVENEMENTS -->
+  <!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+
+  <!-- Partie bandeau BOUTONS EVENEMENTS -->
+  <section class="bandeau_bt_filtre text-center">
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=pour les 7 jours à venir">7 jours</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=pour les 30 jours à venir">30 jours</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par département">Par département</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par catégorie">Par catégorie</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par public">Par public</a>
+  </section>
+
   <section id="boutons-evenement" class= "container-fluid">
       <div class="row">
+
           <div class="col-md-6">
               <h2><?php echo "Événements " . $_GET["tri"] ?></h2>
           </div>
-          <div class="col-md-6">
 
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par public">Par public</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par catégorie">Par catégorie</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par département">Par département</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=du mois">30 jours</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=de la semaine">7 jours</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
-
-          </div>
   </section>
 
 <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
@@ -77,12 +85,12 @@ session_start ();
 /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
-      if($_GET["tri"] == "de la semaine"){
+      if($_GET["tri"] == "pour les 7 jours à venir"){
           $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
           /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
-      if($_GET["tri"] == "du mois"){
+      if($_GET["tri"] == "pour les 30 jours à venir"){
           $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
           /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }

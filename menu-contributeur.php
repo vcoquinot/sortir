@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-offset-3 col-md-5 row text-right">
             <span><?php echo $_SESSION['pseudo']; ?></span>
-            <a class="display_inline_block" href="logout.php"><p>Déconnexion</p></a>
+            <a class="display_inline_block" href="index.php"><p>Déconnexion</p></a>
         </div>
 
     </div>

@@ -1,6 +1,6 @@
 <?php
 session_start ();
-include ("acces-bdd.php");
+require_once("acces-bdd.php");
 include ("menu-contributeur.php");
 include ("fonctions.php");
 

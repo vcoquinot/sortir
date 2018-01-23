@@ -28,7 +28,7 @@ session_start();
   <body>
     <?php include ("menu-logo.php");
     include ("fonctions.php");
-    include ("acces-bdd.php")?>
+    require_once("acces-bdd.php")?>
 
     <section id="introduction-contributeur" class= "container'fluid">
       <div class="col-md-12 row text-center">

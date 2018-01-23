@@ -29,7 +29,6 @@ session_start ();
   <body>
 
   <?php include ("menu.php");?>
-  <?php include ("acces-bdd.php");?>
 
   <section id="introduction-evenements-filtres" class="container-fluid">
       <div class="col-md-12 row text-center">
@@ -40,118 +39,75 @@ session_start ();
 <!-- Présentation -->
       <section id="presentation" class="container">
           <div class="row">
-              <p>À l'aide des boutons ci-dessous vous allez pouvoir filtrer les événements.</p>
+              <p>À l'aide des boutons ci-dessous à droite vous allez pouvoir filtrer les événements.</p>
           </div>
       </section>
 <!-- Fin Présentation -->
 
-<!--TODO gestion de l'intitulé par une variable $tri-->
-      <?php $tri = "Événements du jour" ?>
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
   <section id="boutons-evenement" class= "container-fluid">
       <div class="row">
           <div class="col-md-6">
-              <h2><?php echo $tri ?></h2>
+              <h2><?php echo "Événements " . $_GET["tri"] ?></h2>
           </div>
           <div class="col-md-6">
 
-          <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
-
-              <button class="boutons-filtres" type="button" >Par public</button>
-              <button class="boutons-filtres" type="button" >Par catégorie</button>
-
-              <button class="boutons-filtres" type="button" >Par département</button>
-              <button class="boutons-filtres" type="button" >Du mois</button>
-              <button class="boutons-filtres" type="button" >De la semaine</button>
-              <button class="boutons-filtres" type="button" >Du jour</button>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par public">Par public</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par catégorie">Par catégorie</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par département">Par département</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=du mois">Du mois</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=de la semaine">De la semaine</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
 
           </div>
   </section>
 
-  <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
+<!-- Fin partie bandeau BOUTONS EVENEMENTS -->
 
 
-    <section id="boutons-block" class="container">
+<!-- Partie EVENEMENTS -->
 
-    </section>
+  <section id="evenements" class="container-fluid">
+      <?php
+      require_once("acces-bdd.php");
+
+      if($_GET["tri"] == "du jour"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+/*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
+
+      if($_GET["tri"] == "de la semaine"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
+
+      if($_GET["tri"] == "du mois"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
+
+      if($_GET["tri"] == "trié(s) par département"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `departement` ASC");
+          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
+
+      if($_GET["tri"] == "trié(s) par catégorie"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
+
+      if($_GET["tri"] == "trié(s) par public"){
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `public` ASC");
+          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+      }
 
 
+      include ("bloc-evenement.php");
+      ?>
+  </section>
 
-
-    <!-- Partie EVENEMENTS -->
-
-    <!-- Partie provisoire simulation données de la base -->
-    <?php {
-        $titre = "Vernissage œuvres de Franck Célaire et dégustation de vin « Mas des armes »";
-        $categorie = "Exposition";
-        $date = "23 janvier 2018";
-        $heure = "15:30";
-        $public = "Adulte";
-        $lieu = "Le Rockstore";
-        $departement = "Pyrénées-Orientales";
-        $visuel = "fire-2565561_960_720.jpg";
-        $adresse = "20 Rue de Verdun";
-        $codePostal = "34000";
-        $ville = "Montpellier";
-        $organisateur = "Monsieur Rame";
-        $telephone = "0606060606";
-        $email = "contact@rockstore.fr";
-        $site = "http://www.rockstore.fr/";
-
-        $descriptif = "Xxxxxxxxx xxxx x x x xxxxxxx x x xxxxxxxx";
-    }
-    ?>
-
-    <!--    TODO boucle PHP-->
-
-    <section id="evenements" class="container-fluid">
-        <article class="evenement-block">
-            <div class="evenement-description col-xs-5 col-md-5" >
-                <div class="row">
-                    <div class="col-xs-7 col-md-8">
-                        <h2><?php echo $titre?></h2>
-                    </div>
-                    <div class="col-xs-5 col-md-4">
-                        <h3><?php echo $categorie ?></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4><?php echo $date ?><span> / </span><span class = "bleu"><?php echo $heure ?></span><span> / </span><?php echo $public ?></h4>
-                        <h4><?php echo $lieu ?><span> / </span><span class = "bleu"><?php echo $departement ?></span></h4>
-                    </div>
-                </div>
-
-                <img src=./images/concert.jpg alt="concert">
-                <button type="button" class="btn btn-light buttonPlus">+</button>
-            </div>
-        </article>
-
-        <article class="evenement-block">
-            <div class="evenement-description col-md-offset-1 col-md-5" >
-                <div class="row">
-                    <div class="col-xs-9 col-md-9">
-                        <h2><?php echo $titre?></h2>
-                    </div>
-                    <div class="col-xs-3 col-md-3">
-                        <h3><?php echo $categorie ?></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4><?php echo $date ?><span> / </span><span class = "bleu"><?php echo $heure ?></span><span> / </span><?php echo $public ?></h4>
-                        <h4><?php echo $lieu ?><span> / </span><span class = "bleu"><?php echo $departement ?></span></h4>
-                    </div>
-                </div>
-
-                <img src=./images/concert.jpg alt="concert">
-                <button type="button" class="btn btn-light buttonPlus">+</button>
-            </div>
-        </article>
-    </section>
-
-        <!-- Fin Partie EVENEMENTS -->
+<!-- Fin Partie EVENEMENTS -->
 
   <!-- Footer -->
   <?php include ("footer.php");?>

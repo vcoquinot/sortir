@@ -25,7 +25,7 @@
 
   <body>
   <?php include ("menu-logo.php");
-  include ("acces-bdd.php");
+  require_once("acces-bdd.php");
   include ("fonctions.php");?>
 
     <section id="introduction-creation-compte" class= "container-fluid">

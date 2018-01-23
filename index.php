@@ -77,7 +77,7 @@
 
 <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
             <a href="#">Rechercher les événements</a>
-            <a href="evenements-filtres.php?tri="du jour">Filtrer les événements</a>
+            <a href="evenements-filtres.php?tri=du jour">Filtrer les événements</a>
             </div>
     </section>
 
@@ -87,9 +87,9 @@
 
      <section id="evenements" class="container-fluid">
             <?php
-            include ("acces-bdd.php");
+            require_once("acces-bdd.php");
 
-            $donnees_bdd = $bdd->query("SELECT * FROM evenement");
+            $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `date` ASC");
             include ("bloc-evenement.php");
             ?>
      </section>

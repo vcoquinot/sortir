@@ -50,21 +50,23 @@ include ("fonctions.php");
 
 
 <?php
-displayFormNouvelEvenement();
-/* if (isset($_POST['titre'])) {
-     echo 'traitement';
-     else {
-*/?><!--
 
---><?php
-/*     }
- }
-*/?>
+ if (!(isset($_POST['titre']))) {
+     displayFormNouvelEvenement();
+     }
+ else {
+    $adresse = $_POST['adresse'];
+    $code_postal = $_POST['code_postal'];
+    $ville = $_POST['ville'];
+
+    $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
+
+    $id_adresse = $bdd->lastInsertId();
 
 
 
-
-
+     }
+?>
 
 
 

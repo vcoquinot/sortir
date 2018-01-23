@@ -143,7 +143,7 @@ function displayFormNouvelEvenement(){
 ?>
     <section id="formulaire-nouvel-evenement" class="container">
 
-        <form  action="traitement_nouvel_evenement.php" method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
                     <input type="text" class="form-control" placeholder="Titre de l'événement*" name="titre" required>

@@ -78,6 +78,7 @@
         }
     ?>
 
+
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->

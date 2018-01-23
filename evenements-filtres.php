@@ -56,8 +56,8 @@ session_start ();
               <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par public">Par public</a>
               <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par catégorie">Par catégorie</a>
               <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par département">Par département</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=du mois">Du mois</a>
-              <a class="boutons-filtres" href="evenements-filtres.php?tri=de la semaine">De la semaine</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=du mois">30 jours</a>
+              <a class="boutons-filtres" href="evenements-filtres.php?tri=de la semaine">7 jours</a>
               <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
 
           </div>
@@ -73,17 +73,17 @@ session_start ();
       require_once("acces-bdd.php");
 
       if($_GET["tri"] == "du jour"){
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
 /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "de la semaine"){
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
           /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "du mois"){
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
           /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 

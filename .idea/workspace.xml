@@ -22,18 +22,18 @@
               <file leaf-file-name="evenements-filtres.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="484">
-                      <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+                    <state relative-caret-position="308">
+                      <caret line="58" column="91" lean-forward="false" selection-start-line="58" selection-start-column="91" selection-end-line="58" selection-end-column="91" />
                       <folding>
-                        <marker date="1516728704000" expanded="true" signature="2830:2878" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="2920:2961" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="2920:2962" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="2920:2968" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="3065:3113" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="3304:3352" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="3559:3609" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="3814:3862" ph="SELECT * FRO... evenement" />
-                        <marker date="1516728704000" expanded="true" signature="4064:4109" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="2825:2909" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="2951:2992" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="2951:2993" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="2951:2999" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="3096:3210" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="3401:3516" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="3723:3773" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="3978:4026" ph="SELECT * FRO... evenement" />
+                        <marker date="1516732217000" expanded="true" signature="4228:4273" ph="SELECT * FRO... evenement" />
                       </folding>
                     </state>
                   </provider>
@@ -76,8 +76,8 @@
               <file leaf-file-name="evenements-filtres2.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/evenements-filtres2.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="632">
-                      <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+                    <state relative-caret-position="14">
+                      <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
                       <folding>
                         <marker date="1516724874000" expanded="true" signature="1416:1464" ph="SELECT titre... evenement" />
                         <marker date="1516724874000" expanded="true" signature="1917:1965" ph="SELECT titre... evenement" />
@@ -306,12 +306,12 @@
       <workItem from="1516624173888" duration="2405000" />
       <workItem from="1516641685200" duration="4484000" />
       <workItem from="1516649405628" duration="51000" />
-      <workItem from="1516724914988" duration="3502000" />
+      <workItem from="1516724914988" duration="5517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132874000" />
+    <option name="totallyTimeSpent" value="134889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,18 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evenements-filtres2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-          <folding>
-            <marker date="1516724874000" expanded="true" signature="1416:1464" ph="SELECT titre... evenement" />
-            <marker date="1516724874000" expanded="true" signature="1917:1965" ph="SELECT titre... evenement" />
-            <marker date="1516724874000" expanded="true" signature="2443:2492" ph="SELECT titre... evenement" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nouvel-evenement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
@@ -731,20 +719,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/evenements-filtres2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <marker date="1516724874000" expanded="true" signature="1416:1464" ph="SELECT titre... evenement" />
+            <marker date="1516724874000" expanded="true" signature="1917:1965" ph="SELECT titre... evenement" />
+            <marker date="1516724874000" expanded="true" signature="2443:2492" ph="SELECT titre... evenement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/evenements-filtres.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="58" column="91" lean-forward="false" selection-start-line="58" selection-start-column="91" selection-end-line="58" selection-end-column="91" />
           <folding>
-            <marker date="1516728704000" expanded="true" signature="2830:2878" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="2920:2961" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="2920:2962" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="2920:2968" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="3065:3113" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="3304:3352" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="3559:3609" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="3814:3862" ph="SELECT * FRO... evenement" />
-            <marker date="1516728704000" expanded="true" signature="4064:4109" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="2825:2909" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="2951:2992" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="2951:2993" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="2951:2999" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="3096:3210" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="3401:3516" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="3723:3773" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="3978:4026" ph="SELECT * FRO... evenement" />
+            <marker date="1516732217000" expanded="true" signature="4228:4273" ph="SELECT * FRO... evenement" />
           </folding>
         </state>
       </provider>

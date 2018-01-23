@@ -213,7 +213,7 @@ function displayFormNouvelEvenement(){
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input name="email" type="email" class="form-control" placeholder="Email">
+                    <input name="mail" type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col-md-offset-1 col-md-3">
                     <input name="site" type="text" class="form-control" placeholder="Site web">
@@ -224,7 +224,7 @@ function displayFormNouvelEvenement(){
                     <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée"><!--270*140p-->
 
                     <label for="file_image" class="btn btn-light bt_bleu">Télecharger une image</label>
-                    <input id="file_image" name="chemin_image" class="input-file" type="file" >
+                    <input id="file_image" name="file_image" class="input-file" type="file" >
 
                     <input name="legende" type="text" class="form-control" placeholder="Légende">
                 </div>
@@ -251,12 +251,12 @@ function displayFormNouvelEvenement(){
             <div class="label-group row">
                 <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé*</strong></span>
                 <label class="custom-control custom-radio col-md-1 marginTop">
-                    <input name="handicape" type="radio" class="custom-control-input" value="oui" required >
+                    <input name="acces_handicap" type="radio" class="custom-control-input" value="oui" required >
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Oui</span>
                 </label>
                 <label class="custom-control custom-radio col-md-1 marginTop">
-                    <input name="handicape" type="radio" class="custom-control-input" value="non">
+                    <input name="hacces_handicap" type="radio" class="custom-control-input" value="non">
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Non</span>
                 </label>

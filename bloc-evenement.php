@@ -35,7 +35,7 @@ while ($valeurs = $donnees_bdd->fetch()) {
                 <h4 class="col-md-12"><?php echo $valeurs['lieu'] ?><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><span class = "bleu"><?php echo $valeurs['departement'] ?></span></h4>
             </div>
 
-            <img class="img-responsive" src=<?php echo $valeurs['chemin_img']?> alt=<?php echo $valeurs['legende']?>>
+            <img class="img-responsive" src=<?php echo $valeurs['chemin_image']?> alt=<?php echo $valeurs['legende']?>>
             <button type="button" class="btn btn-light buttonPlus">+</button>
         </div>
     </article>

@@ -28,27 +28,6 @@
   include ("acces-bdd.php");
   include ("fonctions.php");?>
 
-  <?php 
-    if(isset($_POST['pseudo'])) 
-    { 
-        $pseudo = $_POST['pseudo'];
-        $email= $_POST['email'];
-        $nom = $_POST['nom'];
-        $prenom= $_POST['prenom'];
-        $psw= $_POST['psw'];
-        $psw_confirm = $_POST['psw_confirm'];
-        $type= $_POST['type'];
-        $adresse= $_POST['adresse'];
-        $cp= $_POST['cp'];
-        $ville= $_POST['ville'];
-        $tel= $_POST['tel'];
-        $CGU= $_POST['CGU'];
-    }
-
-    //vérification password et password_confirm identiques
-    
-    ?>
-
     <section id="introduction-creation-compte" class= "container-fluid">
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
@@ -63,19 +42,52 @@
     </section>
 
     <?php 
-        if (!(isset($_POST['pseudo']))) {
+        if (!(isset($_POST['pseudo']))) 
+        {
              displayFormCreationCompte();
         }
-        else {
-            if (($psw != $psw_confirm) || ($_POST['CGU'] != 'accepte')){
-                echo "<p class='message'> Veuillez remplir....</p>";
-                displayFormCreationCompte();
-            }
-            else {
-                echo "<p class='message'> Valide</p>";
-
-            } 
+        else 
+        {
+            $nom = $_POST['nom']; 
+            $prenom= $_POST['prenom'];
+            $pseudo = $_POST['pseudo'];
+            $type= $_POST['type'];
+            $entite= $_POST['nom_entite'];
+            $adresse= $_POST['adresse'];
+            $site= $_POST['site'];
+            $mail= $_POST['email'];
+            $tel= $_POST['tel'];
+            $psw = $_POST['psw'];
+            $psw_confirm = $_POST['psw_confirm'];          
+            $cp= $_POST['cp'];
+            $ville= $_POST['ville'];
+            $CGU= $_POST['CGU'];
+                if ($psw != $psw_confirm)
+                {
+                    echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
+                    displayFormCreationCompte();
+                }
+                else if($_POST['CGU'] != 'accepte')
+                {
+                    echo "<p class='message'>Vous devez accepter les conditions générales</p>";
+                    displayFormCreationCompte();
+                }
+                else
+                {
+                    $bdd->exec("INSERT INTO utilisateur (nom, prenom) VALUES ('toto', 'tutu')"); 
+                    //header('Location:tableau-de-bord.php'); 
+                } 
         }
+
+
+
+
+
+
+
+            
+           
+        
     ?>
 
 

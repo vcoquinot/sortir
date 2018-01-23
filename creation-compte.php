@@ -36,6 +36,7 @@
             <section id="presentation" class="container">
                 <div class="row">
                     <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>
+                    <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
                 </div>
             </section>
 <!-- Fin Présentation -->

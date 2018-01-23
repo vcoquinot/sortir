@@ -42,7 +42,7 @@ function displayFormCreationCompte(){
         </div>
         <div class="col-md-offset-1 col-md-3">
           <select class="form-control" name="type" required>
-              <option value="<?php echo (isset($_POST['type'])) ? ($_POST['type']) : "" ;?>" selected>Type...*</option>
+              <option value="<?php echo (isset($_POST['type'])) ? ($_POST['type']) : "" ;?>">Type...*</option>
               <option value="Association">Association</option>
               <option value="Collectivité">Collectivité</option>
               <option value="Entreprise">Entreprise</option>

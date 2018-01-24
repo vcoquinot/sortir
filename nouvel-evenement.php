@@ -60,7 +60,7 @@ include ("fonctions.php");
     $ville = addslashes(htmlspecialchars(strip_tags($_POST['ville'])));
 
     $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
-    $bdd->closeCursor();
+
 
 
     $id_adresse = $bdd->lastInsertId(); //récupère l'id généré par l'insertion
@@ -83,8 +83,10 @@ include ("fonctions.php");
     $descriptif = addslashes(htmlspecialchars(strip_tags($_POST['descriptif'])));
     $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
 
-     $bdd->exec("INSERT INTO evenement (id_adresse, titre, categorie, `date`, heure, `public`, lieu, departement, acces_handicap, contact, tel, mail, site, legende, statut) VALUES ($id_adresse, $titre, $categorie, $date, $heure, $public, $lieu, $departement, $acces_handicap, $contact, $tel, $mail, $site, $legende, $statut)");
-     $bdd->closeCursor();
+
+     $bdd->exec("INSERT INTO evenement (id_adresse, titre) VALUES ($id_adresse, $titre)");
+
+//     $bdd->exec("INSERT INTO evenement (id_adresse, titre, categorie, `date`, heure, `public`, lieu, departement, acces_handicap, contact, tel, mail, site, legende, statut) VALUES ($id_adresse, $titre, $categorie, $date, $heure, $public, $lieu, $departement, $acces_handicap, $contact, $tel, $mail, $site, $legende, $statut)");
 
 
  }

@@ -61,14 +61,7 @@ session_start ();
   }
   ?>
 
-  <section id="boutons-evenement" class= "container-fluid">
-      <div class="row">
 
-          <div class="col-md-6">
-              <h2><?php echo "Événements " . $_GET["tri"] ?></h2>
-          </div>
-
-  </section>
 
 <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
 
@@ -82,35 +75,63 @@ session_start ();
 
 
       if($_GET["tri"] == "du jour"){
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
 
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
       }
 
       if($_GET["tri"] == "pour les 7 jours à venir"){
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
+
           $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
-          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "pour les 30 jours à venir"){
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
+
           $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
-          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "trié(s) par département"){
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `departement` ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
+
           $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `departement` ASC");
-          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "trié(s) par catégorie"){
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `categorie` ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
+
           $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
-          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
       if($_GET["tri"] == "trié(s) par public"){
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `public` ASC");
+          $valeurs= $resultatCompte->fetch();
+          $nbentree = $valeurs['nbentree'];
+
           $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `public` ASC");
-          /*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
       }
 
+?>
+ <section id="boutons-evenement" class= "container-fluid">
+      <div class="row">
+
+          <div class="col-md-12">
+              <h2><?php  echo "$nbentree Événement(s) " . $_GET["tri"] ?></h2>
+      </div>
+
+</section>
+      <?php
 
       include ("bloc-evenement.php");
       ?>

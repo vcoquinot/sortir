@@ -166,6 +166,10 @@ header a:focus, header a:hover {
     font-size: 1.5em;
     color: #FF0000;
 }
+.textBlanc {
+    color: #ffffff;
+    margin: 15px 0;
+}
 
 
 /*----- BOUTONS EVENEMENTS-----*/

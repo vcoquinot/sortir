@@ -13,9 +13,9 @@ session_start ();
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
-      <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -44,15 +44,7 @@ session_start ();
       </section>
 <!-- Fin Présentation -->
 
-<!-- TODO isset $_GET["tri"]-->
-<!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-  <!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-  <!-- TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-
-
-  <!-- Partie bandeau BOUTONS EVENEMENTS -->
+<!-- Partie bandeau BOUTONS EVENEMENTS -->
   <section class="bandeau_bt_filtre text-center">
       <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
       <a class="boutons-filtres" href="evenements-filtres.php?tri=pour les 7 jours à venir">7 jours</a>
@@ -61,6 +53,13 @@ session_start ();
       <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par catégorie">Par catégorie</a>
       <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par public">Par public</a>
   </section>
+
+  <?php
+  //      Initialise Tri si on arrive sur cette page directement sans passer par index
+  if (!(isset($_GET["tri"]))) {
+      $_GET["tri"] = "du jour";
+  }
+  ?>
 
   <section id="boutons-evenement" class= "container-fluid">
       <div class="row">
@@ -80,9 +79,11 @@ session_start ();
       <?php
       require_once("acces-bdd.php");
 
+
+
       if($_GET["tri"] == "du jour"){
           $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
-/*        $données_bdd = $bdd->query("SELECT * FROM evenement WHERE categorie = 'Expo';");*/
+
       }
 
       if($_GET["tri"] == "pour les 7 jours à venir"){

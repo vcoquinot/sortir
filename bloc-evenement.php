@@ -1,6 +1,13 @@
 <?php
 $compteur = 0;
 
+if (!($donnees_bdd->fetch())) {
+    echo "<p class='message textBlanc'>Aucun événement selon les critères en vigueur</p>";
+}
+
+/*reset($donnees_bdd);*/
+
+
 while ($valeurs = $donnees_bdd->fetch()) {
     $compteur++;
     if ($compteur%7 == 0) {

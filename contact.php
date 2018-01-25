@@ -48,7 +48,7 @@
     
 
         <section id="formulaire-creation-compte" class="container">
-        <form action="traitement_contact-0.php" method="POST">
+        <form action="traitement_contact.php" method="POST">
           <div class="form-horizontal">
             <div class="form-group row">
               <div class="col-md-offset-3 col-md-3">

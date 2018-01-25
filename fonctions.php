@@ -266,12 +266,12 @@ function displayFormNouvelEvenement(){
                 <div class="label-group row">
                     <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
                     <label class="custom-control custom-radio col-md-2">
-                        <input name="statut" type="radio" class="custom-control-input" value="brouillon">
+                        <input name="statut" type="radio" class="custom-control-input" value="brouillon" checked>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Brouillon</span>
                     </label>
                     <label class="custom-control custom-radio col-md-2">
-                        <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
+                        <input name="statut" type="radio" class="custom-control-input" value="publié">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Publié</span>
                     </label>

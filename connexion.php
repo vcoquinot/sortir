@@ -1,7 +1,3 @@
-<?php 
-session_start();
-$_SESSION['pseudo'];
-?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>

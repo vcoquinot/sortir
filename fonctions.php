@@ -187,7 +187,7 @@ function displayFormNouvelEvenement(){
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-3">
-                    <input name="lieu" type="text" class="form-control" placeholder="Lieu">
+                    <input name="lieu" type="text" class="form-control" placeholder="Lieu-dit, nom de la salle…">
                     <input name="adresse" type="text" class="form-control" placeholder="Adresse*" required>
                 </div>
                 <div class="col-md-offset-1 col-md-3">
@@ -266,12 +266,12 @@ function displayFormNouvelEvenement(){
                 <div class="label-group row">
                     <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
                     <label class="custom-control custom-radio col-md-2">
-                        <input name="statut" type="radio" class="custom-control-input" value="brouillon" checked>
+                        <input name="statut" type="radio" class="custom-control-input" value="brouillon">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Brouillon</span>
                     </label>
                     <label class="custom-control custom-radio col-md-2">
-                        <input name="statut" type="radio" class="custom-control-input" value="publié">
+                        <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-description">Publié</span>
                     </label>

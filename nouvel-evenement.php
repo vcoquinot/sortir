@@ -61,15 +61,12 @@ include ("fonctions.php");
 
     $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
 
-
-
     $id_adresse = $bdd->lastInsertId(); //récupère l'id généré par l'insertion
 
     $titre = addslashes(htmlspecialchars(strip_tags($_POST['titre'])));
     $categorie = addslashes(htmlspecialchars(strip_tags($_POST['categorie'])));
     $date = addslashes(htmlspecialchars(strip_tags($_POST['date'])));
     $heure = addslashes(htmlspecialchars(strip_tags($_POST['heure'])));
-
     $public = addslashes(htmlspecialchars(strip_tags($_POST['public'])));
     $lieu = addslashes(htmlspecialchars(strip_tags($_POST['lieu'])));
     $departement = addslashes(htmlspecialchars(strip_tags($_POST['departement'])));
@@ -78,16 +75,24 @@ include ("fonctions.php");
     $tel = addslashes(htmlspecialchars(strip_tags($_POST['tel'])));
     $mail = addslashes(htmlspecialchars(strip_tags($_POST['mail'])));
     $site = addslashes(htmlspecialchars(strip_tags($_POST['site'])));
+
 //     $file_image = addslashes(htmlspecialchars(strip_tags($_POST['file_image'])));
-    $legende = addslashes(htmlspecialchars(strip_tags($_POST['legende'])));
-    $descriptif = addslashes(htmlspecialchars(strip_tags($_POST['descriptif'])));
-    $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
 
+     $legende = addslashes(htmlspecialchars(strip_tags($_POST['legende'])));
+     $descriptif = addslashes(htmlspecialchars(strip_tags($_POST['descriptif'])));
+     $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
+//     $bdd->exec("INSERT INTO evenement (id_adresse, titre) VALUES (`$id_adresse`, `$titre`)");
 
-     $bdd->exec("INSERT INTO evenement (id_adresse, titre) VALUES ($id_adresse, $titre)");
+     $bdd->exec("INSERT INTO `evenement`(`titre`, `categorie`, `date`, `heure`, `public`, `lieu`, `id_adresse`, `departement`, `acces_handicap`, `contact`, `tel`, `mail`, `site`, `legende`, `descriptif`, `status`) VALUES ('$titre','$categorie','$date','$heure','$public','$lieu','$id_adresse','$departement','$acces_handicap','$contact','$tel','$mail','$site','$legende','$descriptif','$statut')");
 
-//     $bdd->exec("INSERT INTO evenement (id_adresse, titre, categorie, `date`, heure, `public`, lieu, departement, acces_handicap, contact, tel, mail, site, legende, statut) VALUES ($id_adresse, $titre, $categorie, $date, $heure, $public, $lieu, $departement, $acces_handicap, $contact, $tel, $mail, $site, $legende, $statut)");
+?>
+     <SCRIPT LANGUAGE="JavaScript">
+         alert('Votre nouvel élément à bien été créé');
+</SCRIPT>
 
+<?php
+
+     header('Location:tableau-de-bord.php');
 
  }
 ?>

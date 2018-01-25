@@ -1,7 +1,3 @@
-<?php
-session_start ();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -70,34 +66,33 @@ session_start ();
             $periodicite= addslashes(htmlspecialchars(strip_tags($_POST['periodicite'])));
             $CGU= addslashes(htmlspecialchars(strip_tags($_POST['CGU'])));
             
-                if ($psw != $psw_confirm)
-                {
-                    echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
-                    displayFormCreationCompte();
-                }
-                else if($_POST['CGU'] != 'accepte')
-                {
-                    echo "<p class='message'>Vous devez accepter les conditions générales</p>";
-                    displayFormCreationCompte();
-                }
-                else
-                {
-                    //insertion adresse
-                    $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
-                    //récupère l'id généré par l'insertion
-                    $id_adresse = $bdd->lastInsertId(); 
-                    //insertion newsletter
-                    $bdd->exec("INSERT INTO newsletter (etat_abonne, periodicite) VALUES ('newsletter', 'periodicite')");
-                    //recupère id newsletter
-                    $id_newsletter = $bdd->lastInsertId(); 
-                    //insertion reste des donnees du formulaire
-                    $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`,`nom_entite`,`id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$psw', '2', '$type', '$entite', '$id_adresse', '', '$mail', '00', '$id_newsletter');");
+            if ($psw != $psw_confirm)
+            {
+                echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
+                displayFormCreationCompte();
+            }
+            else if($_POST['CGU'] != 'accepte')
+            {
+                echo "<p class='message'>Vous devez accepter les conditions générales</p>";
+                displayFormCreationCompte();
+            }
+            else
+            {
+                //insertion adresse
+                $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
+                //récupère l'id généré par l'insertion
+                $id_adresse = $bdd->lastInsertId(); 
+                //insertion newsletter
+                $bdd->exec("INSERT INTO newsletter (etat_abonne, periodicite) VALUES ('newsletter', 'periodicite')");
+                //recupère id newsletter
+                $id_newsletter = $bdd->lastInsertId(); 
+                //insertion reste des donnees du formulaire
+                $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`,`nom_entite`,`id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$psw', '2', '$type', '$entite', '$id_adresse', '', '$mail', '00', '$id_newsletter');");
                     
-                    //verifier erreur BDD
-                   //print_r($bdd->errorInfo());
-
-                    header('Location:tableau-de-bord.php'); 
-                } 
+                //verifier erreur BDD
+                //print_r($bdd->errorInfo());                 
+                header('Location:tableau-de-bord.php'); 
+            } 
         }
     ?>
 

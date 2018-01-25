@@ -38,7 +38,7 @@ function displayFormCreationCompte(){
      
       <div class="form-group row ">
         <div class="col-md-offset-2 col-md-3">
-          <input name="nom_entite" class="form-control" type="text" placeholder="Nom de l'entité">
+          <input name="entite" class="form-control" type="text" placeholder="Nom de l'entité">
         </div>
         <div class="col-md-offset-1 col-md-3">
           <select class="form-control" name="type" required>

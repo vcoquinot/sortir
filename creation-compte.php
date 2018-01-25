@@ -52,14 +52,15 @@
             $nom = $_POST['nom']; 
             $prenom= $_POST['prenom'];
             $pseudo = $_POST['pseudo'];
+            $psw = $_POST['psw'];
+            $psw_confirm = $_POST['psw_confirm']; 
             $type= $_POST['type'];
             $entite= $_POST['nom_entite'];
             $adresse= $_POST['adresse'];
             $site= $_POST['site'];
             $mail= $_POST['email'];
             $tel= $_POST['tel'];
-            $psw = $_POST['psw'];
-            $psw_confirm = $_POST['psw_confirm'];          
+         
             $cp= $_POST['cp'];
             $ville= $_POST['ville'];
             $CGU= $_POST['CGU'];
@@ -75,7 +76,11 @@
                 }
                 else
                 {
-                    $bdd->exec("INSERT INTO utilisateur (nom, prenom) VALUES ('toto', 'tutu')"); 
+                    $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`, `nom_entite`, `id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$pwd', '1', '$type', '$nom_entite', '1', '', '$mail', '00', '4');");
+                    
+                    //verifier erreur BDD
+                   print_r($bdd->errorInfo());
+
                     //header('Location:tableau-de-bord.php'); 
                 } 
         }

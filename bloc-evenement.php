@@ -37,7 +37,7 @@
 
     while ($valeurs = $donnees_bdd->fetch()) {
         $compteur++;
-        if ($compteur%7 == 0) {
+        if ($compteur%6 == 0) {
             ?>
             <article class="evenement-block">
                 <div class="evenement-description col-xs-12 col-md-12">

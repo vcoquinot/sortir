@@ -1,3 +1,7 @@
+<?php
+session_start ();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -90,9 +94,9 @@
                     $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`,`nom_entite`,`id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$psw', '2', '$type', '$entite', '$id_adresse', '', '$mail', '00', '$id_newsletter');");
                     
                     //verifier erreur BDD
-                   print_r($bdd->errorInfo());
+                   //print_r($bdd->errorInfo());
 
-                    //header('Location:tableau-de-bord.php'); 
+                    header('Location:tableau-de-bord.php'); 
                 } 
         }
     ?>

@@ -77,7 +77,7 @@
 
 <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
             <a href="#">Rechercher les événements</a>
-            <a href="evenements-filtres.php?tri=du jour">Filtrer les événements</a>
+            <a href="evenements-filtres.php?tri=Aujourd'hui">Filtrer les événements</a>
             </div>
     </section>
 

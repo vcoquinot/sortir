@@ -238,14 +238,14 @@ header a:focus, header a:hover {
 }
 
 #evenements h2 {  /*mise en forme titres*/
-    font-size: 1.58em;
+    font-size: 1.42em;
     color: black;
     font-weight: bold;
 }
 
 #evenements h3 { /*mise en forme catégories*/
     color: #0bb3e8;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: right;
     display: inline;
 }

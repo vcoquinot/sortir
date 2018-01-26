@@ -46,7 +46,7 @@ session_start ();
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
   <section class="bandeau_bt_filtre text-center">
-      <a class="boutons-filtres" href="evenements-filtres.php?tri=du jour">Du jour</a>
+      <a class="boutons-filtres" href="evenements-filtres.php?tri=Aujourd'hui">Aujourd'hui</a>
       <a class="boutons-filtres" href="evenements-filtres.php?tri=pour les 7 jours à venir">7 jours</a>
       <a class="boutons-filtres" href="evenements-filtres.php?tri=pour les 30 jours à venir">30 jours</a>
       <a class="boutons-filtres" href="evenements-filtres.php?tri=trié(s) par département">Par département</a>
@@ -57,7 +57,7 @@ session_start ();
   <?php
   //      Initialise Tri si on arrive sur cette page directement sans passer par index
   if (!(isset($_GET["tri"]))) {
-      $_GET["tri"] = "du jour";
+      $_GET["tri"] = "Aujourd'hui";
   }
   ?>
 
@@ -68,13 +68,12 @@ session_start ();
 
 <!-- Partie EVENEMENTS -->
 
-  <section id="evenements" class="container-fluid">
       <?php
       require_once("acces-bdd.php");
 
 
 
-      if($_GET["tri"] == "du jour"){
+      if($_GET["tri"] == "Aujourd'hui"){
           $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
@@ -83,19 +82,19 @@ session_start ();
       }
 
       if($_GET["tri"] == "pour les 7 jours à venir"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) ORDER BY `evenement`.`date`  ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+7 ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "pour les 30 jours à venir"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) ORDER BY `evenement`.`date`  ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `date` <= CURRENT_DATE+30 ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "trié(s) par département"){
@@ -131,7 +130,9 @@ session_start ();
       </div>
 
 </section>
-      <?php
+  <section id="evenements" class= "container-fluid">
+
+  <?php
 
       include ("bloc-evenement.php");
       ?>

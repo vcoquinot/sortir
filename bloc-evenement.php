@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <h3><?php echo $valeurs['categorie'] ?></h3>
-                        <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo strftime('%e %b. %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo strftime('%H:%M', strtotime(strval($valeurs['heure']))) ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
+                        <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo strftime('%e %b %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo strftime('%H:%M', strtotime(strval($valeurs['heure']))) ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
 
                     </div>
 
@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <h3><?php echo $valeurs['categorie'] ?></h3>
-                        <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo strftime('%e %b. %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo strftime('%H:%M', strtotime(strval($valeurs['heure']))) ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
+                        <h4><span>&nbsp;&nbsp;///&nbsp;&nbsp;</span><?php echo strftime('%e %b %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><span class = "bleu"><?php echo strftime('%H:%M', strtotime(strval($valeurs['heure']))) ?></span><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['public'] ?></h4>
 
                     </div>
 

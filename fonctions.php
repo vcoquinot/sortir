@@ -163,7 +163,7 @@ function displayFormNouvelEvenement(){
 
             <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                    <input type="text" class="form-control" placeholder="Titre de l'événement*" name="titre" title="Titre de l'événement"required>
+                    <input type="text" class="form-control" placeholder="Titre de l'événement*" name="titre" title="Titre de l'événement" value="<?php echo (isset($_POST['titre'])) ? ($_POST['titre']) : "" ;?>" required>
                 </div>
 
                 <div class="col-md-offset-2 col-md-4">
@@ -207,19 +207,6 @@ function displayFormNouvelEvenement(){
                 <label class="custom-control-input">&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="non">Non</label>
                 </div>
 
-<!--                <div class="label-group row">
-                    <span class="custom-control-description col-md-offset-2 col-md-2 marginTop"><strong>Accès handicapé*</strong></span>
-                    <label class="custom-control custom-radio col-md-1 marginTop">
-                        <input name="acces_handicap" type="radio" class="custom-control-input" value="oui" required >
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Oui</span>
-                    </label>
-                    <label class="custom-control custom-radio col-md-1 marginTop">
-                        <input name="hacces_handicap" type="radio" class="custom-control-input" value="non">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">Non</span>
-                    </label>
-                </div>-->
             </div>
 
                 <div class="col-md-12">
@@ -261,13 +248,16 @@ function displayFormNouvelEvenement(){
                     <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement*" title="Détails de l'événement" required></textarea>
                 </div>
 
+
+<!-- Gestion téléchargement visuel événement -->
                 <div id="visuel" class="row visuel text-center">
                     <div class="col-md-4 text-center">
                         <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée" title="Visuel de l'image"><!--270*140p-->
 
+
                         <label for="file_image" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement">Télecharger une image* (JPG, PNG | max. 300 Ko)</label>
                         <input type="hidden" name="MAX_FILE_SIZE" value="3072" />
-                        <input id="file_image" name="file_image" class="input-file" type="file" title="XXX WWWWWW">
+                        <input id="file_image" name="file_image" class="input-file" type="file">
 
                         <input name="legende" type="text" class="form-control" placeholder="Légende" title="Légende du visuel (utile pour Google)">
                     </div>
@@ -321,21 +311,21 @@ function displayFormNouvelEvenement(){
 
             <div class="label-group row col-md-offset-2 col-md-8 marginTop text-center">
                 <label class="custom-control-input">Statut de la publication*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="brouillon" required>Brouillon</label>
-                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié">Publié</label>
+                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié" checked>Publié</label>
             </div>
 
-<!--            <div class="label-group row">-->
-<!--                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>-->
-<!--                <label class="custom-control custom-radio col-md-2">-->
-<!--                    <input name="statut" type="radio" class="custom-control-input" value="brouillon">-->
-<!--                    <span class="custom-control-indicator"></span>-->
-<!--                    <span class="custom-control-description">Brouillon</span>-->
-<!--                </label>-->
-<!--                <label class="custom-control custom-radio col-md-2">-->
-<!--                    <input name="statut" type="radio" class="custom-control-input" value="publié" checked>-->
-<!--                    <span class="custom-control-indicator"></span>-->
-<!--                    <span class="custom-control-description">Publié</span>-->
-<!--                </label>-->
+            <div class="label-group row">
+                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
+                <label class="custom-control custom-radio col-md-2">
+                    <input name="statut" type="radio" class="custom-control-input" value="brouillon">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Brouillon</span>
+                </label>
+                <label class="custom-control custom-radio col-md-2">
+                    <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Publié</span>
+                </label>
 
         </div>
 
@@ -358,5 +348,56 @@ function displayFormNouvelEvenement(){
     </section>
 
 <?php
+}
+?>
+
+<?php
+function controDownLoadFile(){
+//<!-- ***************************************   -->
+//<!-- Contrôle le téléchargement d'un fichier image -->
+//<!-- ***************************************   -->
+    $erreur = "";
+
+    if (!($_FILES['file_image']['error'] > 0)) {
+        $nouveauNomVisuel = md5(uniqid(rand(), true));
+        $nouveauNomVisuel = "images/visuels-evenements/ . $nouveauNomVisuel . {$extension_upload}";
+        $resultat = move_uploaded_file($_FILES['file_image']['tmp_name'],$nom);
+        if ($resultat) echo "Transfert réussi";
+
+    }
+    else {
+        $erreur = "Erreur lors du transfert";
+        echo $erreur;
+
+        if ($_FILES['file_image']['size'] > 3072) {
+            $erreur = $erreur . "Le fichier est trop gros";
+            echo $erreur;
+        }
+
+        $extensions_valides = array('jpg', 'jpeg', 'png');
+
+        //1. strrchr renvoie l'extension avec le point (« . »).
+        //2. substr(chaine,1) ignore le premier caractère de chaine.
+        //3. strtolower met l'extension en minuscules.
+        $extension_upload = strtolower(substr(  strrchr($_FILES['file_image']['name'], '.')  ,1)  );
+        if (!(in_array($extension_upload,$extensions_valides))) {
+            $erreur = "Extension incorrecte";
+            echo $erreur;
+        }
+
+
+        $image_sizes = getimagesize($_FILES['file_image']['tmp_name']);
+        if ($image_sizes[0] > 801 OR $image_sizes[1] > 801) {
+            $erreur = "Image trop grande";
+            echo $erreur;
+        }
+
+        displayFormNouvelEvenement();
+
+    }
+
+
+
+
 }
 ?>

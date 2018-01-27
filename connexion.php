@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -49,7 +53,7 @@
         else
         {
           $pseudo= $_POST['pseudo'];
-          $password= $_POST['password'];
+          $password= md5($_POST['password']); // gratos ou contributeur
 
           $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
           
@@ -70,7 +74,7 @@
                   {
                     
                     $_SESSION['pseudo']=$pseudo;
-                    header('Location:tableau-de-bord.php');    
+                    header('Location:tableau-de-bord.php');
                   }
                   else
                   {

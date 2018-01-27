@@ -87,6 +87,7 @@
                 //recupère id newsletter
                 $id_newsletter = $bdd->lastInsertId(); 
                 //insertion reste des donnees du formulaire
+                $psw = md5($psw);
                 $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`,`nom_entite`,`id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$psw', '2', '$type', '$entite', '$id_adresse', '', '$mail', '00', '$id_newsletter');");
                     
                 //verifier erreur BDD

@@ -88,7 +88,7 @@ include ("fonctions.php");
 ?>
      <SCRIPT LANGUAGE="JavaScript">
          alert('Votre nouvel élément à bien été créé');
-</SCRIPT>
+     </SCRIPT>
 
 <?php
 

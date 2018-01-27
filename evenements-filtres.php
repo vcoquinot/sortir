@@ -62,7 +62,6 @@ session_start ();
   ?>
 
 
-
 <!-- Fin partie bandeau BOUTONS EVENEMENTS -->
 
 
@@ -70,7 +69,6 @@ session_start ();
 
       <?php
       require_once("acces-bdd.php");
-
 
 
       if($_GET["tri"] == "Aujourd'hui"){

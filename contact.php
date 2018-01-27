@@ -14,8 +14,8 @@
 
 
       <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@
   </head>
   <body>
 
-  <?php include ("menu-logo.php");?>
+    <?php include ("menu-logo.php");?>
 
     <section id="introduction-contact" class="container-fluid">
 
@@ -36,7 +36,6 @@
           <!-- Présentation -->
           <div id="presentation" class="container">
               <div class="row">
-
                   <p>Si vous avez des questions, des suggestions n'hésitez pas à nous envoyer un message, nous ne manquerons pas de vous répondre.</p>
               </div>
           </div>
@@ -45,43 +44,41 @@
 
           <!-- Fin Présentation -->
 
-    
+    <section id="formulaire-creation-compte" class="container">
 
-        <section id="formulaire-creation-compte" class="container">
-        <form action="traitement_contact.php" method="POST">
-          <div class="form-horizontal">
-            <div class="form-group row">
-              <div class="col-md-offset-3 col-md-3">
-                <input name="nom" class="form-control" type="text" placeholder="Nom" required>
-              </div>
-              <div class="col-md-3">
-               <input name="mail" class="form-control" type="email" placeholder="Mail" required>
-              </div>
-            </div>
-
-            <div class="form-group row ">
-              <div class="col-md-offset-3 col-md-6">
-                <textarea name="message" class="form-control" placeholder="Votre message" rows="8" required></textarea>
-              </div>
-                <div class="col-md-offset-3 col-md-6 text-center">
-                    <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
-                </div>
-            </div>
+    <form action="traitement_contact.php" method="POST">
+      <div class="form-horizontal">
+        <div class="form-group row">
+          <div class="col-md-offset-3 col-md-3">
+            <input name="nom" class="form-control" type="text" placeholder="Nom" required>
           </div>
-          </form>
-        </section>
+          <div class="col-md-3">
+           <input name="mail" class="form-control" type="email" placeholder="Mail" required>
+          </div>
+        </div>
+
+        <div class="form-group row ">
+          <div class="col-md-offset-3 col-md-6">
+            <textarea name="message" class="form-control" placeholder="Votre message" rows="8" required></textarea>
+          </div>
+            <div class="col-md-offset-3 col-md-6 text-center">
+                <button type="submit" class="btn btn-light bt_bleu">Envoyer</button>
+            </div>
+        </div>
+      </div>
+      </form>
+
+    </section>
 
 
 
+    <!-- Footer -->
+    <?php include ("footer.php");?>
+    <!-- Fin Footer -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- Footer -->
-  <?php include ("footer.php");?>
-  <!-- Fin Footer -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    </body>
-    </html>
+  </body>
+</html

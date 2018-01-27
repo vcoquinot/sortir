@@ -114,6 +114,7 @@ function displayFormCreationCompte(){
 
 <?php
 }
+
 ?>
 <?php
 function displayFormConnexion(){
@@ -147,6 +148,7 @@ function displayFormConnexion(){
         <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
       </div>
     </section>
+    <!-- Fin formulaire -->
 <?php
   }
   ?>

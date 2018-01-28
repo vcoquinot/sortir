@@ -322,6 +322,11 @@ header a:focus, header a:hover {
     margin: 20px auto !important;
 }
 
+.tdb {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 /*---- FORMULAIRE ----*/
 /* ----------------------------------------------------------------------------- */
 
@@ -421,6 +426,7 @@ input[type="file"] {
 #visuel_evenement {
     width: 260px;
     height: 134px;
+    margin-top: 12px;
 }
 
 .obligatoires {

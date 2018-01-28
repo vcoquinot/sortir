@@ -63,7 +63,7 @@ session_start();
           $donnee_pseudo = $donneebdd_pseudo->fetch();
           $donneebdd_pseudo->closeCursor();
     
-          if ($pseudo == $donnee_pseudo['pseudo']) 
+          if ($pseudo == $donnee_pseudo['pseudo'])
           {
               //VERIF SI PWD CORRECT ET ASSOCIE AU PSEUDO
               $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pseudo = '$pseudo'");

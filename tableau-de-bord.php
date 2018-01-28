@@ -1,6 +1,9 @@
 <?php
 //verification session ouverte
 require_once("securite.php");
+//acces BDD
+require_once("acces-bdd.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -50,7 +53,7 @@ require_once("securite.php");
           <section id="tableau-de-bord" class="container">
               <div class="row text-center">
               <a href="nouvel-evenement.php" class="lien_bleu font_roboto">Créer un événement</a>
-              <a href="#" class="lien_bleu font_roboto">Gérer mon compte</a>
+              <a href="non-developpe.php" class="lien_bleu font_roboto">Gérer mon compte</a>
               </div>
           </section>
           <!-- Fin Partie bandeau BOUTONS -->
@@ -74,7 +77,7 @@ require_once("securite.php");
   <?php {
       $titre = "Vernissage œuvres de Franck Célaire et dégustation de vin « Mas des armes »";
       $categorie = "Exposition";
-      $date = "23 janvier 2018";
+      $date = "23 janv 18";
       $heure = "15:30";
       $public = "Adulte";
       $lieu = "Le Rockstore";
@@ -87,6 +90,7 @@ require_once("securite.php");
       $telephone = "0606060606";
       $email = "contact@rockstore.fr";
       $site = "http://www.rockstore.fr/";
+      $status = "publié";
   }
   ?>
 
@@ -99,14 +103,13 @@ require_once("securite.php");
                     <div class="evenement-description col-md-12" >
                         <div class="row">
                             <div class="col-md-4">
-                                <h2><?php echo $titre ?></h2>
+                                <h2 class="tdb"><?php echo $titre ?></h2>
                             </div>
-                            <div class="col-md-1">
-                                <h3><?php echo $categorie ?></h3>
+
+                            <div class="col-md-3">
+                                <h4><?php echo $categorie ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><?php echo $date ?><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $status ?></h4>
                             </div>
-                            <div class="col-md-2">
-                                <h3><?php echo $date ?></h3>
-                            </div>
+
                             <div class="col-md-5 text-right">
                                 <button type="button" class="btn btn-light bt_bleu">Modifier</button>
                                 <button type="button" class="btn btn-light bt_bleu">Supprimer</button>

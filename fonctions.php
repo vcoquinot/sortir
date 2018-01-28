@@ -132,7 +132,7 @@ function displayFormConnexion(){
             </div>
             <div class="col-md-3">
                 <input class="form-control" type="password" placeholder="Mot de passe" name="password" value="<?php echo (isset($_POST['password'])) ? ($_POST['password']) : "" ;?>" required>
-                <small><a href="#" >Mot de passe oublié</a></small>
+                <small><a href="non-developpe.php" >Mot de passe oublié</a></small>
             </div>
             <div class="col-md-12 row text-center">
                 <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
@@ -205,8 +205,8 @@ function displayFormNouvelEvenement(){
                 </div>
 
                 <div class="label-group row col-md-offset-2 col-md-8 marginTop text-center">
-                <label class="custom-control-input">Accessible aux personnes à mobilitée réduite*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="oui" required>Oui</label>
-                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="non">Non</label>
+                <label class="custom-control-input">Accessible aux personnes à mobilitée réduite*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="oui" required>&nbsp;Oui</label>
+                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="non">&nbsp;Non</label>
                 </div>
 
             </div>
@@ -312,22 +312,22 @@ function displayFormNouvelEvenement(){
         <div class="row">
 
             <div class="label-group row col-md-offset-2 col-md-8 marginTop text-center">
-                <label class="custom-control-input">Statut de la publication*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="brouillon" required>Brouillon</label>
-                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié" checked>Publié</label>
+                <label class="custom-control-input">Statut de la publication*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="brouillon" required>&nbsp;Brouillon</label>
+                <label class="custom-control-input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié" checked>&nbsp;Publié</label>
             </div>
 
-            <div class="label-group row">
-                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>
-                <label class="custom-control custom-radio col-md-2">
-                    <input name="statut" type="radio" class="custom-control-input" value="brouillon">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Brouillon</span>
-                </label>
-                <label class="custom-control custom-radio col-md-2">
-                    <input name="statut" type="radio" class="custom-control-input" value="publié" checked>
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Publié</span>
-                </label>
+<!--            <div class="label-group row">-->
+<!--                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>-->
+<!--                <label class="custom-control custom-radio col-md-2">-->
+<!--                    <input name="statut" type="radio" class="custom-control-input" value="brouillon">-->
+<!--                    <span class="custom-control-indicator"></span>-->
+<!--                    <span class="custom-control-description">Brouillon</span>-->
+<!--                </label>-->
+<!--                <label class="custom-control custom-radio col-md-2">-->
+<!--                    <input name="statut" type="radio" class="custom-control-input" value="publié" checked>-->
+<!--                    <span class="custom-control-indicator"></span>-->
+<!--                    <span class="custom-control-description">Publié</span>-->
+<!--                </label>-->
 
         </div>
 

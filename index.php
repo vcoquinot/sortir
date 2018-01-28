@@ -76,7 +76,7 @@
             <div class="col-md-6">
 
 <!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
-            <a href="#">Rechercher les événements</a>
+            <a href="non-developpe.php">Rechercher les événements</a>
             <a href="evenements-filtres.php?tri=Aujourd'hui">Filtrer les événements</a>
             </div>
     </section>

@@ -92,7 +92,7 @@
                     
                 //verifier erreur BDD
                 //print_r($bdd->errorInfo());                 
-                header('Location: tableau-de-bord.php');
+                header("location:tableau-de-bord.php");
             } 
         }
     ?>

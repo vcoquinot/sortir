@@ -90,12 +90,13 @@ include ("fonctions.php");
 
 ?>
      <SCRIPT LANGUAGE="JavaScript">
-         alert('Votre nouvel élément à bien été créé');
+         alert('Votre nouvel événement à bien été créé');
      </SCRIPT>
 
 <?php
-
+    
      header('Location:tableau-de-bord.php');
+     
 
  }
 ?>

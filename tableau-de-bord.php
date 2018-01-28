@@ -1,6 +1,9 @@
 <?php
 session_start ();
-$_SESSION['pseudo'];
+if(!(isset($_SESSION['pseudo']))){
+    header("location:connexion.php");
+}
+//$_SESSION['pseudo'];
 
 ?>
 <!DOCTYPE html>

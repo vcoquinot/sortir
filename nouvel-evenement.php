@@ -87,9 +87,9 @@ include ("fonctions.php");
      $bdd->exec("INSERT INTO `evenement`(`titre`, `categorie`, `date`, `heure`, `public`, `lieu`, `id_adresse`, `departement`, `acces_handicap`, `contact`, `tel`, `mail`, `site`, `legende`, `descriptif`, `status`) VALUES ('$titre','$categorie','$date','$heure','$public','$lieu','$id_adresse','$departement','$acces_handicap','$contact','$tel','$mail','$site','$legende','$descriptif','$statut')");
 
 ?>
-<!--     <SCRIPT LANGUAGE="JavaScript">-->
-<!--         alert('Votre nouvel élément à bien été créé');-->
-<!--     </SCRIPT>-->
+     <SCRIPT LANGUAGE="JavaScript">
+         alert('Votre nouvel élément à bien été créé');
+     </SCRIPT>
 
 <?php
 

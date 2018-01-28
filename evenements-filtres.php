@@ -72,51 +72,51 @@ session_start ();
 
 
       if($_GET["tri"] == "Aujourd'hui"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` = CURRENT_DATE AND `status`= \"publié\" ORDER BY `evenement`.`heure` ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE ORDER BY `evenement`.`heure` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE AND `status`= \"publié\" ORDER BY `evenement`.`heure` ASC");
       }
 
       if($_GET["tri"] == "pour les 7 jours à venir"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) ORDER BY `evenement`.`date`  ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) AND `status`= \"publié\" ORDER BY `evenement`.`date`  ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) AND `status`= \"publié\" ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "pour les 30 jours à venir"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) ORDER BY `evenement`.`date`  ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) AND `status`= \"publié\" ORDER BY `evenement`.`date`  ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) AND `status`= \"publié\" ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "trié(s) par département"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `departement` ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `status`= \"publié\" ORDER BY `departement` ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `departement` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `status`= \"publié\" ORDER BY `departement` ASC");
       }
 
       if($_GET["tri"] == "trié(s) par catégorie"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `categorie` ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `status`= \"publié\" ORDER BY `categorie` ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `categorie` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `status`= \"publié\" ORDER BY `categorie` ASC");
       }
 
       if($_GET["tri"] == "trié(s) par public"){
-          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement ORDER BY `public` ASC");
+          $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `status`= \"publié\" ORDER BY `public` ASC");
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement ORDER BY `public` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `status`= \"publié\" ORDER BY `public` ASC");
       }
 
 ?>

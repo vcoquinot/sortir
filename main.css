@@ -310,6 +310,14 @@ header a:focus, header a:hover {
     background-color: #E7169D !important;
 }
 
+.icon_acces_handicape {  /*mise en forme icon accès handicapé*/
+    position: absolute;
+    min-width: 52px !important;
+    width: 40px !important;
+    left: 0px;
+    bottom: -14px;
+}
+
 .annonceur {
     margin: 20px auto !important;
 }

@@ -26,7 +26,9 @@
                 </div>
 
                 <img class="img-responsive" src=<?php echo $valeurs['chemin_image']?> alt=<?php echo $valeurs['legende']?>>
+                <img class="icon_acces_handicape" alt='accès handicapé' title="accès handicapé" src=<?php if ($valeurs['acces_handicap']=="oui") {echo "images/acces_handicape_O.png";} else {echo "images/acces_handicape_N.png";}?> >
                 <button type="button" class="btn btn-light buttonPlus">+</button>
+
             </div>
         </article>
         <?php
@@ -68,6 +70,7 @@
                 </div>
 
                 <img class="img-responsive" src=<?php echo $valeurs['chemin_image']?> alt=<?php echo $valeurs['legende']?>>
+                <img class="icon_acces_handicape" alt='accès handicapé' title="accès handicapé" src=<?php if ($valeurs['acces_handicap']=="oui") {echo "images/acces_handicape_O.png";} else {echo "images/acces_handicape_N.png";}?>>
                 <button type="button" class="btn btn-light buttonPlus">+</button>
             </div>
         </article>

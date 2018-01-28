@@ -1,4 +1,7 @@
-
+<?php
+//verification session ouverte
+require_once("securite.php");
+?>
 <header class="container-fluid">
     <div class="row">
         <div class="col-md-offset-1 col-md-3">
@@ -6,8 +9,8 @@
             <a href="index.php" title="Page d'accueil sortirgratos.fr"><img class="anim_logo" src="images/logo.png" alt= "logo"></a>
         </div>
         <div class="col-md-offset-1 col-md-6 row text-right">
-            <span><?php echo $_SESSION['pseudo']; ?></span>
-            <a class="display_inline_block" href="index.php"><p>Déconnexion</p></a>
+            <span><?php if(isset($_SESSION['pseudo'])) echo ($_SESSION['pseudo']); ?></span>
+            <a class="display_inline_block" href="logout.php"><p>Déconnexion</p></a>
         </div>
 
     </div>

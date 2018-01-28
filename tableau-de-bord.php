@@ -1,10 +1,6 @@
 <?php
-session_start ();
-if(!(isset($_SESSION['pseudo']))){
-    header("location:connexion.php");
-}
-//$_SESSION['pseudo'];
-
+//verification session ouverte
+require_once("securite.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">

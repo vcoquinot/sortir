@@ -1,8 +1,7 @@
 <?php
-session_start ();
-if(!(isset($_SESSION['pseudo']))){
-    header("location:connexion.php");
-}
+//verification session ouverte
+require_once("securite.php");
+//acces BDD
 require_once("acces-bdd.php");
 include ("menu-contributeur.php");
 include ("fonctions.php");

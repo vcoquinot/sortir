@@ -135,7 +135,7 @@ function displayFormConnexion(){
                 <small><a href="non-developpe.php" >Mot de passe oublié</a></small>
             </div>
             <div class="col-md-12 row text-center">
-                <button type="submit" class="btn btn-light bt_bleu">Connexion</button>
+                <button type="submit" class="btn btn-light bt_bleu" autofocus>Connexion</button>
             </div>
           </div>
         </form>

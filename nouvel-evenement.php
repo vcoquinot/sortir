@@ -106,7 +106,7 @@ include ("fonctions.php");
   <!-- Fin Footer -->
 
 <!--  Javascript pour affichage image téléchargée  -->
-    <script type="text/javascript" src="gestion_image.js"></script
+    <script type="text/javascript" src="gestion_image.js"></script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

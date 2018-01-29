@@ -42,13 +42,14 @@
         <div class="col-md-12 text-center">
             <p class="spacer"></p>
         </div>
-        <div class="col-md-offset-4 col-md-4">
+        <div class="col-md-offset-3 col-md-6">
             <ul>
                 <li>Mot de passe oublié</li>
                 <li>Rechercher les événements</li>
                 <li>Partie Administrateur</li>
                 <li>Gérer mon compte</li>
                 <li>Plan du site</li>
+                <li>Boutons : Modifier, Supprimer, Dupliquer dans le tableau de bord Contributeur</li>
                 <li>…</li>
                 <li>Plus tout ce que l'on aurait aimé développer</li>
             </ul>

@@ -35,6 +35,24 @@ require_once("acces-bdd.php");
 
   <?php include ("menu-contributeur.php");?>
 
+  <!-- Partie provisoire simulation données de la base -->
+  <?php {
+      //            TODO ajouter l'id_utilisateur ! ! ! ! ! ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      $id_utilisateur = 4;
+
+  }
+
+  require_once("acces-bdd.php");
+
+  $resultatCompte = $bdd->query("SELECT COUNT(id) AS nbentree FROM evenement WHERE `id_utilisateur` = $id_utilisateur ORDER BY `evenement`.`date` ASC");
+  $valeurs= $resultatCompte->fetch();
+  $nbentree = $valeurs['nbentree'];
+
+  $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `id_utilisateur` = $id_utilisateur ORDER BY `evenement`.`date` ASC");
+
+  ?>
+
+
   <section id="introduction-contact" class="container-fluid">
 
       <div class="col-md-12 row text-center">
@@ -68,81 +86,77 @@ require_once("acces-bdd.php");
   <section id="en-tete-mes-evenements" class= "container-fluid">
       <div class="row">
           <div class="col-md-6">
-              <h2>Mes événements</h2>
+              <h2><?php  echo "$nbentree Événement(s)"?></h2>
           </div>
   </section>
 
 
-  <!-- Partie provisoire simulation données de la base -->
-  <?php {
-      $titre = "Vernissage œuvres de Franck Célaire et dégustation de vin « Mas des armes »";
-      $categorie = "Exposition";
-      $date = "23 janv 18";
-      $heure = "15:30";
-      $public = "Adulte";
-      $lieu = "Le Rockstore";
-      $departement = "Pyrénées-Orientales";
-      $visuel = "fire-2565561_960_720.jpg";
-      $adresse = "20 Rue de Verdun";
-      $codePostal = "34000";
-      $ville = "Montpellier";
-      $organisateur = "Monsieur Rame";
-      $telephone = "0606060606";
-      $email = "contact@rockstore.fr";
-      $site = "http://www.rockstore.fr/";
-      $status = "publié";
-  }
-  ?>
 
-<!--    TODO boucle PHP-->
-  <section id="mes-evenements" class="container-fluid">
+  <section id="evenements" class="container-fluid">
+      <?php
 
 
-            <article class="evenement-block row">
-                <div class="marge-article">
-                    <div class="evenement-description col-md-12" >
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h2 class="tdb"><?php echo $titre ?></h2>
-                            </div>
-
-                            <div class="col-md-3">
-                                <h4><?php echo $categorie ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><?php echo $date ?><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $status ?></h4>
-                            </div>
-
-                            <div class="col-md-5 text-right">
-                                <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-                                <button type="button" class="btn btn-light bt_bleu">Supprimer</button>
-                                <button type="button" class="btn btn-light bt_bleu">Dupliquer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+      if (!($valeurs= $donnees_bdd->fetch())) {
+          echo "<p class='message textBlanc'>Vous n'avez aucun événement !</p>";
+      }
+      else {
+      ?>
 
       <article class="evenement-block row">
           <div class="marge-article">
               <div class="evenement-description col-md-12" >
                   <div class="row">
                       <div class="col-md-4">
-                          <h2><?php echo $titre ?></h2>
+                          <h2 class="tdb"><?php echo $valeurs['titre'] ?></h2>
                       </div>
-                      <div class="col-md-1">
-                          <h3><?php echo $categorie ?></h3>
+
+                      <div class="col-md-3">
+                          <h4 class="align-v"><?php echo $valeurs['categorie'] ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><?php echo strftime('%e %b. %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['statut'] ?></h4>
                       </div>
-                      <div class="col-md-2">
-                          <h3><?php echo $date ?></h3>
-                      </div>
+
                       <div class="col-md-5 text-right">
-                          <button type="button" class="btn btn-light bt_bleu">Modifier</button>
-                          <button type="button" class="btn btn-light bt_bleu">Supprimer</button>
-                          <button type="button" class="btn btn-light bt_bleu">Dupliquer</button>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto">Supprimer</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
                       </div>
                   </div>
               </div>
           </div>
       </article>
-   </section>
+
+      <?php
+    }
+
+      while ($valeurs = $donnees_bdd->fetch()) {
+          ?>
+
+          <article class="evenement-block row">
+              <div class="marge-article">
+                  <div class="evenement-description col-md-12" >
+                      <div class="row">
+                          <div class="col-md-4">
+                              <h2 class="tdb"><?php echo $valeurs['titre'] ?></h2>
+                          </div>
+
+                          <div class="col-md-3">
+                              <h4 class="align-v"><?php echo $valeurs['categorie'] ?><span>&nbsp;&nbsp;//&nbsp;&nbsp;</span><?php echo strftime('%e %b. %g', strtotime(strval($valeurs['date']))) ?><span>&nbsp;&nbsp;/&nbsp;&nbsp;</span><?php echo $valeurs['statut'] ?></h4>
+                          </div>
+
+                          <div class="col-md-5 text-right">
+                              <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto">Supprimer</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </article>
+
+      <?php
+      }
+        ?>
+  </section>
+
 
 
 

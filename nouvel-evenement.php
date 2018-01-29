@@ -30,6 +30,12 @@ include ("fonctions.php");
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script LANGUAGE="JavaScript">
+        function RedirectionJavascript(){
+            document.location.href="tableau-de-bord.php";
+        }
+    </script>
   
 </head>
 
@@ -58,45 +64,103 @@ include ("fonctions.php");
      }
  else {
 
+    $target_dir = "images/visuels-evenements/";
+    $target_file = $target_dir . time() . basename($_FILES["fileToUpload"]["name"]);
 
-     $adresse = addslashes(htmlspecialchars(strip_tags($_POST['adresse'])));
-     $code_postal = addslashes(htmlspecialchars(strip_tags($_POST['code_postal'])));
-     $ville = addslashes(htmlspecialchars(strip_tags($_POST['ville'])));
 
-     $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    // Check if image file is a actual image or fake image
+    if(isset($_POST["submit"])) {
+        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        if($check !== false) {
+            echo "File is an image - " . $check["mime"] . ".";
+            $uploadOk = 1;
+        } else {
+            echo "<p class='message'>Votre fichier n'est pas une image !</p>";
+            $uploadOk = 0;
+        }
+    }
+    // Check if file already exists
+    if (file_exists($target_file)) {
+        echo "<p class='message'>Désolé, ce fichier exsite déjà !</p>";
+        $uploadOk = 0;
+    }
+    // Check file size
+    if ($_FILES["fileToUpload"]["size"] > 500000) {
+        echo "<p class='message'>Désolé, votre fichier est trop lourd !</p>";
+        $uploadOk = 0;
+    }
+    // Allow certain file formats
+    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+        echo "<p class='message'>Désolé, seuls les fichiers JPG, JPEG, PNG sont autorisés !</p>";
+        $uploadOk = 0;
+    }
+    // Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0) {
+        echo "<p class='message'>Désolé, votre fichier n'a pas été téléchargé !</p>";
+        displayFormNouvelEvenement();
 
-     $id_adresse = $bdd->lastInsertId(); //récupère l'id généré par l'insertion
+        // if everything is ok, try to upload file
+    } else {
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            echo "<p class='message vert'>Le fichier \"" . basename($_FILES["fileToUpload"]["name"]) . "\" a bien été téléchargé</p>";
 
-     $titre = addslashes(htmlspecialchars(strip_tags($_POST['titre'])));
-     $categorie = addslashes(htmlspecialchars(strip_tags($_POST['categorie'])));
-     $date = addslashes(htmlspecialchars(strip_tags($_POST['date'])));
-     $heure = addslashes(htmlspecialchars(strip_tags($_POST['heure'])));
-     $public = addslashes(htmlspecialchars(strip_tags($_POST['public'])));
-     $lieu = addslashes(htmlspecialchars(strip_tags($_POST['lieu'])));
-     $departement = addslashes(htmlspecialchars(strip_tags($_POST['departement'])));
-     $acces_handicap = addslashes(htmlspecialchars(strip_tags($_POST['acces_handicap'])));
-     $contact = addslashes(htmlspecialchars(strip_tags($_POST['contact'])));
-     $tel = addslashes(htmlspecialchars(strip_tags($_POST['tel'])));
-     $mail = addslashes(htmlspecialchars(strip_tags($_POST['mail'])));
-     $site = addslashes(htmlspecialchars(strip_tags($_POST['site'])));
 
-//     $file_image = addslashes(htmlspecialchars(strip_tags($_POST['file_image'])));
+            $adresse = addslashes(htmlspecialchars(strip_tags($_POST['adresse'])));
+            $code_postal = addslashes(htmlspecialchars(strip_tags($_POST['code_postal'])));
+            $ville = addslashes(htmlspecialchars(strip_tags($_POST['ville'])));
 
-     $legende = addslashes(htmlspecialchars(strip_tags($_POST['legende'])));
-     $descriptif = addslashes(htmlspecialchars(strip_tags($_POST['descriptif'])));
-     $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
+            $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
 
-     $bdd->exec("INSERT INTO `evenement`(`titre`, `categorie`, `date`, `heure`, `public`, `lieu`, `id_adresse`, `departement`, `acces_handicap`, `contact`, `tel`, `mail`, `site`, `legende`, `descriptif`, `status`) VALUES ('$titre','$categorie','$date','$heure','$public','$lieu','$id_adresse','$departement','$acces_handicap','$contact','$tel','$mail','$site','$legende','$descriptif','$statut')");
+            $id_adresse = $bdd->lastInsertId(); //récupère l'id généré par l'insertion de l'adresse
 
-?>
-     <SCRIPT LANGUAGE="JavaScript">
-         alert('Votre nouvel événement à bien été créé');
-     </SCRIPT>
+            $titre = addslashes(htmlspecialchars(strip_tags($_POST['titre'])));
+            $categorie = addslashes(htmlspecialchars(strip_tags($_POST['categorie'])));
+            $date = addslashes(htmlspecialchars(strip_tags($_POST['date'])));
+            $heure = addslashes(htmlspecialchars(strip_tags($_POST['heure'])));
+            $public = addslashes(htmlspecialchars(strip_tags($_POST['public'])));
+            $lieu = addslashes(htmlspecialchars(strip_tags($_POST['lieu'])));
+            $departement = addslashes(htmlspecialchars(strip_tags($_POST['departement'])));
+            $acces_handicap = addslashes(htmlspecialchars(strip_tags($_POST['acces_handicap'])));
+            $contact = addslashes(htmlspecialchars(strip_tags($_POST['contact'])));
+            $tel = addslashes(htmlspecialchars(strip_tags($_POST['tel'])));
+            $mail = addslashes(htmlspecialchars(strip_tags($_POST['mail'])));
+            $site = addslashes(htmlspecialchars(strip_tags($_POST['site'])));
 
-<?php
-    
-     header('Location:tableau-de-bord.php');
-     
+            $chemin_image = addslashes(htmlspecialchars(strip_tags($target_file)));
+
+            $legende = addslashes(htmlspecialchars(strip_tags($_POST['legende'])));
+            $descriptif = addslashes(htmlspecialchars(strip_tags($_POST['descriptif'])));
+            $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
+            $coup_d_coeur = "n";
+
+//            TODO ajouter l'id_utilisateur ! ! ! ! ! ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            $id_utilisateur = 4;
+
+
+
+
+            $bdd->exec("INSERT INTO `evenement`(`id_utilisateur`, `titre`, `categorie`, `date`, `heure`, `public`, `lieu`, `id_adresse`, `departement`, `acces_handicap`, `contact`, `tel`, `mail`, `site`, `chemin_image`, `legende`, `descriptif`, `statut`, `coup_d_coeur`) VALUES ('$id_utilisateur', '$titre', '$categorie', '$date', '$heure', '$public', '$lieu', '$id_adresse', '$departement', '$acces_handicap', '$contact', '$tel' ,'$mail', '$site', '$chemin_image', '$legende', '$descriptif', '$statut', '$coup_d_coeur')");
+
+
+            echo "<p class='message vert'>Le nouvelle événement à bien été créé";
+
+            ?>
+
+
+            <script LANGUAGE="JavaScript">
+                setTimeout('RedirectionJavascript()', 3000);
+            </script>
+
+            <?php
+
+        } else {
+            echo "<p class='message'>Désolé, il y a eu une erreur de téléchargement !</p>";
+            displayFormNouvelEvenement();
+
+        }
+    }
 
  }
 ?>

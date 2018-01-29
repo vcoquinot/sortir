@@ -2,7 +2,7 @@
 var photoEvenement = document.getElementById("visuel_evenement");
 
 /* récupère l'objet bouton téléchargemnt*/
-var boutonTelechargerImage = document.getElementById("file_image");
+var boutonTelechargerImage = document.getElementById("fileToUpload");
 
 /* positionne une écoute sur le bouton et réagi au changement (sélection d'un fichier) */
 boutonTelechargerImage.addEventListener("change", function() {

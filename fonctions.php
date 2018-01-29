@@ -247,36 +247,24 @@ function displayFormNouvelEvenement(){
             <div class="row">
 
                 <div class="col-md-offset-2 col-md-4">
-                    <textarea name="descriptif" class="form-control" rows="11" placeholder="Descriptif de l'événement*" title="Détails de l'événement" required></textarea>
+                    <textarea name="descriptif" class="form-control" rows="12" placeholder="Descriptif de l'événement*" title="Détails de l'événement" required></textarea>
                 </div>
 
-
-<!-- Gestion téléchargement visuel événement -->
+                <!-- ***************************************   -->
+                <!-- Gestion téléchargement visuel événement -->
+                <!-- ***************************************   -->
                 <div id="visuel" class="row visuel text-center">
                     <div class="col-md-4 text-center">
-                        <img id="visuel_evenement" src="images/image-grise.jpg" alt="image-grisée" title="Visuel de l'image"><!--270*140p-->
+                        <img id="visuel_evenement" src="images/image-grise.png" alt="image-grisée" title="Visuel de l'image"><!--270*140p-->
 
 
-                        <label for="file_image" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement">Télecharger une image* (JPG, PNG | max. 300 Ko)</label>
-                        <input type="hidden" name="MAX_FILE_SIZE" value="3072" />
-                        <input id="file_image" name="file_image" class="input-file" type="file">
+                        <label for="fileToUpload" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement">Télécharger une image*</label>
+                        <input id="fileToUpload" name="fileToUpload" class="input-file" type="file" required>
+
 
                         <input name="legende" type="text" class="form-control" placeholder="Légende" title="Légende du visuel (utile pour Google)">
                     </div>
 
-
-                    <!--TODO  taille image à télécharger + verif script?? + JS
-                    voir script page https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/file
-                    -->
-                    <!--                        <input id="input-dim-4" name="input-dim-4[]" multiple type="file" accept="image/*">-->
-                    <!--                    <script>-->
-                    <!--                    $("#input-dim-1").fileinput({-->
-                    <!--                        uploadUrl: "/file-upload-batch/2",-->
-                    <!--                        allowedFileExtensions: ["jpg", "png", "gif"],-->
-                    <!--                        minImageWidth: 50,-->
-                    <!--                        minImageHeight: 50-->
-                    <!--                    });-->
-                    <!--                    </script>-->
 
                 </div>
             </div>
@@ -316,18 +304,7 @@ function displayFormNouvelEvenement(){
                 <label class="custom-control-input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié" checked>&nbsp;Publié</label>
             </div>
 
-<!--            <div class="label-group row">-->
-<!--                <span class="custom-control-description col-md-offset-2 col-md-2"><strong>Statut</strong></span>-->
-<!--                <label class="custom-control custom-radio col-md-2">-->
-<!--                    <input name="statut" type="radio" class="custom-control-input" value="brouillon">-->
-<!--                    <span class="custom-control-indicator"></span>-->
-<!--                    <span class="custom-control-description">Brouillon</span>-->
-<!--                </label>-->
-<!--                <label class="custom-control custom-radio col-md-2">-->
-<!--                    <input name="statut" type="radio" class="custom-control-input" value="publié" checked>-->
-<!--                    <span class="custom-control-indicator"></span>-->
-<!--                    <span class="custom-control-description">Publié</span>-->
-<!--                </label>-->
+
 
         </div>
 
@@ -350,56 +327,5 @@ function displayFormNouvelEvenement(){
     </section>
 
 <?php
-}
-?>
-
-<?php
-function controDownLoadFile(){
-//<!-- ***************************************   -->
-//<!-- Contrôle le téléchargement d'un fichier image -->
-//<!-- ***************************************   -->
-    $erreur = "";
-
-    if (!($_FILES['file_image']['error'] > 0)) {
-        $nouveauNomVisuel = md5(uniqid(rand(), true));
-        $nouveauNomVisuel = "images/visuels-evenements/ . $nouveauNomVisuel . {$extension_upload}";
-        $resultat = move_uploaded_file($_FILES['file_image']['tmp_name'],$nom);
-        if ($resultat) echo "Transfert réussi";
-
-    }
-    else {
-        $erreur = "Erreur lors du transfert";
-        echo $erreur;
-
-        if ($_FILES['file_image']['size'] > 3072) {
-            $erreur = $erreur . "Le fichier est trop gros";
-            echo $erreur;
-        }
-
-        $extensions_valides = array('jpg', 'jpeg', 'png');
-
-        //1. strrchr renvoie l'extension avec le point (« . »).
-        //2. substr(chaine,1) ignore le premier caractère de chaine.
-        //3. strtolower met l'extension en minuscules.
-        $extension_upload = strtolower(substr(  strrchr($_FILES['file_image']['name'], '.')  ,1)  );
-        if (!(in_array($extension_upload,$extensions_valides))) {
-            $erreur = "Extension incorrecte";
-            echo $erreur;
-        }
-
-
-        $image_sizes = getimagesize($_FILES['file_image']['tmp_name']);
-        if ($image_sizes[0] > 801 OR $image_sizes[1] > 801) {
-            $erreur = "Image trop grande";
-            echo $erreur;
-        }
-
-        displayFormNouvelEvenement();
-
-    }
-
-
-
-
 }
 ?>

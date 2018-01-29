@@ -89,7 +89,7 @@
             <?php
             require_once("acces-bdd.php");
 
-            $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `status`= \"publié\" ORDER BY `evenement`.`date` ASC");
+            $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`date` ASC");
             include ("bloc-evenement.php");
             ?>
      </section>

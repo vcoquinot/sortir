@@ -72,7 +72,6 @@ session_start();
               
                   if($password == $donnee_pwd['pwd'])
                   {
-                    session_start();
                     $_SESSION['pseudo']=$pseudo;
                     header('Location:tableau-de-bord.php');
                   }

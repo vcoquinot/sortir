@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-offset-1 col-md-6 row text-right">
             <a class="display_inline_block" href="connexion.php"><p>Contribution</p></a>
-            <a class="display_inline_block" href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+            <a class="display_inline_block" href="non-developpe.php"><i class="fa fa-facebook-square fa-lg"></i></a>
         </div>
 
     </div>

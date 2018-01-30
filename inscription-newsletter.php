@@ -39,6 +39,7 @@ session_start ();
                     <p>Nous avons conçu cette newsletter comme un mail super pratique qui vous permettra de passer gratuitement de bons moments dans la région.</p>
                     <p><br/>Vous y trouverez les événements gratuits à ne pas rater et nos coups de cœur. On ne vous enverra pas de la pub, on ne la transmettra pas à des tiers et vous pourrez très simplement vous désabonner si elle ne répond pas à vos attentes.</p>
                     <p><br/>Alors, n'hésitez plus&nbsp;! Confiez-nous votre adresse mail pour la recevoir.</p>
+                    <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
                     </p>
                 </div>
             </section>
@@ -51,13 +52,13 @@ session_start ();
 
     <section id="formulaire-newsletter" class="container">
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="email"  name="email" class="form-control" placeholder="Email" value='<?php echo (isset($_POST['email'])) ? ($_POST['email']) : "" ;?> ' required>
+                <input type="email"  name="email" class="form-control" placeholder="Email*" value='<?php echo (isset($_POST['email'])) ? ($_POST['email']) : "" ;?> ' required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text" name="prenom" class="form-control" placeholder="Prénom" value ='<?php echo (isset($_POST['prenom'])) ? ($_POST['prenom']) : "" ;?>' required>
+                <input type="text" name="prenom" class="form-control" placeholder="Prénom*" value ='<?php echo (isset($_POST['prenom'])) ? ($_POST['prenom']) : "" ;?>' required>
             </div>
             <div class="form-group col-md-offset-4 col-md-3">
-                <input type="text"  name="nom" class="form-control" placeholder="Nom" value ='<?php echo (isset($_POST['nom'])) ? ($_POST['nom']) : "" ;?>' required>
+                <input type="text"  name="nom" class="form-control" placeholder="Nom*" value ='<?php echo (isset($_POST['nom'])) ? ($_POST['nom']) : "" ;?>' required>
             </div>
     </section>
 

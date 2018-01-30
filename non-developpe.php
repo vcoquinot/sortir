@@ -50,6 +50,8 @@
                 <li>Gérer mon compte</li>
                 <li>Plan du site</li>
                 <li>Boutons : Modifier, Supprimer, Dupliquer dans le tableau de bord Contributeur</li>
+                <li>À la création d'un compte Contributeur, envoi d'un email récapitulatif au contributeur qui vient de s'inscrire et à l'administrateur</li>
+                <li>Compte Facebook</li>
                 <li>…</li>
                 <li>Plus tout ce que l'on aurait aimé développer</li>
             </ul>

@@ -5,7 +5,7 @@
             <a href="index.php" title="Page d'accueil sortirgratos.fr"><img class="anim_logo" src="images/logo.png" alt= "logo"></a>
         </div>
         <div class="col-md-offset-1 col-md-6 row text-right">
-            <a class="display_inline_block menu_logo" href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+            <a class="display_inline_block menu_logo" href="non-developpe.php"><i class="fa fa-facebook-square fa-lg"></i></a>
         </div>
 
     </div>

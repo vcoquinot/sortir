@@ -14,21 +14,21 @@ include ("fonctions.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sortirgratos.fr / Nouvel événement</title>
+    <title>Sortirgratos.fr / Nouvel événement</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
     <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.MIN.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <script LANGUAGE="JavaScript">
@@ -165,12 +165,13 @@ include ("fonctions.php");
  }
 ?>
 
+
   <!-- Footer -->
   <?php include ("footer.php");?>
   <!-- Fin Footer -->
 
 <!--  Javascript pour affichage image téléchargée  -->
-    <script type="text/javascript" src="gestion_image.js"></script
+    <script type="text/javascript" src="gestion_image.js"></script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

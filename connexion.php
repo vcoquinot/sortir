@@ -45,49 +45,49 @@ session_start();
     </section>
 
     <?php 
-
-        if (!(isset($_POST['pseudo']))) 
-        {
-             displayFormConnexion();
-        }
-        else
-        {
-          $pseudo= $_POST['pseudo'];
-          $password= md5($_POST['password']); // gratos ou contributeur
-
-          $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
-          
-
-          //VERIF SI PSEUDO EXISTE DANS BDD
-
-          $donnee_pseudo = $donneebdd_pseudo->fetch();
-          $donneebdd_pseudo->closeCursor();
-    
-          if ($pseudo == $donnee_pseudo['pseudo'])
-          {
-              //VERIF SI PWD CORRECT ET ASSOCIE AU PSEUDO
-              $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pseudo = '$pseudo'");
-              $donnee_pwd = $donneebdd_pwd->fetch(); 
-              $donneebdd_pwd->closeCursor();
-              
-                  if($password == $donnee_pwd['pwd'])
-                  {
-                    $_SESSION['pseudo']=$pseudo;
-                    header('Location:tableau-de-bord.php');
-                  }
-                  else
-                  {
-                      echo "<p class='message'>Mot de passe incorrect</p>";
-                      displayFormConnexion();
-                  }
-          }
-          else
-          {
-              echo "<p class='message'>Ce&nbsp;pseudo n'existe pas</p>";
-              displayFormConnexion();
-          }
-        }
+               if (!(isset($_POST['pseudo']))) 
+               {
+                    displayFormConnexion();
+               }
+               else
+               {
+                 $pseudo= $_POST['pseudo'];
+                 $password= md5($_POST['password']); // gratos ou contributeur
+       
+                 $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
+                 
+       
+                 //VERIF SI PSEUDO EXISTE DANS BDD
+       
+                 $donnee_pseudo = $donneebdd_pseudo->fetch();
+                 $donneebdd_pseudo->closeCursor();
+           
+                 if ($pseudo == $donnee_pseudo['pseudo'])
+                 {
+                     //VERIF SI PWD CORRECT ET ASSOCIE AU PSEUDO
+                     $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pseudo = '$pseudo'");
+                     $donnee_pwd = $donneebdd_pwd->fetch(); 
+                     $donneebdd_pwd->closeCursor();
+                     
+                         if($password == $donnee_pwd['pwd'])
+                         {
+                           $_SESSION['pseudo']=$pseudo;
+                           header('Location:tableau-de-bord.php');
+                         }
+                         else
+                         {
+                             echo "<p class='message'>Mot de passe incorrect</p>";
+                             displayFormConnexion();
+                         }
+                 }
+                 else
+                 {
+                     echo "<p class='message'>Ce&nbsp;pseudo n'existe pas</p>";
+                     displayFormConnexion();
+                 }
+               }
 ?>
+
 
     <!-- Footer -->
     <?php include ("footer.php");?>

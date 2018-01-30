@@ -54,6 +54,25 @@
                 <li>Plus tout ce que l'on aurait aimé développer</li>
             </ul>
         </div>
+        <div  class="row">
+        <div class="col-md-12 text-center">
+            <p class="spacer"></p>
+        </div>
+        <div class="col-md-offset-3 col-md-6">
+            <ul>
+                <li><strong>Liste des fonctionnalités évoquées pour une V2</strong></li>
+                <li>Gestion des événements récurrents</li>
+                <li>Carte des événements géolocalisés</li>
+                <li>Calendrier des événements</li>
+                <li>Gestion des cookies</li>
+                <li>Alerte événement</li>
+                <li>Événement coup de cœur</li>
+                <li>Balise Google Analytics</li>
+                <li>WCAG Web Content Accessibility Guidelines</li>
+                <li>Étendre le service à l’Occitanie , voire au territoire français</li>
+                <li>Évoquer l’utilité d’une application mobile</li>
+            </ul>
+        </div>
 
     </div>
 </section>

@@ -54,7 +54,7 @@ session_start();
                  $pseudo= $_POST['pseudo'];
                  $password= md5($_POST['password']); // gratos ou contributeur
        
-                 $donneebdd_pseudo = $bdd->query("SELECT pseudo from utilisateur WHERE pseudo = '$pseudo'");
+                 $donneebdd_pseudo = $bdd->query("SELECT pseudo FROM utilisateur WHERE pseudo = '$pseudo'");
                  
        
                  //VERIF SI PSEUDO EXISTE DANS BDD
@@ -64,14 +64,18 @@ session_start();
            
                  if ($pseudo == $donnee_pseudo['pseudo'])
                  {
-                     //VERIF SI PWD CORRECT ET ASSOCIE AU PSEUDO
-                     $donneebdd_pwd = $bdd->query("SELECT `pwd` from `utilisateur`WHERE pseudo = '$pseudo'");
+                     //VERIF SI PWD CORRECT + SI PWD ASSOCIE AU PSEUDO
+                     $donneebdd_pwd = $bdd->query("SELECT pwd FROM utilisateur WHERE pwd = '$password' AND pseudo = '$pseudo'");
                      $donnee_pwd = $donneebdd_pwd->fetch(); 
                      $donneebdd_pwd->closeCursor();
+                     //$donneebdd_user = $bdd->query("SELECT id FROM utilisateur WHERE pwd = '$password' AND pseudo = '$pseudo'");
+                     //$donnee_user = $donneebdd_user->fetch();
+                     //$donneebdd_user->closeCursor();
                      
                          if($password == $donnee_pwd['pwd'])
                          {
-                           $_SESSION['pseudo']=$pseudo;
+
+                           $_SESSION['pseudo']=$pseudo;//pseudo
                            header('Location:tableau-de-bord.php');
                          }
                          else

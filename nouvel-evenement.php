@@ -3,7 +3,7 @@
 require_once("securite.php");
 //acces BDD
 require_once("acces-bdd.php");
-include ("menu-contributeur.php");
+include ("menu-contributeur-nouvel-evenement.php");
 include ("fonctions.php");
 
 

@@ -116,7 +116,7 @@ require_once("acces-bdd.php");
 
                       <div class="col-md-5 text-right">
                           <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
-                          <a href="non-developpe.php" class="lien_bleu font_roboto">Supprimer</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto backgroundRouge">Supprimer</a>
                           <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
                       </div>
                   </div>
@@ -144,7 +144,7 @@ require_once("acces-bdd.php");
 
                           <div class="col-md-5 text-right">
                               <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
-                              <a href="non-developpe.php" class="lien_bleu font_roboto">Supprimer</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto backgroundRouge">Supprimer</a>
                               <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
                           </div>
                       </div>

@@ -373,6 +373,10 @@ header a:focus, header a:hover {
     color: white;
 }
 
+.backgroundRouge {
+    background-color: #FF0000;
+}
+
 .lien_bleu.focus, .lien_bleu:focus, .lien_bleu:hover {
     color: black !important;
 }

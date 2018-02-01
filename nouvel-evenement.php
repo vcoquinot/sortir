@@ -145,7 +145,7 @@ include ("fonctions.php");
             $bdd->exec("INSERT INTO `evenement`(`id_utilisateur`, `titre`, `categorie`, `date`, `heure`, `public`, `lieu`, `id_adresse`, `departement`, `acces_handicap`, `contact`, `tel`, `mail`, `site`, `chemin_image`, `legende`, `descriptif`, `statut`, `coup_d_coeur`) VALUES ('$id_utilisateur', '$titre', '$categorie', '$date', '$heure', '$public', '$lieu', '$id_adresse', '$departement', '$acces_handicap', '$contact', '$tel' ,'$mail', '$site', '$chemin_image', '$legende', '$descriptif', '$statut', '$coup_d_coeur')");
 
 
-            echo "<p class='message vert'>Le nouvelle événement à bien été créé";
+            echo "<p class='message vert'>Le nouvel événement à bien été créé";
 
             ?>
 

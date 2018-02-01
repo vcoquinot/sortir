@@ -23,8 +23,11 @@
   </head>
 
   <body>
-
-    <?php include ("menu.php");?>
+    <?php 
+    session_start();
+    include ("menu.php");
+    ?>
+    
 
 <!-- Caroussel size slides: 650*433-->
     <section id="slides" class="container-fluid">

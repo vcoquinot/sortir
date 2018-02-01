@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,7 +26,7 @@
   </head>
   <body>
 
-    <?php include ("menu-logo.php");?>
+    <?php include ("menu.php");?>
 
     <section id="introduction-contact" class="container-fluid">
 

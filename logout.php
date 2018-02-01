@@ -6,6 +6,5 @@ session_unset ();
 session_destroy ();
 // Redicrection vers la page d'accueil
 header ('location: index.php');
-echo "vous êtes deconnecté";
     
 ?>

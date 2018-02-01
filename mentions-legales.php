@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -21,7 +24,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body><?php include ("menu-logo.php"); ?>
+  <body><?php include ("menu.php"); ?>
 
   <section id="introduction-contact" class="container-fluid">
 

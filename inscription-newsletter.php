@@ -26,7 +26,7 @@ session_start ();
   </head>
 
   <body>
-  <?php include ("menu-logo.php");
+  <?php include ("menu.php");
   require_once("acces-bdd.php"); ?>
 
     <section id="introduction-inscription-newsletter" class= "container'fluid">

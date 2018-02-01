@@ -26,7 +26,7 @@ session_start();
   </head>
 
   <body>
-    <?php include ("menu-logo.php");
+    <?php include ("menu.php");
     include ("fonctions.php");
     require_once("acces-bdd.php")?>
 
@@ -54,11 +54,9 @@ session_start();
                  $pseudo= $_POST['pseudo'];
                  $password= md5($_POST['password']); // gratos ou contributeur
        
+                 //VERIF SI PSEUDO EXISTE DANS BDD
                  $donneebdd_pseudo = $bdd->query("SELECT pseudo FROM utilisateur WHERE pseudo = '$pseudo'");
                  
-       
-                 //VERIF SI PSEUDO EXISTE DANS BDD
-       
                  $donnee_pseudo = $donneebdd_pseudo->fetch();
                  $donneebdd_pseudo->closeCursor();
            
@@ -68,12 +66,12 @@ session_start();
                      $donneebdd_pwd = $bdd->query("SELECT pwd FROM utilisateur WHERE pwd = '$password' AND pseudo = '$pseudo'");
                      $donnee_pwd = $donneebdd_pwd->fetch(); 
                      $donneebdd_pwd->closeCursor();
-                     //$donneebdd_user = $bdd->query("SELECT id FROM utilisateur WHERE pwd = '$password' AND pseudo = '$pseudo'");
-                     //$donnee_user = $donneebdd_user->fetch();
-                     //$donneebdd_user->closeCursor();
                      
                          if($password == $donnee_pwd['pwd'])
                          {
+                           /* $donneebdd_user = $bdd->query("SELECT id FROM utilisateur WHERE pwd = '$password' AND pseudo = '$pseudo'");
+                            $donnee_user = $donneebdd_user->fetch();
+                            $donneebdd_user->closeCursor();*/
 
                            $_SESSION['pseudo']=$pseudo;//pseudo
                            header('Location:tableau-de-bord.php');

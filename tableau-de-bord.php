@@ -1,10 +1,11 @@
 <?php
+session_start();
 //verification session ouverte
 require_once("securite.php");
 //acces BDD
 require_once("acces-bdd.php");
-
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -33,7 +34,7 @@ require_once("acces-bdd.php");
 
   <body>
 
-  <?php include ("menu-contributeur.php");?>
+  <?php include ("menu.php");?>
 
   <!-- Partie provisoire simulation données de la base -->
   <?php {

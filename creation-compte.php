@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,7 +27,7 @@
   </head>
 
   <body>
-  <?php include ("menu-logo.php");
+  <?php include ("menu.php");
   require_once("acces-bdd.php");
   include ("fonctions.php");?>
 

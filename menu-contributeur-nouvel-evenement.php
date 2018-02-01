@@ -10,8 +10,8 @@ require_once("securite.php");
         </div>
         <div class="col-md-offset-1 col-md-6 row text-right">
             <span><?php echo((isset($_SESSION['pseudo'])) ? ($_SESSION['pseudo']):" "); ?></span>
-            <a class="display_inline_block" href="tableau-de-bord.php"><p>Tableau-de-bord</p></a>
-            <a class="display_inline_block" href="logout.php"><p>Déconnexion</p></a>
+            <a class="display_inline_block" href="tableau-de-bord.php"><p>a changé tbd</p></a>
+            <a class="display_inline_block" href="logout.php"><p>Deconnect pas le bon menu !</p></a>
         </div>
 
     </div>

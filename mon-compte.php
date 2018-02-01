@@ -1,4 +1,5 @@
 <?php
+session_start();
 //verification session ouverte
 require_once("securite.php");
 ?>
@@ -30,7 +31,7 @@ require_once("securite.php");
 </head>
 
 <body> 
-    <?php include ("menu-contributeur.php");?>
+    <?php include ("menu.php");?>
 
     <section id="introduction-creation-compte" class= "container-fluid">
         <div class="col-md-12 row text-center">

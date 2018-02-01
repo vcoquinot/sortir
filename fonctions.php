@@ -238,7 +238,6 @@ function displayFormNouvelEvenement(){
                         <option value="Pyrénées-Orientales">Pyrénées-Orientales (66)</option>
                     </select>
                 </div>
-            </div>
 
                 <div class="col-md-12">
                     <p class="spacer"></p>
@@ -298,30 +297,24 @@ function displayFormNouvelEvenement(){
 
 
         <div class="row">
-
             <div class="label-group row col-md-offset-2 col-md-8 marginTop text-center">
                 <label class="custom-control-input">Statut de la publication*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="brouillon" required>&nbsp;Brouillon</label>
                 <label class="custom-control-input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="statut" value="publié" checked>&nbsp;Publié</label>
             </div>
-
-
-
         </div>
 
 
-            <section id="statut-evenement" class="container marginTop">
 
+        <div class="col-md-12">
+            <p class="spacer"></p>
+        </div>
 
-                <div class="col-md-12">
-                    <p class="spacer"></p>
-                </div>
-
-                <!-- bouton création événement -->
-                <section id="bouton-creer-compte" class="container">
-                    <div class="row text-center col-md-offset-2 col-md-7">
-                        <button type="submit" class="btn btn-ligh bt_bleu">Créer l'événement</button>
-                    </div>
-                </section>
+        <!-- bouton création événement -->
+        <section id="bouton-creer-compte" class="container">
+            <div class="row text-center col-md-offset-2 col-md-7">
+                <button type="submit" class="btn btn-ligh bt_bleu">Créer l'événement</button>
+            </div>
+        </section>
         </form>
 
     </section>

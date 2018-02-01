@@ -75,6 +75,12 @@ session_start();
 
                            $_SESSION['pseudo']=$pseudo;//pseudo
                            header('Location:tableau-de-bord.php');
+                           ?>
+                           <script LANGUAGE="JavaScript">
+        function RedirectionJavascript(){
+            document.location.href="tableau-de-bord.php";
+        }
+    </script><?php
                          }
                          else
                          {

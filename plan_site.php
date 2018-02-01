@@ -1,13 +1,18 @@
 <?php
-session_start();
+//verification session ouverte
+if (!(isset($_POST['pseudo'])))
+{
+    session_start();
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sortirgratos.fr / Tableau de bord</title>
+    <title>Sortirgratos.fr / Plan du site</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
@@ -28,48 +33,68 @@ session_start();
   </head>
 
   <body>
+  <?php include ("menu.php");?>
 
-  <header class="container-fluid">
-    <div class="row">
-        <div class="col-md-offset-1 col-md-3">
-            <a class="navbar-brand" href="index.html"></a>
-            <a href="index.php" title="Page d'accueil sortirgratos.fr"><img class="anim_logo" src="images/logo.png" alt= "logo"></a>
-        </div>
-        <div class="col-md-offset-1 col-md-6 row text-right">
-            <a class="display_inline_block" href="connexion.php"><p>Contribution</p></a>
-            <a class="display_inline_block" href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
-        </div>
+  <!-- Présentation -->
+  <section id="presentation" class="container">
+      <div class="row">
+          <h1>Plan du site</h1>
+      </div>
+  </section>
+  <!-- Fin Présentation -->
 
-    </div>
-  </header>
-
-  <div>
-<h1 class="lien">Plan du site </h1>
-<ul class="lien">
-  <li><a href="index.php">Accueil</a>
-    <ul>
-      <li><a href="bloc-evenement.php">Événement</a></>
-      <li><a href="nouvel-evenement.php">Contribution</a><!-- Contribuer en créant un événement  -->
-        <ul>
-          <li><a href="creation-compte.php">Création compte</a></li><!-- Création de mon compte contributeur  -->
-          <li><a href="tableau-de-bord.php">tableau de bord</a></li> <!--erreur au niveu de la requete sql à la ligne 44 de tableau-de-bord.php -->
-            <ul>
-                <li><a href="mon-compte.php">Gérer mon compte</a>  
-                <li><a href="nouvel-evenement.php">Création événement</a></li>
-            </ul>
-        </ul>
-      </li>
-      <li><a href="inscription-newsletter.php">Inscription NewsLetters</a>
-      <li><a href="mentions-legales.php">Mentions-légales</a></li>
-      <li><a href="qui-sommes-nous.php">Qui sommes nous?</a></li>
-      <li><a href="contact.php">Contact</a></li>
-  </li>
-</ul>
-</div>
-     
+  <section class="container">
+      <div class="row text-center">
+      </div>
+  </section>
 
 
 
+
+  <section id="formulaire-contributeur" class="container">
+      <div class="form-group row">
+          <div class="col-md-offset-2 col-md-4">
+              <ul class="lien">
+                  <li><a href="index.php">Accueil</a>
+                      <ul>
+                          <li><a href="bloc-evenement.php">Événement</a></>
+                          <li><a href="nouvel-evenement.php">Contribution</a><!-- Contribuer en créant un événement  -->
+                              <ul>
+                                  <li><a href="creation-compte.php">Création compte</a></li><!-- Création de mon compte contributeur  -->
+                                  <li><a href="tableau-de-bord.php">tableau de bord</a></li> <!--erreur au niveu de la requete sql à la ligne 44 de tableau-de-bord.php -->
+                                  <ul>
+                                      <li><a href="mon-compte.php">Gérer mon compte</a>
+                                      <li><a href="nouvel-evenement.php">Création événement</a></li>
+                                  </ul>
+                              </ul>
+                          </li>
+                          <li><a href="inscription-newsletter.php">Inscription NewsLetters</a>
+                          <li><a href="mentions-legales.php">Mentions-légales</a></li>
+                          <li><a href="qui-sommes-nous.php">Qui sommes nous?</a></li>
+                          <li><a href="contact.php">Contact</a></li>
+                          </li>
+                      </ul>
+          </div>
+          <div class="col-md-4">
+              <img class="visuel_plan_site" src= "./images/visuel_plan_site.jpg" alt="Le site">
+
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+<section>
+
+</section>
 
 
   <!-- Footer -->

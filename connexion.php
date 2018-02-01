@@ -1,5 +1,10 @@
 <?php
-session_start();
+//verification session ouverte
+//if (!(session_start()))
+//{
+    session_start();
+//}
+include ("fonctions.php");
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +28,17 @@ session_start();
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+      <script LANGUAGE="JavaScript">
+          function RedirectionJavascript(){
+              document.location.href="tableau-de-bord.php";
+          }
+      </script>
   </head>
 
   <body>
     <?php include ("menu.php");
-    include ("fonctions.php");
+
     require_once("acces-bdd.php")?>
 
     <section id="introduction-contributeur" class= "container'fluid">
@@ -74,13 +85,11 @@ session_start();
                             $donneebdd_user->closeCursor();*/
 
                            $_SESSION['pseudo']=$pseudo;//pseudo
-                           header('Location:tableau-de-bord.php');
                            ?>
-                           <script LANGUAGE="JavaScript">
-        function RedirectionJavascript(){
-            document.location.href="tableau-de-bord.php";
-        }
-    </script><?php
+                             <script LANGUAGE="JavaScript">
+                                 RedirectionJavascript();
+                             </script>
+                             <?php
                          }
                          else
                          {

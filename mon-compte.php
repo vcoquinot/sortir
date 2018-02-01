@@ -1,6 +1,11 @@
 <?php
-session_start();
 //verification session ouverte
+if (!(isset($_POST['pseudo'])))
+{
+    session_start();
+}
+
+
 require_once("securite.php");
 ?>
 

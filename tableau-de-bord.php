@@ -1,7 +1,13 @@
+
 <?php
-session_start();
 //verification session ouverte
-require_once("securite.php");
+if (!(session_start()))
+{
+    session_start();
+}
+
+include("securite.php");
+
 //acces BDD
 require_once("acces-bdd.php");
 ?>

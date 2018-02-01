@@ -100,10 +100,14 @@ header a:focus, header a:hover {
 
 /*----- MENU-----*/
 /* ----------------------------------------------------------------------------- */
-.menu_logo {
-    margin-top: 16px;
-}
+/*.menu_logo {*/
+    /*margin-top: 16px;*/
+/*}*/
 
+.bt_dTdB_deconnexion {
+    margin-top: 17px;
+    font-size: 0.9em;
+}
 
 /*----- CAROUSEL-----*/
 /* ----------------------------------------------------------------------------- */
@@ -174,6 +178,10 @@ header a:focus, header a:hover {
 .textBlanc {
     color: #ffffff;
     margin: 15px 0;
+}
+
+.visuel_plan_site {
+    max-width: 100%;
 }
 
 

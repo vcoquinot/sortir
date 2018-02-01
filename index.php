@@ -1,3 +1,11 @@
+<?php
+//verification session ouverte
+if (!(isset($_POST['pseudo'])))
+{
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -24,7 +32,6 @@
 
   <body>
     <?php 
-    session_start();
     include ("menu.php");
     ?>
     
@@ -78,7 +85,6 @@
             </div>
             <div class="col-md-6">
 
-<!--    TODO lien--><!--!!!!!!!!!AJOUTER LIENS!!!!!!!-->
             <a href="non-developpe.php">Rechercher les événements</a>
             <a href="evenements-filtres.php?tri=Aujourd'hui">Filtrer les événements</a>
             </div>

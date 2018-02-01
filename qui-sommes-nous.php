@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (!(isset($_POST['pseudo'])))
+{
+    session_start();
+}
 ?>
 
 <!DOCTYPE html>

@@ -1,9 +1,13 @@
 <?php
 //verification session ouverte
+if (!(isset($_POST['pseudo'])))
+{
+    session_start();
+}
+
 require_once("securite.php");
 //acces BDD
 require_once("acces-bdd.php");
-session_start();
 include ("menu.php");
 include ("fonctions.php");
 

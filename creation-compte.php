@@ -96,6 +96,13 @@ session_start();
                 //verifier erreur BDD
                 //print_r($bdd->errorInfo());                 
                 header("location:tableau-de-bord.php");
+                ?>
+                <script LANGUAGE="JavaScript">
+        function RedirectionJavascript(){
+            document.location.href="tableau-de-bord.php";
+        }
+    </script>
+    <?php
             } 
         }
     ?>

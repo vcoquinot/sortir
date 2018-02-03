@@ -184,6 +184,20 @@ header a:focus, header a:hover {
     max-width: 100%;
 }
 
+.planDuSite {
+    margin-top: 28px;
+}
+
+.planDuSite li {
+    border-left: 3px solid #e7169d;
+}
+
+ul.liPlanSite, ul.liPlanSite2, ul.liPlanSite3 {
+    list-style-type: none;
+    margin: 0;
+}
+
+
 
 /*----- BOUTONS EVENEMENTS-----*/
 /* ----------------------------------------------------------------------------- */

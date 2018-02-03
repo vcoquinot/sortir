@@ -33,15 +33,14 @@
     require_once("acces-bdd.php");
 
     $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`date` ASC");
-    include ("test-bloc-deplie.php");
+//    include ("test-bloc-deplie.php");
+    include ("test-bloc-deplie-large.php");
     ?>
 </section>
 
 <!-- Fin Partie EVENEMENTS -->
 
-<!-- Footer -->
-<?php include ("footer.php");?>
-<!-- Fin Footer -->
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

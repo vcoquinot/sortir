@@ -35,45 +35,40 @@ if (!(isset($_POST['pseudo'])))
   <body>
   <?php include ("menu.php");?>
 
-  <!-- Présentation -->
-  <section id="presentation" class="container">
-      <div class="row">
-          <h1>Plan du site</h1>
-      </div>
-  </section>
-  <!-- Fin Présentation -->
+  <div class="col-md-12 row text-center">
+      <h1>Plan du site</h1>
+  </div>
+
+  <div class="col-md-12">
+      <p class="spacer"></p>
+  </div>
+
 
   <section class="container">
-      <div class="row text-center">
-      </div>
-  </section>
-
-
-
-
-  <section id="formulaire-contributeur" class="container">
       <div class="form-group row">
-          <div class="col-md-offset-2 col-md-4">
-              <ul class="lien">
-                  <li><a href="index.php">Accueil</a>
-                      <ul>
-                          <li><a href="bloc-evenement.php">Événement</a></>
-                          <li><a href="nouvel-evenement.php">Contribution</a><!-- Contribuer en créant un événement  -->
-                              <ul>
-                                  <li><a href="creation-compte.php">Création compte</a></li><!-- Création de mon compte contributeur  -->
-                                  <li><a href="tableau-de-bord.php">tableau de bord</a></li> <!--erreur au niveu de la requete sql à la ligne 44 de tableau-de-bord.php -->
-                                  <ul>
-                                      <li><a href="mon-compte.php">Gérer mon compte</a>
-                                      <li><a href="nouvel-evenement.php">Création événement</a></li>
-                                  </ul>
-                              </ul>
-                          </li>
-                          <li><a href="inscription-newsletter.php">Inscription NewsLetters</a>
-                          <li><a href="mentions-legales.php">Mentions-légales</a></li>
-                          <li><a href="qui-sommes-nous.php">Qui sommes nous?</a></li>
-                          <li><a href="contact.php">Contact</a></li>
-                          </li>
-                      </ul>
+          <div class="col-md-offset-2 col-md-4 planDuSite">
+            <ul class="liPlanSite">
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="evenements-filtres.php">Filtrer les événements</a></>
+                <li><a href="non-developpe.php">Rechercher les événement</a></>
+                <li><a href="connexion.php">Contribution/Connexion</a>
+                <ul class="liPlanSite2">
+                    <li><a href="creation-compte.php">Création un compte</a>
+                    <li><a href="tableau-de-bord.php">Tableau de bord</a></li>
+                    <ul class="liPlanSite3">
+                        <li><a href="nouvel-evenement.php">Créer un événement</a></li>
+                        <li><a href="mon-compte.php">Gérer mon compte</a></li>
+                    </ul>
+                </ul>
+                </li>
+                <li><a href="inscription-newsletter.php">Inscription NewsLetters</a>
+                <li><a href="qui-sommes-nous.php">Qui sommes nous ?</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="mentions-legales.php">Mentions légales/CGU</a></li>
+                <li><a href="plan_site.php">Plan du site</a></li>
+                <li><a href="non-developpe.php"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+            </ul>
+
           </div>
           <div class="col-md-4">
               <img class="visuel_plan_site" src= "./images/visuel_plan_site.jpg" alt="Le site">

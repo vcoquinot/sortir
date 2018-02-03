@@ -15,7 +15,9 @@ if (!(isset($_POST['pseudo'])))
     <meta name="description" content="Site de réferencement des évènements gratuits dans les départements du l'Aude, du Gard, de l'Hérault, de la Lozère et des Pyrénées-Orientales">
     <title>Sortirgratos / ÉVénements gratuits dans votre région</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="modal.css"  type="text/css" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 <!-- Bootstrap -->
@@ -31,9 +33,7 @@ if (!(isset($_POST['pseudo'])))
   </head>
 
   <body>
-    <?php 
-    include ("menu.php");
-    ?>
+    <?php include ("menu.php"); ?>
     
 
 <!-- Caroussel size slides: 650*433-->
@@ -98,7 +98,7 @@ if (!(isset($_POST['pseudo'])))
             <?php
             require_once("acces-bdd.php");
 
-            $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` >= CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`date` ASC");
+            $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `date` >= CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`date` ASC LIMIT 0, 20");
             include ("bloc-evenement.php");
             ?>
      </section>

@@ -216,7 +216,7 @@ function displayFormNouvelEvenement(){
                 </div>
 
                 <div class="col-md-offset-2 col-md-8">
-                    <input name="lieu" type="text" class="form-control" placeholder="Lieu-dit, nom de la salle…" title="Comment s'appelle le lieu de l'événement">
+                    <input name="lieu" type="text" class="form-control" placeholder="Lieu-dit, nom de la salle…*" title="Comment s'appelle le lieu de l'événement" required>
                     <input name="adresse" type="text" class="form-control" placeholder="Adresse*" title="Adresse de l'événement" required>
                 </div>
 

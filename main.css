@@ -299,6 +299,14 @@ ul.liPlanSite, ul.liPlanSite2, ul.liPlanSite3 {
     display: inline;
 }
 
+/*#evenement-complet h4 { !*mise en forme date, heure, public, lieu, département*!*/
+    /*color: #00c20b;*/
+    /*font-size: 1.2em;*/
+    /*text-align: left;*/
+/*}*/
+
+
+
 /*.marge-article {
     margin: 0 20px;
 }

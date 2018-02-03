@@ -5,6 +5,7 @@ if (!(isset($_POST['pseudo'])))
     session_start();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -13,7 +14,9 @@ if (!(isset($_POST['pseudo'])))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sortirgratos.fr / Événements filtrés</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="modal.css"  type="text/css" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
@@ -32,7 +35,7 @@ if (!(isset($_POST['pseudo'])))
 
   <body>
 
-  <?php include ("menu.php");?>
+  <?php include ("menu.php"); ?>
 
   <section id="introduction-evenements-filtres" class="container-fluid">
       <div class="col-md-12 row text-center">
@@ -80,7 +83,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` = CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`heure` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND`date` = CURRENT_DATE AND `statut`= \"publié\" ORDER BY `evenement`.`heure` ASC");
       }
 
       if($_GET["tri"] == "pour les 7 jours à venir"){
@@ -88,7 +91,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) AND `statut`= \"publié\" ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 6 DAY) AND `statut`= \"publié\" ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "pour les 30 jours à venir"){
@@ -96,7 +99,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) AND `statut`= \"publié\" ORDER BY `evenement`.`date`  ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `date` BETWEEN CURRENT_DATE AND (CURRENT_DATE + INTERVAL 29 DAY) AND `statut`= \"publié\" ORDER BY `evenement`.`date`  ASC");
       }
 
       if($_GET["tri"] == "trié(s) par département"){
@@ -104,7 +107,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `statut`= \"publié\" ORDER BY `departement` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `statut`= \"publié\" ORDER BY `departement` ASC");
       }
 
       if($_GET["tri"] == "trié(s) par catégorie"){
@@ -112,7 +115,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `statut`= \"publié\" ORDER BY `categorie` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `statut`= \"publié\" ORDER BY `categorie` ASC");
       }
 
       if($_GET["tri"] == "trié(s) par public"){
@@ -120,7 +123,7 @@ if (!(isset($_POST['pseudo'])))
           $valeurs= $resultatCompte->fetch();
           $nbentree = $valeurs['nbentree'];
 
-          $donnees_bdd = $bdd->query("SELECT * FROM evenement WHERE `statut`= \"publié\" ORDER BY `public` ASC");
+          $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND `statut`= \"publié\" ORDER BY `public` ASC");
       }
 
 ?>

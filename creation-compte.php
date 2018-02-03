@@ -1,6 +1,6 @@
 <?php
 //verification session ouverte
-if (!(isset($_POST['pseudo'])))
+if ((isset($_POST['pseudo'])))
 {
     session_start();
 }
@@ -50,6 +50,7 @@ if (!(isset($_POST['pseudo'])))
     </section>
 
     <?php 
+    // Si NON CONNECTE, AFFICHAGE FORMULAIRE
         if (!(isset($_POST['pseudo']))) 
         {
              displayFormCreationCompte();
@@ -72,44 +73,67 @@ if (!(isset($_POST['pseudo'])))
             $newsletter= addslashes(htmlspecialchars(strip_tags($_POST['etat_abonne'])));
             $periodicite= addslashes(htmlspecialchars(strip_tags($_POST['periodicite'])));
             $CGU= addslashes(htmlspecialchars(strip_tags($_POST['CGU'])));
-            
-            if ($psw != $psw_confirm)
+
+            //VERIF SI PSEUDO DEJA UTILISE
+            $donneebdd_pseudo = $bdd->query("SELECT pseudo FROM utilisateur WHERE pseudo = '$pseudo'");     
+            $donnee_pseudo = $donneebdd_pseudo->fetch();
+            $donneebdd_pseudo->closeCursor();
+            //SI PSEUDO PAS DEJA UTILISE, PASS ET PASSCONFIRM IDENTIQUES, CGU ACCEPTEES
+            if ($pseudo !== $donnee_pseudo['pseudo'] &&  $psw == $psw_confirm  &&  $_POST['CGU'] == 'accepte')
             {
-                echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
-                displayFormCreationCompte();
-            }
-            else if($_POST['CGU'] != 'accepte')
-            {
-                echo "<p class='message'>Vous devez accepter les conditions générales</p>";
-                displayFormCreationCompte();
-            }
-            else
-            {
+                //INSERTION DONNEES DANS BDD
                 //insertion adresse
                 $bdd->exec("INSERT INTO adresse (adresse, code_postal, ville) VALUES ('$adresse', '$code_postal', '$ville')");
                 //récupère l'id généré par l'insertion
-                $id_adresse = $bdd->lastInsertId(); 
+                 $id_adresse = $bdd->lastInsertId(); 
                 //insertion newsletter
                 $bdd->exec("INSERT INTO newsletter (etat_abonne, periodicite) VALUES ('newsletter', 'periodicite')");
                 //recupère id newsletter
                 $id_newsletter = $bdd->lastInsertId(); 
-                //insertion reste des donnees du formulaire
+                 //insertion reste des donnees du formulaire
                 $psw = md5($psw);
                 $bdd->exec("INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `pseudo`, `pwd`, `id_droit`, `type`,`nom_entite`,`id_adresse`, `site`, `mail`, `tel`, `id_newsletter`) VALUES (NULL, '$nom', '$prenom', '$pseudo', '$psw', '2', '$type', '$entite', '$id_adresse', '', '$mail', '00', '$id_newsletter');");
-                    
-                //verifier erreur BDD
-                //print_r($bdd->errorInfo());                 
-                header("location:tableau-de-bord.php");
+
+                 //REDIRECTION TABLEAU DE BORD                 
+                 header("location:tableau-de-bord.php");
                 ?>
                 <script LANGUAGE="JavaScript">
-        function RedirectionJavascript(){
-            document.location.href="tableau-de-bord.php";
-        }
-    </script>
-    <?php
+                function RedirectionJavascript(){
+                document.location.href="tableau-de-bord.php";
+                }
+                </script>
+                <?php
             } 
+            //EN CAS DE PROBLEME
+            else
+            {
+                //PSEUDO DEJA UTILISE
+                if($pseudo == $donnee_pseudo['pseudo'])
+                {                     
+                    echo "<p class='message'>Ce pseudo est déjà utilisé</p>";
+                    displayFormCreationCompte();
+                }
+                //PASSWORD ET CONFIRMATION PASSWORD NON IDENTIQUES
+                else 
+                {
+                    if ($psw != $psw_confirm)
+                    {
+                        echo "<p class='message'>Les mots de passe ne sont pas identiques</p>";
+                        displayFormCreationCompte();
+                    }
+                    else
+                    {
+                        //CGU NON ACCEPTEES
+                        if ($_POST['CGU'] != 'accepte')
+                        {
+                        echo "<p class='message'>Vous devez accepter les conditions générales</p>";
+                        displayFormCreationCompte();
+                        }
+                    }
+                }
+            }
         }
-    ?>
+            ?>
 
 
   <!-- Footer -->

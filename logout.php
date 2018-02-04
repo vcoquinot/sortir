@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 
 //Destruction des variables de session

@@ -48,10 +48,10 @@ function displayFormCreationCompte(){
             <div class="col-md-offset-1 col-md-3">
                 <select class="form-control" name="type" required>
                   <option value="<?php echo (isset($_POST['type'])) ? ($_POST['type']) : "" ;?>">Type...*</option>
-                  <option value="Association">Association</option>
-                  <option value="Collectivité">Collectivité</option>
-                  <option value="Entreprise">Entreprise</option>
-                  <option value="Particulier">Particulier</option>
+                  <option value="Association" <?php if (isset($_POST['type']) && $_POST['type']=="Association") {echo "selected" ;} ?> >Association</option>
+                  <option value="Collectivité" <?php if (isset($_POST['type']) && $_POST['type']=="Collectivité") {echo "selected" ;} ?> >Collectivité</option>
+                  <option value="Entreprise" <?php if (isset($_POST['type']) && $_POST['type']=="Entreprise") {echo "selected" ;} ?> >Entreprise</option>
+                  <option value="Particulier" <?php if (isset($_POST['type']) && $_POST['type']=="Particulier") {echo "selected" ;} ?> >Particulier</option>
                 </select>
             </div>
             </div>
@@ -59,7 +59,7 @@ function displayFormCreationCompte(){
             <div class="form-group row ">
                 <div class="col-md-offset-2 col-md-3">
                 <textarea name="adresse" class="form-control" rows="3" placeholder="Adresse*"
-                value="<?php echo (isset($_POST['adresse'])) ? ($_POST['adresse']) : "" ;?>" required></textarea>
+                value="" required></textarea>
                 </div>
             <div class="col-md-offset-1 col-md-3">
                 <input name="cp" class="form-control" type="text" placeholder="Code postal*"

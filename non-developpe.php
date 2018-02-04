@@ -62,6 +62,7 @@ if (!(isset($_POST['pseudo'])))
                 <li>Compte Facebook</li>
                 <li>…</li>
                 <li>Plus tout ce que l'on aurait aimé développer</li>
+                <li>Conservation de la mise en forme (passage à la ligne) dans la description d'un événement</li>
             </ul>
         </div>
         <div  class="row">

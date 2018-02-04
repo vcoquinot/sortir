@@ -246,7 +246,7 @@ function displayFormNouvelEvenement(){
                 <!-- ***************************************   -->
                 <div id="visuel" class="row visuel text-center">
                     <div class="col-md-4 text-center">
-                        <img id="visuel_evenement" src="images/image-grise.png" alt="image-grisée" title="Visuel de l'image"><!--270*140p-->
+                        <img id="visuel_evenement" src="images/image-grise.png" alt="image de placement" title="Visuel de l'image"><!--270*140p-->
                         <label for="fileToUpload" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement">Télécharger une image*</label>
                         <input id="fileToUpload" name="fileToUpload" class="input-file" type="file" required>
                         <input name="legende" type="text" class="form-control" placeholder="Légende" title="Légende du visuel (utile pour Google)">

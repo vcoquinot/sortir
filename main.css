@@ -35,7 +35,7 @@ a {
 
 input {
     outline: none;
-    -webkit-appearance: none;
+    /*-webkit-appearance: radio;*/
     border: none;
     border-bottom: 3px solid #E7169D;
     border-radius: 0;
@@ -137,9 +137,9 @@ header a:focus, header a:hover {
     /*  animation du bandeau bleu */
     position: relative;
     -webkit-animation-name: anim_bandeau; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: anim_bandeau;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 #presentation h1{
@@ -403,6 +403,10 @@ ul.liPlanSite, ul.liPlanSite2, ul.liPlanSite3 {
     padding: 10px 20px !important;
     margin: 12px 5px 15px 5px !important;
     color: white;
+}
+
+.petit_lien {
+    font-size: 0.8em !important;
 }
 
 .backgroundRouge {

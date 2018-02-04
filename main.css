@@ -34,6 +34,8 @@ a {
 }
 
 input {
+    outline: none;
+    -webkit-appearance: none;
     border: none;
     border-bottom: 3px solid #E7169D;
     border-radius: 0;

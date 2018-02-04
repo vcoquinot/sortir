@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sortirgratos.fr / Inscription à la newsletter</title>
 
-
-
 </head>
 
 <body>
@@ -19,16 +17,15 @@ print_r($_POST);
     ?>
 </pre>
 
-<?php //TODO mysql_real_escape_string
+<?php
     if(isset($_POST['email'])) 
     { 
-        $email = $_POST['email'];
-        $prenom= $_POST['prenom'];
-        $nom = $_POST['nom'];
-        $CGU=$_POST['CGU'];
+        $email = addslashes(htmlspecialchars(strip_tags($_POST['email'])));
+        $prenom = addslashes(htmlspecialchars(strip_tags($_POST['prenom'])));
+        $nom = addslashes(htmlspecialchars(strip_tags($_POST['nom'])));
+        $CGU = addslashes(htmlspecialchars(strip_tags($_POST['CGU'])));
     }
-
-    //vérification accepatation CGU
+//vérification accepatation CGU
     if($CGU != 'accepte') 
     {
         echo "Vous devez accepter les conditions générales pour finaliser votre inscription <br/>";
@@ -40,4 +37,4 @@ print_r($_POST);
     ?>
 
 </body>
-</html>
+</html>))

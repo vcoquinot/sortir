@@ -1,6 +1,6 @@
 <?php
-session_start();
-include ("fonctions.php");
+    session_start();
+    include ("fonctions.php");
 ?>
 
 <!DOCTYPE html>
@@ -14,16 +14,16 @@ include ("fonctions.php");
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-        <!-- Bootstrap -->
+<!-- Bootstrap -->
             <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<![endif]-->
 
         <script LANGUAGE="JavaScript">
             function RedirectionJavascript(){
@@ -41,21 +41,22 @@ include ("fonctions.php");
         <div class="col-md-12 row text-center">
         <h1>Connexion contributeur</h1>
 
-            <!-- ***************************************   -->
-            <!-- présentation -->
-            <!-- ***************************************   -->
+<!-- ***************************************   -->
+<!-- présentation -->
+<!-- ***************************************   -->
             <section id="presentation" class="container">
                 <div class="row">
                     <p>Si vous voulez contribuer (annoncer vos événements), créez votre compte.</p>
                     <p>Si vous avez déjà un compte, entrez votre pseudo et votre mot de passe, puis cliquez sur connexion.</p>
                 </div>
             </section>
-            <!-- Fin Présentation -->
+<!-- Fin Présentation -->
+
         </section>
 
-        <!-- ***************************************   -->
-        <!-- Formulaire connexion avec tests
-        <!-- ***************************************   -->        
+<!-- ***************************************   -->
+<!-- Formulaire connexion avec tests
+<!-- ***************************************   -->
 
         <?php 
                 if (!(isset($_POST['pseudo']))) 
@@ -103,13 +104,13 @@ include ("fonctions.php");
                 }
     ?>
 
-    <!-- Footer -->
+<!-- Footer -->
     <?php include ("footer.php");?>
-    <!-- Fin Footer -->
+<!-- Fin Footer -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     </body>

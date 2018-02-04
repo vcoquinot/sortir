@@ -1,20 +1,16 @@
 <?php
 //verification session ouverte
-//if (!(isset($_POST['pseudo'])))
-//{
-//    session_start();
-//}
+    session_start();
 
-//require_once("securite.php");
+    require_once("securite.php");
 //acces BDD
-require_once "acces-bdd.php";
-include "menu.php";
-include "fonctions.php";
+    require_once "acces-bdd.php";
+    include "menu.php";
+    include "fonctions.php";
 
 $id_evenement = "$_GET[id_evenement]";
 $donnees_bdd = $bdd->query("SELECT * FROM evenement, adresse WHERE evenement.id_adresse = adresse.id AND evenement.id=$_GET[id_evenement]");
 $valeurs= $donnees_bdd->fetch();
-
 
 
 ?>
@@ -25,25 +21,26 @@ $valeurs= $donnees_bdd->fetch();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sortirgratos.fr / Modification d'un évènement</title>
+
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.MIN.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
 
     <script LANGUAGE="JavaScript">
         function RedirectionJavascript(){
-            document.location.href="tableau-de-bord.php"; //TODO changer le nom -------------------------------------------------
+            document.location.href="tableau-de-bord.php"; //
         }
     </script>
 
@@ -51,20 +48,19 @@ $valeurs= $donnees_bdd->fetch();
 
 <body>
 
-
-
 <section id="introduction-nouvel-evenement" class="container-fluid">
 
     <div class="col-md-12 row text-center">
         <h1>Modification d'un évènement</h1>
 
-        <!-- Présentation -->
+<!-- Présentation -->
         <section id="presentation" class="container">
             <div class="row">
                 <p>Modifiez votre événement à l'aide du formulaire ci-dessous.<button type="button" class="bt_aide" onclick="alert('Les informations relatives à votre événement doivent être à la fois claires et détaillées afin de retenir l’attention de votre public.\n\n ->Titre : choisissez un titre explicite, synthétique et accrocheur.\n\n->Lieu : il peut s’agir d’un lieu-dit, d’un nom de salle... (ce champ n’est pas obligatoire).\n\n->Contact et téléphone : indiquez le nom et / ou prénom d’une personne dédiée et son numéro de téléphone (ces champs ne sont  pas obligatoires).\n\n->Image : téléchargez le visuel de votre événement ou une image en rapport avec celui-ci. Comme le titre, l’image doit être explicite. Les dimensions doivent être du 400x267px.\n\n->Site web : si vous avez un site, indiquez le lien vers la page d’accueil ou vers la page de l’événement.\n\n->Descriptif : expliquez en quelques lignes ce que vous proposez.\n\n->Brouillon : à tout moment vous avez la possibilité d’enregistrer votre événement sans le publier en cliquant sur ”Brouillon” et de revenir dessus plus tard.\n\n->Modifier l’événement : lorsque vous avez complété le formulaire, cliquez sur “Enregistrer le(s) changement(s)”')">Aide</button></p>
                 <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
         </section>
-        <!-- Fin Présentation -->
+<!-- FIN Présentation -->
+
     </div>
 </section>
 
@@ -159,21 +155,19 @@ $valeurs= $donnees_bdd->fetch();
                 <textarea name="descriptif" class="form-control" rows="12" placeholder="Descriptif de l'événement*" title="Détails de l'événement" required><?php echo $valeurs['descriptif'] ;?></textarea>
             </div>
 
-            <!-- ***************************************   -->
-            <!-- Gestion téléchargement visuel événement -->
-            <!-- ***************************************   -->
+<!-- ************************** -->
+<!-- Affichage visuel événement -->
+<!-- ************************** -->
             <div id="visuel" class="row visuel text-center">
                 <div class="col-md-4 text-center">
                     <img id="visuel_evenement" src="<?php echo $valeurs['chemin_image'] ;?>" alt="image de placement" title="Visuel de l'image"><!--270*140p-->
 
 
                     <label for="fileToUpload" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement" disabled>Télécharger une image*</label>
-<!--                    <input id="fileToUpload" name="fileToUpload" class="input-file" type="file" disabled>-->
 
 
                     <input name="legende" type="text" class="form-control" placeholder="Légende" title="Légende du visuel (utile pour Google)" value="<?php echo $valeurs['legende'] ;?>">
                 </div>
-
 
             </div>
         </div>
@@ -261,19 +255,15 @@ if (isset($_POST['titre'])) {
             $statut = addslashes(htmlspecialchars(strip_tags($_POST['statut'])));
             $coup_d_coeur = "n";
 
-//            TODO ajouter l'id_utilisateur ! ! ! ! ! ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//          TODO faire le lien avec l'id_utilisateur ! ! ! ! ! ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             $id_utilisateur = 4;
 
     $bdd->exec("UPDATE `evenement` SET `titre`='$titre', `categorie`='$categorie', `date`='$date', `heure`='$heure', `public`='$public', `lieu`='$lieu', `departement`='$departement', `acces_handicap`='$acces_handicap', `contact`='$contact', `tel`='$tel', `mail`='$mail', `site`='$site', `legende`='$legende', `descriptif`='$descriptif', `statut`='$statut', `coup_d_coeur`='$coup_d_coeur' WHERE `id`='$id_evenement'");
-
-
     ?>
 
-
-            <script LANGUAGE="JavaScript">
-                RedirectionJavascript();
-            </script>
-
+     <script LANGUAGE="JavaScript">
+         RedirectionJavascript();
+     </script>
 
 <?php
 }
@@ -281,16 +271,17 @@ if (isset($_POST['titre'])) {
 
 
 <!-- Footer -->
-<?php include ("footer.php");?>
+    <?php include ("footer.php");?>
 <!-- Fin Footer -->
 
 <!--  Javascript pour affichage image téléchargée  -->
-<script type="text/javascript" src="gestion_image.js"></script>
+    <script type="text/javascript" src="gestion_image.js"></script>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

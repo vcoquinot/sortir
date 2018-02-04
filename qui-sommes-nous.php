@@ -1,8 +1,8 @@
 <?php
-if (!(isset($_POST['pseudo'])))
-{
-    session_start();
-}
+    if (!(isset($_POST['pseudo'])))
+    {
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -16,23 +16,21 @@ if (!(isset($_POST['pseudo'])))
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-
-      <!-- Bootstrap -->
+<!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
+
   </head>
   <body>
     <?php include ("menu.php");?>
-
-
 
     <!-- Présentation -->
     <section id="presentation" class="container">
@@ -43,7 +41,7 @@ if (!(isset($_POST['pseudo'])))
                 Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et événements gratuits à ne pas manquer.</p>
         </div>
     </section>
-    <!-- Fin Présentation -->
+<!-- Fin Présentation -->
 
     <section class="container">
       <div class="row text-center">
@@ -51,13 +49,14 @@ if (!(isset($_POST['pseudo'])))
       </div>
     </section>
 
-    <!-- Footer -->
+<!-- Footer -->
     <?php include ("footer.php");?>
-    <!-- Fin Footer -->
+<!-- Fin Footer -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>

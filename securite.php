@@ -9,9 +9,11 @@
     if (!(isset($_SESSION['pseudo']))) {
         header("location:connexion.php");
         ?>
-        <script LANGUAGE="JavaScript">
-            RedirectionJavascript()';
-            </script>
+
+<script LANGUAGE="JavaScript">
+    RedirectionJavascript()';
+</script>
+
 <?php
     }
 ?>

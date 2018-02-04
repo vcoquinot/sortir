@@ -1,9 +1,9 @@
 <?php
 //verification session ouverte
-if (!(isset($_POST['pseudo'])))
-{
-    session_start();
-}
+    if (!(isset($_POST['pseudo'])))
+    {
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -14,22 +14,24 @@ if (!(isset($_POST['pseudo'])))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sortirgratos.fr / Plan du site</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
-      <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
+
   </head>
 
   <body>
@@ -42,7 +44,6 @@ if (!(isset($_POST['pseudo'])))
   <div class="col-md-12">
       <p class="spacer"></p>
   </div>
-
 
   <section class="container">
       <div class="form-group row">
@@ -57,7 +58,7 @@ if (!(isset($_POST['pseudo'])))
                     <li><a href="tableau-de-bord.php">Tableau de bord</a></li>
                     <ul class="liPlanSite3">
                         <li><a href="nouvel-evenement.php">Créer un événement</a></li>
-                        <li><a href="mon-compte.php">Gérer mon compte</a></li>
+                        <li><a href="non-developpe.php">Gérer mon compte</a></li>
                     </ul>
                 </ul>
                 </li>
@@ -72,25 +73,9 @@ if (!(isset($_POST['pseudo'])))
           </div>
           <div class="col-md-4">
               <img class="visuel_plan_site" src= "./images/visuel_plan_site.jpg" alt="Le site">
-
           </div>
       </div>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-<section>
-
-</section>
-
 
   <!-- Footer -->
   <?php include ("footer.php");?>

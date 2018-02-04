@@ -13,6 +13,7 @@ if (!(isset($_POST['pseudo'])))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Site de réferencement des évènements gratuits dans les départements du l'Aude, du Gard, de l'Hérault, de la Lozère et des Pyrénées-Orientales">
+
     <title>Sortirgratos / ÉVénements gratuits dans votre région</title>
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="modal.css"  type="text/css" rel="stylesheet">
@@ -36,7 +37,7 @@ if (!(isset($_POST['pseudo'])))
     <?php include ("menu.php"); ?>
     
 
-<!-- Caroussel size slides: 650*433-->
+<!-- Caroussel size slides: 600*433-->
     <section id="slides" class="container-fluid">
         <div class="carousel slide" data-ride="carousel" id="carousel">
         <ol class="carousel-indicators">
@@ -65,6 +66,7 @@ if (!(isset($_POST['pseudo'])))
         </div>
     </div>
   </section>
+<!-- FIN Caroussel size slides: 600*433-->
 
 <!-- Présentation -->
     <section id="presentation" class="container">
@@ -74,7 +76,7 @@ if (!(isset($_POST['pseudo'])))
             Concerts, expos, spectacles ou activités sportives, sortir<strong>gratos</strong>.fr vous dégotte les derniers lieux et évènements gratuits à ne pas manquer. </p>
         </div>
     </section>
-<!-- Fin Présentation -->
+<!-- FIN Présentation -->
 
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
@@ -89,11 +91,9 @@ if (!(isset($_POST['pseudo'])))
             <a href="evenements-filtres.php?tri=Aujourd'hui">Filtrer les événements</a>
             </div>
     </section>
-
-<!-- Fin partie bandeau BOUTONS EVENEMENTS -->
+<!-- FIN partie bandeau BOUTONS EVENEMENTS -->
 
 <!-- Partie EVENEMENTS -->
-
      <section id="evenements" class="container-fluid">
             <?php
             require_once("acces-bdd.php");
@@ -102,16 +102,16 @@ if (!(isset($_POST['pseudo'])))
             include ("bloc-evenement.php");
             ?>
      </section>
-
-<!-- Fin Partie EVENEMENTS -->
+<!-- FIN Partie EVENEMENTS -->
 
 <!-- Footer -->
         <?php include ("footer.php");?>
-<!-- Fin Footer -->
+<!-- FIN Footer -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>

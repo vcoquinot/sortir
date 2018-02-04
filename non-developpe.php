@@ -1,9 +1,9 @@
 <?php
 //verification session ouverte
-if (!(isset($_POST['pseudo'])))
-{
-    session_start();
-}
+    if (!(isset($_POST['pseudo'])))
+    {
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -14,27 +14,27 @@ if (!(isset($_POST['pseudo'])))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Site de réferencement des évènements gratuits dans les départements du l'Aude, du Gard, de l'Hérault, de la Lozère et des Pyrénées-Orientales">
     <title>Sortirgratos / Fonctionnalités non développées</title>
+
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
+
 </head>
 
 <body>
 
 <?php include ("menu.php");?>
-
-
 
 <!-- Présentation -->
 <section id="presentation" class="container">
@@ -42,7 +42,6 @@ if (!(isset($_POST['pseudo'])))
         <h1>Fonctionnalités <strong>non</strong> développées</h1>
         <p>Par manque de temps ou de compétences les fonctions ci-dessous n'ont pas été développées&nbsp;!</p>
     </div>
-
 </section>
 
 <section>
@@ -57,12 +56,11 @@ if (!(isset($_POST['pseudo'])))
                 <li>Partie Administrateur</li>
                 <li>Gérer mon compte</li>
                 <li>Plan du site</li>
-                <li>Boutons : Modifier, Supprimer, Dupliquer dans le tableau de bord Contributeur</li>
+                <li>Boutons : Supprimer, Dupliquer dans le tableau de bord Contributeur</li>
                 <li>À la création d'un compte Contributeur, envoi d'un email récapitulatif au contributeur qui vient de s'inscrire et à l'administrateur</li>
-                <li>Compte Facebook</li>
-                <li>…</li>
-                <li>Plus tout ce que l'on aurait aimé développer</li>
                 <li>Conservation de la mise en forme (passage à la ligne) dans la description d'un événement</li>
+                <li>Traitement du formulaire de contact</li>
+                <li>Plus tout ce que l'on aurait aimé développer…</li>
             </ul>
         </div>
         <div  class="row">
@@ -70,8 +68,9 @@ if (!(isset($_POST['pseudo'])))
             <p class="spacer"></p>
         </div>
         <div class="col-md-offset-3 col-md-6">
+            <h2>Liste des fonctionnalités évoquées pour une V2</h2>
             <ul>
-                <li><strong>Liste des fonctionnalités évoquées pour une V2</strong></li>
+                <li>Bouton Partager l'événement sur Facebook</li>
                 <li>Gestion des événements récurrents</li>
                 <li>Carte des événements géolocalisés</li>
                 <li>Calendrier des événements</li>
@@ -87,20 +86,16 @@ if (!(isset($_POST['pseudo'])))
 
     </div>
 </section>
-
-
 <!-- Fin Présentation -->
 
-
-<!-- Fin Partie EVENEMENTS -->
-
 <!-- Footer -->
-<?php include ("footer.php");?>
+    <?php include ("footer.php");?>
 <!-- Fin Footer -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

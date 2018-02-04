@@ -1,9 +1,9 @@
 <?php
+//***************************************
+//Formulaire création compte
+//***************************************
 function displayFormCreationCompte(){
 ?>
-    <!-- ***************************************   -->
-    <!-- Formulaire création compte -->
-    <!-- ***************************************   -->
 
     <section id="formulaire-creation-compte" class="container">
 
@@ -82,7 +82,7 @@ function displayFormCreationCompte(){
             <!-- Inscription newsletter -->
             <?php include ("newsletter.php");?>
 
-          <!-- Acceptation CGU -->
+    <!-- Acceptation CGU -->
     <section id="CGU" class="container">
         <div class="label-group row">
             <label class="custom-control custom-checkbox col-md-offset-3 col-md-5 text-center">
@@ -108,23 +108,22 @@ function displayFormCreationCompte(){
         
         </form>
     </section>
-
-    <!-- Fin formulaire -->
+    <!-- FIN formulaire -->
 
 <?php
 }
-
+// ***************************************
+// Formulaire connexion
+// ***************************************
 function displayFormConnexion(){
 ?>
-    <!-- ***************************************   -->
-    <!-- Formulaire connexion -->
-    <!-- ***************************************   -->
+
 
     <section id="formulaire-contributeur" class="container">
 
         <form  action="connexion.php" method="POST" class="form-horizontal">
             <div class="form-group row">
-                <div class="col-md-offset-3 col-md-3"><!--TODO   header("Location: .php")-->
+                <div class="col-md-offset-3 col-md-3">
                 <input class="form-control" type="text" placeholder="Pseudo" name="pseudo" value="<?php echo (isset($_POST['pseudo'])) ? ($_POST['pseudo']) : "" ;?>" required>
                 </div>
             <div class="col-md-3">
@@ -145,15 +144,16 @@ function displayFormConnexion(){
             <a href="creation-compte.php" class="lien_bleu font_roboto">Créer un compte</a>
         </div>
     </section>
-    <!-- Fin formulaire -->
-<?php
-  }
+<!-- FIN formulaire -->
 
+    <?php
+  }
+//***************************************
+//Formulaire Nouvel Evenement
+//***************************************
 function displayFormNouvelEvenement(){
 ?>
-    <!-- ***************************************   -->
-    <!-- Formulaire Nouvel Evenement -->
-    <!-- ***************************************   -->
+
     <section id="formulaire-nouvel-evenement" class="container">
         <form method="POST" enctype="multipart/form-data">
             <div class="row">
@@ -163,7 +163,7 @@ function displayFormNouvelEvenement(){
 
                 <div class="col-md-offset-2 col-md-4">
                     <select name="categorie" class="form-control" title="Catégorie dans laquelle l'événement va apparaître" required>
-                        <option value="" selected>Catégorie...*</option>
+                        <option ="" selected>Catégorie...*</option>
                         <option value="Atelier">Atelier</option>
                         <option value="Cinéma">Cinéma</option>
                         <option value="Conférence">Conférence</option>
@@ -201,7 +201,6 @@ function displayFormNouvelEvenement(){
                 <label class="custom-control-input">Accessible aux personnes à mobilitée réduite*&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="oui" required>&nbsp;Oui</label>
                 <label class="custom-control-input">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="acces_handicap" value="non">&nbsp;Non</label>
                 </div>
-
             </div>
 
                 <div class="col-md-12">
@@ -241,9 +240,7 @@ function displayFormNouvelEvenement(){
                     <textarea name="descriptif" class="form-control" rows="12" placeholder="Descriptif de l'événement*" title="Détails de l'événement" required></textarea>
                 </div>
 
-                <!-- ***************************************   -->
-                <!-- Gestion téléchargement visuel événement -->
-                <!-- ***************************************   -->
+<!-- Gestion téléchargement visuel événement -->
                 <div id="visuel" class="row visuel text-center">
                     <div class="col-md-4 text-center">
                         <img id="visuel_evenement" src="images/image-grise.png" alt="image de placement" title="Visuel de l'image"><!--270*140p-->
@@ -253,7 +250,7 @@ function displayFormNouvelEvenement(){
                     </div>
                 </div>
             </div>
-            <!-- Fin gestion téléchargement visuel -->    
+<!-- FIN gestion téléchargement visuel -->
 
             <div class="col-md-12">
                 <p class="spacer"></p>
@@ -301,6 +298,7 @@ function displayFormNouvelEvenement(){
         
         </form>
     </section>
+
 <?php
 }
 ?>

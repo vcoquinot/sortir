@@ -1,9 +1,9 @@
 <?php
 //verification session ouverte
-if (!(isset($_POST['pseudo'])))
-{
-    session_start();
-}
+    if (!(isset($_POST['pseudo'])))
+    {
+        session_start();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ if (!(isset($_POST['pseudo'])))
     <link href="main.css"  type="text/css" rel="stylesheet">
     <link href="modal.css"  type="text/css" rel="stylesheet">
 
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
@@ -25,12 +25,12 @@ if (!(isset($_POST['pseudo'])))
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<![endif]-->
   </head>
 
   <body>
@@ -49,7 +49,7 @@ if (!(isset($_POST['pseudo'])))
               <p>À l'aide des boutons ci-dessous vous allez pouvoir filtrer les événements.</p>
           </div>
       </section>
-<!-- Fin Présentation -->
+<!-- FIN Présentation -->
 
 <!-- Partie bandeau BOUTONS EVENEMENTS -->
   <section class="bandeau_bt_filtre text-center">
@@ -69,11 +69,10 @@ if (!(isset($_POST['pseudo'])))
   ?>
 
 
-<!-- Fin partie bandeau BOUTONS EVENEMENTS -->
+<!-- FIN partie bandeau BOUTONS EVENEMENTS -->
 
 
 <!-- Partie EVENEMENTS -->
-
       <?php
       require_once("acces-bdd.php");
 
@@ -143,16 +142,16 @@ if (!(isset($_POST['pseudo'])))
       ?>
   </section>
 
-<!-- Fin Partie EVENEMENTS -->
+<!-- FIN Partie EVENEMENTS -->
 
-  <!-- Footer -->
-  <?php include ("footer.php");?>
-  <!-- Fin Footer -->
+<!-- Footer -->
+    <?php include ("footer.php");?>
+<!-- Fin Footer -->
 
         
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     </body>

@@ -1,9 +1,9 @@
 <?php
 //verification session ouverte
-if ((isset($_POST['pseudo'])))
-{
-    session_start();
-}
+    if ((isset($_POST['pseudo'])))
+    {
+        session_start();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,16 +18,16 @@ if ((isset($_POST['pseudo'])))
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
   </head>
 
   <body>
@@ -39,23 +39,22 @@ if ((isset($_POST['pseudo'])))
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
 
-            <!-- ***************************************   -->
-            <!-- présentation -->
-            <!-- ***************************************   -->
+<!-- ***************************************   -->
+<!-- présentation -->
+<!-- ***************************************   -->
             <section id="presentation" class="container">
                 <div class="row">
                     <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>
                     <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
                 </div>
             </section>
-            <!-- Fin Présentation -->
+<!-- Fin Présentation -->
     </section>
 
     <?php 
-                /* ***************************************   -->
-                /*-- affichage formualire si non connecté -->
-                /* ***************************************   --> 
-                */
+/* ***************************************
+/*-- affichage formualire si non connecté
+/* ****************************************/
         if (!(isset($_POST['pseudo']))) 
         {
              displayFormCreationCompte();
@@ -141,14 +140,14 @@ if ((isset($_POST['pseudo'])))
             ?>
 
 
-  <!-- Footer -->
-  <?php include ("footer.php");?>
-  <!-- Fin Footer -->
+<!-- Footer -->
+    <?php include ("footer.php");?>
+<!-- Fin Footer -->
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
   </body>
 </html>

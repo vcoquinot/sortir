@@ -1,5 +1,5 @@
 
-<!-- Inscription newsletter -->
+<!-- INSCRIPTION NEWSLETTER (formulaire complet pour les utilisateurs sans compte-->
 <section id="newsletter" class="container">
     <div class="label-group row">
     <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong>Je souhaite recevoir la newsletter&nbsp;:</strong></span>
@@ -15,7 +15,7 @@
         </label>
     </div>
 
-<!-- Périodicité  newsletter -->
+<!-- choix périodicité newsletter -->
     <div class="label-group row">
     <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong></strong></span>
         <label class="custom-control custom-radio col-md-2 text-left">

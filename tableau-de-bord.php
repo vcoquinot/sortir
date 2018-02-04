@@ -1,11 +1,6 @@
 
 <?php
-//verification session ouverte
-if (!(session_start()))
-{
-    session_start();
-}
-
+session_start();
 include("securite.php");
 
 //acces BDD

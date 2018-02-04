@@ -1,6 +1,6 @@
 <section id="newsletter" class="container">
     
-<!-- Périodicité  newsletter -->
+<!-- INSCRIPTION NEWSLETTER CONTRIBUTEUR : affiche uniquement choix périodicité -->
     <div class="label-group row">
     <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong>Je souhaite recevoir la newsletter&nbsp;:</strong></span>
     <span class="custom-control-description col-md-offset-2 col-md-4 row text-center"><strong></strong></span>

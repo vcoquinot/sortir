@@ -43,7 +43,7 @@ $valeurs= $donnees_bdd->fetch();
 
     <script LANGUAGE="JavaScript">
         function RedirectionJavascript(){
-            document.location.href="tableau-de-bord2.php"; //TODO changer le nom -------------------------------------------------
+            document.location.href="tableau-de-bord.php"; //TODO changer le nom -------------------------------------------------
         }
     </script>
 
@@ -167,8 +167,8 @@ $valeurs= $donnees_bdd->fetch();
                     <img id="visuel_evenement" src="<?php echo $valeurs['chemin_image'] ;?>" alt="image de placement" title="Visuel de l'image"><!--270*140p-->
 
 
-                    <label for="fileToUpload" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement">Télécharger une image*</label>
-                    <input id="fileToUpload" name="fileToUpload" class="input-file" type="file" >
+                    <label for="fileToUpload" class="btn btn-light bt_bleu" title="Cliquez sur ce bouton pour télécharger le visuel de l'événement" disabled>Télécharger une image*</label>
+<!--                    <input id="fileToUpload" name="fileToUpload" class="input-file" type="file" disabled>-->
 
 
                     <input name="legende" type="text" class="form-control" placeholder="Légende" title="Légende du visuel (utile pour Google)" value="<?php echo $valeurs['legende'] ;?>">

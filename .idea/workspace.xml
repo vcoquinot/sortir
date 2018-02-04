@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7638051">
+    <splitter split-orientation="horizontal" split-proportion="0.64222735">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
@@ -92,63 +92,62 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tableau-de-bord2.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tableau-de-bord2.php">
+          <file leaf-file-name="tableau-de-bord.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tableau-de-bord.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="855">
-                  <caret line="57" column="128" lean-forward="true" selection-start-line="57" selection-start-column="128" selection-end-line="57" selection-end-column="128" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
                   <folding>
-                    <element signature="e#7#37#0#PHP" expanded="true" />
-                    <marker date="1517758650000" expanded="true" signature="1601:1717" ph="SELECT COUNT... evenement" />
-                    <marker date="1517758650000" expanded="true" signature="1826:1922" ph="SELECT * FRO... evenement" />
+                    <marker date="1517763737000" expanded="true" signature="1529:1645" ph="SELECT COUNT... evenement" />
+                    <marker date="1517763737000" expanded="true" signature="1754:1850" ph="SELECT * FRO... evenement" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="modifier-evenement.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="modifier-evenement.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modifier-evenement.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="659">
-                  <caret line="266" column="285" lean-forward="false" selection-start-line="266" selection-start-column="285" selection-end-line="266" selection-end-column="285" />
+                <state relative-caret-position="2310">
+                  <caret line="149" column="14" lean-forward="false" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
                   <folding>
                     <element signature="e#6#36#0#PHP" expanded="true" />
-                    <element signature="e#7440#7446#0#HTML" expanded="true" />
-                    <marker date="1517759531000" expanded="true" signature="290:362" ph="SELECT * FRO... evenement" />
-                    <marker date="1517759531000" expanded="true" signature="290:380" ph="SELECT * FRO... evenement" />
-                    <marker date="1517759531000" expanded="false" signature="480:499" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="1325:1516" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="1554:1751" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="1596:1738" ph="{...}" />
-                    <marker date="1517759531000" expanded="true" signature="1768:1912" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="1840:1912" ph="..." />
-                    <marker date="1517759531000" expanded="false" signature="1885:1912" ph="..." />
-                    <marker date="1517759531000" expanded="false" signature="2015:2093" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="2045:2093" ph="..." />
-                    <marker date="1517759531000" expanded="true" signature="12416:12422" ph=" " />
-                    <marker date="1517759531000" expanded="true" signature="13481:13564" ph="INSERT INTO adresse... " />
-                    <marker date="1517759531000" expanded="true" signature="13481:13576" ph="UPDATE adresse... " />
-                    <marker date="1517759531000" expanded="true" signature="13481:13589" ph="UPDATE adresse... " />
-                    <marker date="1517759531000" expanded="true" signature="13481:13591" ph="UPDATE adresse... " />
-                    <marker date="1517759531000" expanded="true" signature="13481:13593" ph="UPDATE adresse... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15224" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15243" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15261" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15284" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15317" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15345" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15364" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15379" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15395" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15402" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15414" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15439" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15463" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15489" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15504" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15133:15531" ph="UPDATE `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15139:15151" ph="INSERT INTO `evenement`... " />
-                    <marker date="1517759531000" expanded="true" signature="15587:15605" ph="..." />
+                    <element signature="e#7439#7445#0#HTML" expanded="true" />
+                    <marker date="1517764163000" expanded="true" signature="290:362" ph="SELECT * FRO... evenement" />
+                    <marker date="1517764163000" expanded="true" signature="290:380" ph="SELECT * FRO... evenement" />
+                    <marker date="1517764163000" expanded="false" signature="480:499" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="1325:1516" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="1554:1750" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="1596:1737" ph="{...}" />
+                    <marker date="1517764163000" expanded="true" signature="1767:1911" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="1839:1911" ph="..." />
+                    <marker date="1517764163000" expanded="false" signature="1884:1911" ph="..." />
+                    <marker date="1517764163000" expanded="false" signature="2014:2092" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="2044:2092" ph="..." />
+                    <marker date="1517764163000" expanded="true" signature="12439:12445" ph=" " />
+                    <marker date="1517764163000" expanded="true" signature="13504:13587" ph="INSERT INTO adresse... " />
+                    <marker date="1517764163000" expanded="true" signature="13504:13599" ph="UPDATE adresse... " />
+                    <marker date="1517764163000" expanded="true" signature="13504:13612" ph="UPDATE adresse... " />
+                    <marker date="1517764163000" expanded="true" signature="13504:13614" ph="UPDATE adresse... " />
+                    <marker date="1517764163000" expanded="true" signature="13504:13616" ph="UPDATE adresse... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15247" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15266" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15284" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15307" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15340" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15368" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15387" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15402" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15418" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15425" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15437" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15462" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15486" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15512" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15527" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15156:15554" ph="UPDATE `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15162:15174" ph="INSERT INTO `evenement`... " />
+                    <marker date="1517764163000" expanded="true" signature="15610:15628" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -163,8 +162,8 @@
               <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="535">
-                      <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+                    <state relative-caret-position="479">
+                      <caret line="531" column="1" lean-forward="true" selection-start-line="531" selection-start-column="1" selection-end-line="531" selection-end-column="1" />
                       <folding />
                     </state>
                   </provider>
@@ -177,7 +176,7 @@
               <file leaf-file-name="modal.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/modal.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1172">
+                    <state relative-caret-position="962">
                       <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                       <folding />
                     </state>
@@ -282,13 +281,13 @@
         <option value="$PROJECT_DIR$/bloc-evenement.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/tableau-de-bord.php" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/acces-bdd.php" />
         <option value="$PROJECT_DIR$/fonctions2.php" />
         <option value="$PROJECT_DIR$/non-developpe.php" />
-        <option value="$PROJECT_DIR$/tableau-de-bord2.php" />
         <option value="$PROJECT_DIR$/fonctions.php" />
         <option value="$PROJECT_DIR$/modifier-evenement.php" />
+        <option value="$PROJECT_DIR$/tableau-de-bord2.php" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -337,6 +336,11 @@
             <path>
               <item name="sortir" type="b2602c69:ProjectViewProjectNode" />
               <item name="sortir" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sortir" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sortir" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="a jeter-----------" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -438,12 +442,12 @@
       <workItem from="1517511298883" duration="6564000" />
       <workItem from="1517596419668" duration="4362000" />
       <workItem from="1517652086246" duration="18083000" />
-      <workItem from="1517726367707" duration="20497000" />
+      <workItem from="1517726367707" duration="22071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258268000" />
+    <option name="totallyTimeSpent" value="259842000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modal.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1172">
+        <state relative-caret-position="962">
           <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
@@ -738,14 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="141" column="25" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
@@ -753,17 +749,6 @@
           <folding>
             <marker date="1517681979000" expanded="true" signature="4137:4293" ph="SELECT * FRO... evenement" />
             <marker date="1517681979000" expanded="true" signature="4137:4305" ph="SELECT * FRO... evenement" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tableau-de-bord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517743309000" expanded="true" signature="1529:1645" ph="SELECT COUNT... evenement" />
-            <marker date="1517743309000" expanded="true" signature="1754:1850" ph="SELECT * FRO... evenement" />
           </folding>
         </state>
       </provider>
@@ -848,61 +833,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tableau-de-bord2.php">
+    <entry file="file://$PROJECT_DIR$/modifier-evenement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="128" lean-forward="true" selection-start-line="57" selection-start-column="128" selection-end-line="57" selection-end-column="128" />
+        <state relative-caret-position="2310">
+          <caret line="149" column="14" lean-forward="false" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
           <folding>
-            <element signature="e#7#37#0#PHP" expanded="true" />
-            <marker date="1517758650000" expanded="true" signature="1601:1717" ph="SELECT COUNT... evenement" />
-            <marker date="1517758650000" expanded="true" signature="1826:1922" ph="SELECT * FRO... evenement" />
+            <element signature="e#6#36#0#PHP" expanded="true" />
+            <element signature="e#7439#7445#0#HTML" expanded="true" />
+            <marker date="1517764163000" expanded="true" signature="290:362" ph="SELECT * FRO... evenement" />
+            <marker date="1517764163000" expanded="true" signature="290:380" ph="SELECT * FRO... evenement" />
+            <marker date="1517764163000" expanded="false" signature="480:499" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="1325:1516" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="1554:1750" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="1596:1737" ph="{...}" />
+            <marker date="1517764163000" expanded="true" signature="1767:1911" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="1839:1911" ph="..." />
+            <marker date="1517764163000" expanded="false" signature="1884:1911" ph="..." />
+            <marker date="1517764163000" expanded="false" signature="2014:2092" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="2044:2092" ph="..." />
+            <marker date="1517764163000" expanded="true" signature="12439:12445" ph=" " />
+            <marker date="1517764163000" expanded="true" signature="13504:13587" ph="INSERT INTO adresse... " />
+            <marker date="1517764163000" expanded="true" signature="13504:13599" ph="UPDATE adresse... " />
+            <marker date="1517764163000" expanded="true" signature="13504:13612" ph="UPDATE adresse... " />
+            <marker date="1517764163000" expanded="true" signature="13504:13614" ph="UPDATE adresse... " />
+            <marker date="1517764163000" expanded="true" signature="13504:13616" ph="UPDATE adresse... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15247" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15266" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15284" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15307" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15340" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15368" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15387" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15402" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15418" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15425" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15437" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15462" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15486" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15512" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15527" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15156:15554" ph="UPDATE `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15162:15174" ph="INSERT INTO `evenement`... " />
+            <marker date="1517764163000" expanded="true" signature="15610:15628" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modifier-evenement.php">
+    <entry file="file://$PROJECT_DIR$/a jeter-----------/-tableau-de-bord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="266" column="285" lean-forward="false" selection-start-line="266" selection-start-column="285" selection-end-line="266" selection-end-column="285" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
           <folding>
-            <element signature="e#6#36#0#PHP" expanded="true" />
-            <element signature="e#7440#7446#0#HTML" expanded="true" />
-            <marker date="1517759531000" expanded="true" signature="290:362" ph="SELECT * FRO... evenement" />
-            <marker date="1517759531000" expanded="true" signature="290:380" ph="SELECT * FRO... evenement" />
-            <marker date="1517759531000" expanded="false" signature="480:499" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="1325:1516" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="1554:1751" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="1596:1738" ph="{...}" />
-            <marker date="1517759531000" expanded="true" signature="1768:1912" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="1840:1912" ph="..." />
-            <marker date="1517759531000" expanded="false" signature="1885:1912" ph="..." />
-            <marker date="1517759531000" expanded="false" signature="2015:2093" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="2045:2093" ph="..." />
-            <marker date="1517759531000" expanded="true" signature="12416:12422" ph=" " />
-            <marker date="1517759531000" expanded="true" signature="13481:13564" ph="INSERT INTO adresse... " />
-            <marker date="1517759531000" expanded="true" signature="13481:13576" ph="UPDATE adresse... " />
-            <marker date="1517759531000" expanded="true" signature="13481:13589" ph="UPDATE adresse... " />
-            <marker date="1517759531000" expanded="true" signature="13481:13591" ph="UPDATE adresse... " />
-            <marker date="1517759531000" expanded="true" signature="13481:13593" ph="UPDATE adresse... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15224" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15243" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15261" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15284" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15317" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15345" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15364" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15379" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15395" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15402" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15414" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15439" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15463" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15489" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15504" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15133:15531" ph="UPDATE `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15139:15151" ph="INSERT INTO `evenement`... " />
-            <marker date="1517759531000" expanded="true" signature="15587:15605" ph="..." />
+            <marker date="1517743309000" expanded="true" signature="1529:1645" ph="SELECT COUNT... evenement" />
+            <marker date="1517743309000" expanded="true" signature="1754:1850" ph="SELECT * FRO... evenement" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tableau-de-bord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <marker date="1517763737000" expanded="true" signature="1529:1645" ph="SELECT COUNT... evenement" />
+            <marker date="1517763737000" expanded="true" signature="1754:1850" ph="SELECT * FRO... evenement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="531" column="1" lean-forward="true" selection-start-line="531" selection-start-column="1" selection-end-line="531" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,11 +1,6 @@
 
 <?php
-//verification session ouverte
-//if (!(session_start()))
-//{
-//    session_start();
-//}
-
+session_start();
 include("securite.php");
 
 //acces BDD
@@ -122,9 +117,9 @@ require_once("acces-bdd.php");
                       </div>
 
                       <div class="col-md-5 text-right">
-                          <a href="modifier-evenement.php?id_evenement=<?php echo $valeurs['id'] ?>" class="lien_bleu petit_lien font_roboto">Modifier</a>
-                          <a href="non-developpe.php" class="lien_bleu petit_lien font_roboto backgroundRouge">Supprimer</a>
-                          <a href="non-developpe.php" class="lien_bleu petit_lien font_roboto">Dupliquer</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto backgroundRouge">Supprimer</a>
+                          <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
                       </div>
                   </div>
               </div>
@@ -150,9 +145,9 @@ require_once("acces-bdd.php");
                           </div>
 
                           <div class="col-md-5 text-right">
-                              <a href="modifier-evenement.php?id_evenement=<?php echo $valeurs['id'] ?>" class="lien_bleu petit_lien font_roboto">Modifier</a>
-                              <a href="non-developpe.php" class="lien_bleu petit_lien font_roboto backgroundRouge">Supprimer</a>
-                              <a href="non-developpe.php" class="lien_bleu petit_lien font_roboto">Dupliquer</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto">Modifier</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto backgroundRouge">Supprimer</a>
+                              <a href="non-developpe.php" class="lien_bleu font_roboto">Dupliquer</a>
                           </div>
                       </div>
                   </div>

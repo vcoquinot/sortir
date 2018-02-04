@@ -39,18 +39,23 @@ if ((isset($_POST['pseudo'])))
         <div class="col-md-12 row text-center">
             <h1>Création Compte Contributeur</h1>
 
-<!-- Présentation -->
+            <!-- ***************************************   -->
+            <!-- présentation -->
+            <!-- ***************************************   -->
             <section id="presentation" class="container">
                 <div class="row">
                     <p>Créez votre compte et diffusez gratuitement vos événements sur sortir<strong>gratos</strong>.fr</p>
                     <div class="obligatoires">Les champs marqués d'une * sont obligatoires !</div>
                 </div>
             </section>
-<!-- Fin Présentation -->
+            <!-- Fin Présentation -->
     </section>
 
     <?php 
-    // Si NON CONNECTE, AFFICHAGE FORMULAIRE
+                /* ***************************************   -->
+                /*-- affichage formualire si non connecté -->
+                /* ***************************************   --> 
+                */
         if (!(isset($_POST['pseudo']))) 
         {
              displayFormCreationCompte();
@@ -74,11 +79,11 @@ if ((isset($_POST['pseudo'])))
             $periodicite= addslashes(htmlspecialchars(strip_tags($_POST['periodicite'])));
             $CGU= addslashes(htmlspecialchars(strip_tags($_POST['CGU'])));
 
-            //VERIF SI PSEUDO DEJA UTILISE
+            //vérification si pseudo déjà utilisé
             $donneebdd_pseudo = $bdd->query("SELECT pseudo FROM utilisateur WHERE pseudo = '$pseudo'");     
             $donnee_pseudo = $donneebdd_pseudo->fetch();
             $donneebdd_pseudo->closeCursor();
-            //SI PSEUDO PAS DEJA UTILISE, PASS ET PASSCONFIRM IDENTIQUES, CGU ACCEPTEES
+            //Si pseudo ok, vérification pwd et pwd confirm identiques + CGU acceptées
             if ($pseudo !== $donnee_pseudo['pseudo'] &&  $psw == $psw_confirm  &&  $_POST['CGU'] == 'accepte')
             {
                 //INSERTION DONNEES DANS BDD
@@ -107,13 +112,13 @@ if ((isset($_POST['pseudo'])))
             //EN CAS DE PROBLEME
             else
             {
-                //PSEUDO DEJA UTILISE
+                //cas où pseudo déjà utilisé
                 if($pseudo == $donnee_pseudo['pseudo'])
                 {                     
                     echo "<p class='message'>Ce pseudo est déjà utilisé</p>";
                     displayFormCreationCompte();
                 }
-                //PASSWORD ET CONFIRMATION PASSWORD NON IDENTIQUES
+                //cas pwd et pwd confirm non identiques
                 else 
                 {
                     if ($psw != $psw_confirm)
@@ -123,7 +128,7 @@ if ((isset($_POST['pseudo'])))
                     }
                     else
                     {
-                        //CGU NON ACCEPTEES
+                        //cas CGU non acceptées
                         if ($_POST['CGU'] != 'accepte')
                         {
                         echo "<p class='message'>Vous devez accepter les conditions générales</p>";
